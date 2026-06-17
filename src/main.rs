@@ -7,7 +7,7 @@ fn main() {
     // Password generated
     let password = rand::thread_rng().gen_range(0, 101);
     // OPTIONAL : show the generated Password
-    println!("GENERATED PASSWORD : {}", password);
+    //println!("GENERATED PASSWORD : {}", password);
     loop {
         println!("Enter the right password");
         // Instance of the string
