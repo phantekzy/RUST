@@ -8,8 +8,9 @@ fn main() {
     // SHADOWING
     let x = x + 1;
     let x = x * 2;
+    println!("{}", x);
 
-    let mut spaces = "   ";
-    spaces = spaces.len();
+    let spaces = "   ";
+    let spaces = spaces.len();
     println!("{}", spaces);
 }
