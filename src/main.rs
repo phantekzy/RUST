@@ -1,6 +1,5 @@
 fn main() {
-    // INTEGER LITERALS
-    let x = 0xff;
-    print!("{}", x);
-    let y = 0o77;
+    // floating pointes types
+    let x = 2.0;
+    let y: f32 = 3.0;
 }
