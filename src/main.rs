@@ -1,4 +1,4 @@
 fn main() {
     // DATA TYPES
-    let guess: u32 = "67".parse().expect("not a number");
+    let guess: u8 = "67".parse().expect("not a number");
 }
