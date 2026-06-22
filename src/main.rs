@@ -1,4 +1,7 @@
+use std::fmt::Display;
 fn main() {
     // Tuples
-    let tup: (i32, f64, u8) = (4, 4.4, 4);
+    let tup = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("the value of y is {}", y);
 }
