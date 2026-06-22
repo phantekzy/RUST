@@ -1,7 +1,4 @@
 fn main() {
-    // Character type
-    // Char literals
-    let c = 'z';
-    // String literals
-    let x = "Maini lotfi";
+    // Tuples
+    let tup = (4, 4.4, 4);
 }
