@@ -1,6 +1,6 @@
 fn main() {
     // The Array type
-    let months = [
+    let _months = [
         "janvier",
         "fevrier",
         "mars",
@@ -16,5 +16,8 @@ fn main() {
         "december",
     ];
 
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    // The fist way
+    let _a: [i32; 5] = [1, 2, 3, 4, 5];
+    // the second way
+    let b = [3; 5];
 }
