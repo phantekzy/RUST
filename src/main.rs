@@ -1,10 +1,10 @@
 fn main() {
-    // The Array type
+    // Functions
+    println!("Rusty Functions");
 
-    // Invalid Array elements
-    let a = [0, 1, 2, 3, 4, 5];
-    let index = 10;
-    let element = a[index];
+    another_function();
+}
 
-    println!("The value of element is : {} ", element);
+fn another_function() {
+    println!("another_function")
 }
