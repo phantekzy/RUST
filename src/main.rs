@@ -1,10 +1,9 @@
 fn main() {
     // Functions
-    println!("Rusty Functions");
-
-    another_function();
+    // Function parameters (Arguments)
+    another_function(5);
 }
 
-fn another_function() {
-    println!("another_function")
+fn another_function(x: i32) {
+    println!("The value of x is : {}", x);
 }
