@@ -25,4 +25,6 @@ fn main() {
     let one = [1, 2, 3, 4, 5];
     let first = one[0];
     println!("first : {}", first);
+    let second = one[2];
+    println!("second : {}", second);
 }
