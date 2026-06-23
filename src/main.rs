@@ -1,6 +1,7 @@
 fn main() {
     // Functions
     // Function parameters (Arguments)
+    // Statments and Expressions in Function Bodies
     another_function(5, 67);
 }
 
