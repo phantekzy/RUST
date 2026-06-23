@@ -20,4 +20,9 @@ fn main() {
     let _a: [i32; 5] = [1, 2, 3, 4, 5];
     // the second way
     let b = [3; 5];
+
+    // Accessing an Array
+    let one = [1, 2, 3, 4, 5];
+    let first = one[0];
+    println!("first : {}", first);
 }
