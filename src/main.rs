@@ -3,8 +3,9 @@
 // Returning values from loops
 // Looping Through a condition with for
 fn main() {
-    let a = [10, 20, 30, 40, 50];
-    for x in a.iter() {
-        println!("the value is {}", x)
+    println!("Count down");
+    for number in (1..11).rev() {
+        println!("{}", number);
     }
+    println!("LET'S GO!")
 }
