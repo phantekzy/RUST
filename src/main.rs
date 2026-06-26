@@ -1,14 +1,13 @@
 // Control flow
 // Repetion with loops
 // Returning values from loops
+// Conditional Loops with While
 fn main() {
-    let mut counter = 0;
-    let result = loop {
-        counter += 1;
+    let mut number = 3;
+    while number != 0 {
+        println!("{}!", number);
 
-        if counter == 10 {
-            break counter * 2;
-        }
-    };
-    println!("the result is {}", result)
+        number -= 1;
+    }
+    println!("GO OFF");
 }
