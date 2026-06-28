@@ -2,8 +2,9 @@
 // OWNERSHIP
 // String type
 // Why strings can be mutated but not litterals ?
+// Memory and Allocation
 fn main() {
     let mut s = String::from("hello");
-    s.push_str(", phantekzy"); // push_str appends a litteral to a String
-    println!("{}", s); // This will print 'phantekzy'
 }
+// the space taken by the variable s is automaticly returned the ths OS
+// After closing the scope
