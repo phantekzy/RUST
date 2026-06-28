@@ -14,7 +14,6 @@ fn main() {
     // Strings
     let s1 = String::from("hello");
     let s2 = s1;
-    println!("{}", s2);
-    // When we assign s1 to s2 , the String Data is copied , meaning we copy
-    // the pointer , the length and the capacity that are on the stack.
+    println!("{} world", s1);
+    // CONTINUE FROM PAGE 65
 }
