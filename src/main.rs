@@ -13,7 +13,7 @@ fn main() {
     // Rust give integers a special property called Copy trait
     // Strings
     let s1 = String::from("hello");
-    let s2 = s1;
-    println!("{} world", s1);
-    // CONTINUE FROM PAGE 65
+    let s2 = s1; // The ownershp moves from s1 to s2 
+    println!("{} world", s1); // When we free Memory it frees only on s2 because it is the only
+    // owner right now
 }
