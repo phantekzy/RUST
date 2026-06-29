@@ -16,4 +16,5 @@ fn main() {
     let s2 = s1; // The ownershp moves from s1 to s2 
     println!("{} world", s1); // When we free Memory it frees only on s2 because it is the only
     // owner right now
+    // Rust in this case do not call this a Shallow copy , it calls it Move
 }
