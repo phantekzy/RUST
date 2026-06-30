@@ -5,6 +5,7 @@ fn main() {
     let s = String::from("FUNCTIONS"); // s comes into scope 
     takes_ownership(s); // s value moves into the function 
     // s is not valid here cause the ownershop has moved
+    //println!("{}", s); Error value moved
     let x = 5;
     makes_copy(x);
 } // Here x goes out of scope , then s
