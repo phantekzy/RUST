@@ -5,3 +5,8 @@
 fn main() {
     let s1 = String::from("Multiple");
 }
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); // len() returns a length of a String
+    (s, length)
+}
