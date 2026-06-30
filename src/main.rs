@@ -1,7 +1,10 @@
 //THE STACK AND THE HEAP
 // OWNERSHIP
 // Return values and scope
-fn main() {}
+fn main() {
+    let s1 = gives_ownership(); // gives_ownership moves its return value into s1
+    let s2 = String::from("PHANTEKZY");
+}
 
 fn gives_ownership() -> String {
     // gives_ownership will move
