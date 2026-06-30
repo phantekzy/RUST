@@ -8,7 +8,8 @@ fn main() {
     //println!("{}", s); Error value moved
     let x = 5;
     makes_copy(x);
-} // Here x goes out of scope , then s
+} // Here x goes out of scope , then s . But because s value was moved
+// Nothing special happnes
 
 fn takes_ownership(some_string: String) {
     // some_string comes into scope
