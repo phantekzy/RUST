@@ -3,8 +3,14 @@
 // Return values and scope
 fn main() {
     let s1 = gives_ownership(); // gives_ownership moves its return value into s1
-    let s2 = String::from("PHANTEKZY");
-}
+
+    let s2 = String::from("PHANTEKZY"); // s2 comes into scope
+
+    let s3 = takes_and_gives_back(s2); // s2 is moved into takes_and_gives_back function
+    // which is also moves its return value into s3
+} // Here s3 goes out the scope and is dropped 
+// s2 goes out of the scope . but was moved , so nothing happens .
+// s1 goes out of the scope and dropped
 
 fn gives_ownership() -> String {
     // gives_ownership will move
