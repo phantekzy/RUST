@@ -1,12 +1,8 @@
 //THE STACK AND THE HEAP
 // OWNERSHIP
-// Return values and scope
-// Returning multiple values using tuples
+// REFRENCES AND BORROWING
 fn main() {
-    let s1 = String::from("Multiple");
+    let s1 = String::from("REFERENCES");
 }
 
-fn calculate_length(s: String) -> (String, usize) {
-    let length = s.len(); // len() returns a length of a String
-    (s, length)
-}
+fn calculate_length(s: &String) -> usize {}
