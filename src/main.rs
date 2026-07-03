@@ -6,6 +6,6 @@ fn main() {
     let mut s = String::from("BORROWING");
     let r = &mut s;
     // We can have only one mutable reference
-    let mut r1 = &mut s;
+    let r1 = &mut s;
     println!("{}, {}", r, r1);
 }
