@@ -4,9 +4,17 @@
 // MUTABLE REFRENCES
 fn main() {
     let mut s = String::from("BORROWING");
-    let r = &mut s;
-    // We can have only one mutable reference
-    // The benefit of having this restriction is that Rust can prevent
-    // data races at compile time .
-    println!("{} ", r);
+    // New scope
+    {
+        let r = &mut s;
+        println!("{} ", r);
+    };
+    // r goes out of the scope , and here we can make a new reference with no problems
+    // A similar rule exists for combining mutable and immutable references
+    // Cannot have an mutable reference if we have immutable ones.
+    let r1 = &s; // No problem
+    let r2 = &s; // No problem
+    let r3 = &mut s; // ERROR
+
+    println!("{},{} and {}", r1, r2, r3);
 }
