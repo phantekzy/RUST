@@ -7,6 +7,7 @@ fn main() {
 }
 
 fn dangle() -> &String {
+    // dangle returns a reference to a String
     let s = String::from("hello");
-    &s
-}
+    &s // we return a reference to a String
+} // s goes out of the scope , and is dropped . it's memory goes away
