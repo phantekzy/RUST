@@ -4,8 +4,10 @@
 // DANGLING REFRENCES
 // SLICE TYPE
 fn main() {
-    let x: u8 = 5;
-    let y: &u8 = &x;
+    let mut s = String::from("Hello World");
+    let word = first_word(&s);
+
+    s.clear(); // Clear empties the String 
 }
 
 fn first_word(s: &String) -> usize {
