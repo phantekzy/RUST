@@ -3,14 +3,15 @@
 // REFRENCES AND BORROWING
 // DANGLING REFRENCES
 // SLICE TYPE
-fn main() {}
+fn main() {
+    let x: u8 = 5;
+    let y: &u8 = &x;
+}
 
 fn first_word(s: &String) -> usize {
-    let bytes = s.as_bytes(); // as_bytes when it is in a Runtime
-
+    let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
-            // b when it is hard coded
             return i;
         }
     }
