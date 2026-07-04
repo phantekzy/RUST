@@ -4,6 +4,7 @@
 // DANGLING REFRENCES
 fn main() {
     let reference_to_nothing = dangle();
+    println!("{}", reference_to_nothing);
 }
 // The sollution is to return the String directly and move Ownership
 fn dangle() -> String {
