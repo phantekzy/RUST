@@ -5,11 +5,9 @@
 // SLICE TYPE
 fn main() {
     // I HAD TO REVIEW LOOPS
-    // Consuming the data
-    let names = vec!["Lotfi", "Yuro", "King"];
-    for name in names {
-        println!("{}", name);
+    let mut numbers = vec![1, 2, 3];
+    for num in &mut numbers {
+        *num *= 2;
+        println!("{}", num);
     }
-    // ERROR
-    println!("Total of people : {}", names.len());
 }
