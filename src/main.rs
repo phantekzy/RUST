@@ -5,9 +5,9 @@
 // SLICE TYPE
 fn main() {
     // I HAD TO REVIEW LOOPS
-    let mut numbers = vec![1, 2, 3];
-    for num in &mut numbers {
-        *num *= 2;
-        println!("{}", num);
+    // Tracking the Index with Enumerate
+    let bytes = b"hello"; // A byte slice of the string
+    for (index, byte) in bytes.iter().enumerate() {
+        println!("index {} holds byte {}", index, byte);
     }
 }
