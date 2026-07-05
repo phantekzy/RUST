@@ -8,7 +8,8 @@ fn main() {
     let word = first_word(&s);
 
     s.clear(); // Clear empties the String 
-}
+} // word still has the value 5 but there is no more strings 
+// that we can use the value 5 with . word is totaly now invalid
 
 fn first_word(s: &String) -> usize {
     let bytes = s.as_bytes();
