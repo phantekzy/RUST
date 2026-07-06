@@ -5,7 +5,7 @@
 // SLICE TYPE
 fn main() {
     let mut s = String::from("Hello World");
-    let word = first_word(&s);
+    let _word = first_word(&s);
 
     s.clear(); // Clear empties the String 
 } // word still has the value 5 but there is no more strings 
