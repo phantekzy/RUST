@@ -12,12 +12,23 @@ fn main() {
     println!("{}", one);
 }
 
-// first_word section should be written like this
+// first_word function should be written like this
 fn first_word(s: &String) -> &str {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
             return &s[..i];
+        }
+    }
+    &s[..]
+}
+
+// Second word function should be written like this
+fn second_word(s: &String) -> &str {
+    let bytes = s.as_bytes();
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[i..];
         }
     }
     &s[..]
