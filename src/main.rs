@@ -4,11 +4,15 @@
 // DANGLING REFRENCES
 // SLICE TYPE
 // STRING SLICES
-fn main() {
-    let s = String::from("Hello");
-    let len = s.len();
-    // To get the entire string
-    let slice = &s[0..len];
-    // We also can drop both values to get the entire string
-    let slice = &s[..];
+fn main() {}
+
+// first_word section should be written like this
+fn first_word(s: &String) -> &str {
+    let bytes = s.as_bytes();
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[..i];
+        }
+    }
+    &s[..]
 }
