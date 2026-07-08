@@ -5,12 +5,10 @@
 // SLICE TYPE
 // STRING SLICES
 fn main() {
-    let string_one = String::from("Hello world");
-    let one = first_word(&string_one);
-    let two = second_word(&string_one);
-    // PRINTS
-    println!("{}", one);
-    println!("{}", two)
+    let mut s = String::from("Hello world");
+    let word = first_word(&s);
+    s.clear();
+    println!("The first word is {}", word)
 }
 
 // first_word function should be written like this
