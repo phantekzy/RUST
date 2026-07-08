@@ -4,7 +4,13 @@
 // DANGLING REFRENCES
 // SLICE TYPE
 // STRING SLICES
-fn main() {}
+fn main() {
+    let string_one = String::from("O NE O");
+    let one = first_word(&string_one);
+
+    // PRINTS
+    println!("{}", one);
+}
 
 // first_word section should be written like this
 fn first_word(s: &String) -> &str {
