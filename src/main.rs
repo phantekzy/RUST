@@ -5,16 +5,18 @@
 // SLICE TYPE
 // STRING SLICES
 fn main() {
-    let string_one = String::from("O NE O");
+    let string_one = String::from("Hello world");
     let one = first_word(&string_one);
-
+    let two = second_word(&string_one);
     // PRINTS
     println!("{}", one);
+    println!("{}", two)
 }
 
 // first_word function should be written like this
 fn first_word(s: &String) -> &str {
     let bytes = s.as_bytes();
+
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
             return &s[..i];
