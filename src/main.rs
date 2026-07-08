@@ -7,7 +7,8 @@
 fn main() {
     let s = String::from("Hello");
     let len = s.len();
-    let slice = &s[3..len];
-    // We can drop the trailing number to get the last byte
-    let slice = &s[3..];
+    // To get the entire string
+    let slice = &s[0..len];
+    // We also can drop both values to get the entire string
+    let slice = &s[..];
 }
