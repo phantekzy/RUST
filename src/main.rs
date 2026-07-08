@@ -5,15 +5,9 @@
 // SLICE TYPE
 // STRING SLICES
 fn main() {
-    // Variables
-    let s = String::from("Maini Lotfi");
-    let p = String::from("Testing");
-    // String slices
-    let maini = &s[0..5];
-    let lotfi = &s[6..11];
-    let test = &p[0..7];
-    // Print
-    println!("{}", maini);
-    println!("{}", lotfi);
-    println!("{}", test);
+    let s = String::from("Hello");
+    // If we want to start at the first index , we can drop the value before two periodes
+    // Both are equqls
+    let slice = &s[0..2];
+    let slice = &s[..2];
 }
