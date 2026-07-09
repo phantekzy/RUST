@@ -4,6 +4,7 @@
 // DANGLING REFRENCES
 // SLICE TYPE
 // STRING SLICES
+// STRING SLICES ARE SLICES
 fn main() {
     let mut s = String::from("Hello world");
     let word = first_word(&s);
@@ -33,3 +34,5 @@ fn second_word(s: &String) -> &str {
     }
     &s[..]
 }
+
+// CONTINUE From STRING LITERALS ARE SLICES
