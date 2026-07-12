@@ -6,6 +6,10 @@
 // STRING SLICES
 fn main() {
     let s = String::from("Hello world");
+    // The slice data structure , stores the starting position
+    // and the length of the slice
     let hello = &s[..5];
-    println!("{}", hello)
+    let world = &s[6..11];
+    println!("{}", hello);
+    println!("{}", world);
 }
