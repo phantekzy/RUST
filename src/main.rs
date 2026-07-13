@@ -6,17 +6,11 @@
 // STRING SLICES
 fn main() {
     let s = String::from("Hello world");
-    // The slice data structure , stores the starting position
-    // and the length of the slice
-    let hello = &s[..5];
-    let world = &s[6..];
-    // To take the entire string
-    let all = &s[..];
-    println!("{}", hello);
-    println!("{}", world);
-    println!("{}", all);
+    let first = first_word(&s);
+    println!("the first word is {}", first);
 }
 
+// First word filter
 fn first_word(s: &String) -> &str {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
@@ -25,4 +19,9 @@ fn first_word(s: &String) -> &str {
         }
     }
     &s[..]
+}
+
+// Second word filter
+fn second_word(s: &String) -> &str {
+    let bytes = s.as_bytes();
 }
