@@ -8,7 +8,8 @@ fn main() {
     let s = String::from("Hello world");
     let first = first_word(&s);
     println!("the first word is {}", first);
-}
+};
+
 
 // First word filter
 fn first_word(s: &String) -> &str {
