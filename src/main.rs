@@ -24,4 +24,5 @@ fn first_word(s: &String) -> &str {
 // Second word filter
 fn second_word(s: &String) -> &str {
     let bytes = s.as_bytes();
+    for (i, &item) in bytes.iter().enumerate() {}
 }
