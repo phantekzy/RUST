@@ -8,8 +8,9 @@ use std::io::Bytes;
 // STRING SLICES
 fn main() {
     let s = String::from("Hello world");
-    let first = first_word(&s);
-    println!("the first word is {}", first);
+    let word = first_word(&s);
+    s.clear();
+    println!("the first word is {}", word);
 }
 
 // First word filter
