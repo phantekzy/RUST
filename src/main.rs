@@ -1,3 +1,5 @@
+use std::io::Bytes;
+
 //THE STACK AND THE HEAP
 // OWNERSHIP
 // REFRENCES AND BORROWING
@@ -19,4 +21,12 @@ fn first_word(s: &String) -> &str {
         }
     }
     &s[..]
+}
+
+// Second word Filter
+fn second_word(s: &String) -> &str {
+    let Bytes = s.as_bytes();
+    for (i, &item) in Bytes.iter().enumerate() {
+        if item == b' ' {}
+    }
 }
