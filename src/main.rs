@@ -9,6 +9,10 @@ fn main() {
     let my_string = String::from("Hello World");
     // First word works on slices of strings
     let word = first_word(&my_string[..]);
+
+    let my_string_literal = "hello world";
+    // First word works on slices of string literals
+    let word = first_word(my_string_literal);
 }
 
 // FIRST WORD FUNCTION
