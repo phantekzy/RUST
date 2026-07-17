@@ -4,6 +4,8 @@
 // DANGLING REFRENCES
 // SLICE TYPE
 // STRING SLICES
+
+// MAIN FUNCTION
 fn main() {
     let s = String::from("Hello world");
     let first = first_word(&s);
