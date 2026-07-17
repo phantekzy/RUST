@@ -8,7 +8,7 @@
 fn main() {
     //let mut s = String::from("Hello world");
     // S here is a String literal because it is hard coded and stored inside the binary
-    let s = "Hello world";
+    let s = "Hello world"; // Type of s is &str pointing to the binary location
     let word = first_word(&s);
     s.clear();
     println!("first word is {}", word);
