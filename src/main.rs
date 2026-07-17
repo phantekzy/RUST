@@ -1,5 +1,3 @@
-use std::io::Bytes;
-
 //THE STACK AND THE HEAP
 // OWNERSHIP
 // REFRENCES AND BORROWING
@@ -8,28 +6,16 @@ use std::io::Bytes;
 // STRING SLICES
 fn main() {
     let s = String::from("Hello world");
-    let word = first_word(&s);
-    s.clear();
-    println!("the first word is {}", word);
+    let hello = &s[..5];
+    let world = &s[6..];
+    println!("{} {} ", hello, world);
 }
 
-// First word filter
 fn first_word(s: &String) -> &str {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
             return &s[..i];
-        }
-    }
-    &s[..]
-}
-
-// Second word Filter
-fn second_word(s: &String) -> &str {
-    let bytes = s.as_bytes();
-    for (i, &item) in bytes.iter().enumerate() {
-        if item == b' ' {
-            return &s[i..];
         }
     }
     &s[..]
