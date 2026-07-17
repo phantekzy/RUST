@@ -6,16 +6,25 @@
 // STRING SLICES
 fn main() {
     let s = String::from("Hello world");
-    let hello = &s[..5];
-    let world = &s[6..];
-    println!("{} {} ", hello, world);
+    let first = first_word(&s);
+    println!("first word is {}", first);
 }
-
+// FIRST WORD FUNCTION
 fn first_word(s: &String) -> &str {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
             return &s[..i];
+        }
+    }
+    &s[..]
+}
+// SECOND WORD FUNCTION
+fn second_word(s: &String) -> &str {
+    let bytes = s.as_bytes();
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[i..];
         }
     }
     &s[..]
