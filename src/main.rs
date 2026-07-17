@@ -7,7 +7,9 @@
 fn main() {
     let s = String::from("Hello world");
     let first = first_word(&s);
+    let second = second_word(&s);
     println!("first word is {}", first);
+    println!("second word is {}", second);
 }
 // FIRST WORD FUNCTION
 fn first_word(s: &String) -> &str {
