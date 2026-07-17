@@ -8,7 +8,7 @@
 fn main() {
     let my_string = String::from("Hello World");
     // First word works on slices of strings
-    let word = first_word(&my_string);
+    let word = first_word(&my_string[..]);
 }
 
 // FIRST WORD FUNCTION
