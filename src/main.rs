@@ -13,6 +13,10 @@ fn main() {
     let my_string_literal = "hello world";
     // First word works on slices of string literals
     let word = first_word(my_string_literal);
+
+    // Because String literals are String slices already ,
+    // this works too , without the slice syntax !
+    let word = first_word(my_string_literal);
 }
 
 // FIRST WORD FUNCTION
@@ -28,6 +32,7 @@ fn first_word(s: &str) -> &str {
 }
 
 // SECOND WORD FUNCTION
+/*
 fn second_word(s: &str) -> &str {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
@@ -37,3 +42,4 @@ fn second_word(s: &str) -> &str {
     }
     &s[..]
 }
+*/
