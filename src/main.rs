@@ -6,12 +6,9 @@
 
 // MAIN FUNCTION
 fn main() {
-    //let mut s = String::from("Hello world");
-    // S here is a String literal because it is hard coded and stored inside the binary
-    let s = "Hello world"; // Type of s is &str pointing to the binary location
-    let first = first_word(s);
-    let second = second_word(s);
-    println!("first word is {} and the second word is {}", first, second);
+    let my_string = String::from("Hello World");
+    // First word works on slices of strings
+    let word = first_word(&my_string);
 }
 
 // FIRST WORD FUNCTION
