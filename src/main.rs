@@ -4,6 +4,7 @@
 // PS :
 // To define a struct we enter the keyword Struct
 // and name the entire struct
+
 struct User {
     username: String,   //
     email: String,      // We call the data inside
