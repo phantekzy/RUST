@@ -14,7 +14,8 @@ struct User {
 // How to use the Struct
 // MAIN FUNCTION
 fn main() {
-    let user1 = User {
+    // Making the Struct mutable
+    let mut user1 = User {
         email: String::from("xxx@mail.com"),
         username: String::from("xxx69"),
         active: true,
