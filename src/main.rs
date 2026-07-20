@@ -1,4 +1,5 @@
 // STRUCTS Defining and Instantiating Structs PS : To define a struct we enter the keyword Struct and name the entire struct
+// CREATING INSTANCES FROM OTHER INSTANCES USING THE STRUCT UPDATE SYNTAX
 struct User {
     username: String,   // String
     email: String,      // We call the data inside
@@ -18,6 +19,13 @@ fn main() {
         sign_in_count: 1,
     };
     user1.username = String::from("Phantekzy");
+    // STRUCT SYNTAX UPDATE
+    let user2 = User {
+        email: String::from("another@example"),
+        username: String::from("anotherusername67"),
+        active: user1.active,
+        sign_in_count: user1.sign_in_count,
+    };
 }
 
 // Creating a build_user function that returns a User instance
