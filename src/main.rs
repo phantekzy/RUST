@@ -11,6 +11,7 @@ struct User {
     sign_in_count: u64, // the curly brackets "fields"
     active: bool,       //
 }
+
 // How to use the Struct
 // MAIN FUNCTION
 fn main() {
@@ -21,5 +22,5 @@ fn main() {
         active: true,
         sign_in_count: 1,
     };
-    user1.email = String::from("anotheremail@email.com");
+    user1.username = String::from("Phantekzy");
 }
