@@ -22,10 +22,11 @@ fn main() {
 
 // Creating a build_user function that returns a User instance
 // with the given email and password
+// Filed init shorthand
 fn build_user(email: String, username: String) -> User {
     User {
-        username: username,
-        email: email,
+        username,
+        email,
         sign_in_count: 1,
         active: true,
     }
