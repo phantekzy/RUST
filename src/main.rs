@@ -25,8 +25,8 @@ fn main() {
 // Filed init shorthand
 fn build_user(email: String, username: String) -> User {
     User {
-        username,
-        email,
+        username, // FIELD INIT SHORTHAND
+        email,    // FIELD INIT SHORTHAND
         sign_in_count: 1,
         active: true,
     }
