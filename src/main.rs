@@ -19,13 +19,15 @@ fn main() {
         sign_in_count: 1,
     };
     user1.username = String::from("Phantekzy");
+
     // STRUCT SYNTAX UPDATE
-    let user2 = User {
+    let mut user2 = User {
         email: String::from("another@example"),
         username: String::from("anotherusername67"),
         active: user1.active,
         sign_in_count: user1.sign_in_count,
     };
+    user2.username = String::from("DivaBob");
 }
 
 // Creating a build_user function that returns a User instance
