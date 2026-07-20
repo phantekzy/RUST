@@ -33,6 +33,7 @@ fn main() {
     let mut user3 = User {
         email: String::from("another@example"),
         username: String::from("anotherusername67"),
+        // I had an error when i added a coma
         ..user2
     };
 }
