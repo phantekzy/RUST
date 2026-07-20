@@ -28,6 +28,13 @@ fn main() {
         sign_in_count: user1.sign_in_count,
     };
     user2.username = String::from("DivaBob");
+
+    // The .. Syntax to write less code
+    let mut user3 = User {
+        email: String::from("another@example"),
+        username: String::from("anotherusername67"),
+        ..user2
+    };
 }
 
 // Creating a build_user function that returns a User instance
