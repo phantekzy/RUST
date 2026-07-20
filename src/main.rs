@@ -16,7 +16,8 @@ struct User {
 // MAIN FUNCTION
 fn main() {
     // Making the Struct mutable
-    let mut user1 = User {
+    // You cannot change the values if the entire instance is not mutable
+    let user1 = User {
         email: String::from("xxx@mail.com"),
         username: String::from("xxx69"),
         active: true,
