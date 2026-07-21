@@ -20,4 +20,6 @@ fn main() {
 
     // Unit-like Structs
     struct Unit;
+    // intatiate a Unit struct
+    let subject = Unit;
 }
