@@ -1,3 +1,4 @@
+// Unit-like Structs Without any Fiehds
 struct User {
     username: String,   // String
     email: String,      // We call the data inside
@@ -8,6 +9,8 @@ struct User {
 // MAIN FUNCTION
 fn main() {
     // TUPLE STRUCTS
+    // Both Structs have a different Type
+    // Each Struct we define have its own Type
     struct Color(i32, i32, i32);
     struct Point(i32, i32, i32);
 
