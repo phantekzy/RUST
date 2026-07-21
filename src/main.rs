@@ -30,6 +30,7 @@ fn main() {
     user2.username = String::from("DivaBob");
 
     // The .. Syntax to write less code
+    // Update Syntax
     let mut user3 = User {
         email: String::from("another@example"),
         username: String::from("anotherusername67"),
