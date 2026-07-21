@@ -17,4 +17,7 @@ fn main() {
     // ASSIGNING THE VARIABLES
     let black = Color(0, 0, 0);
     let origin = Point(0, 0, 0);
+
+    // Unit-like Structs
+    struct Unit;
 }
