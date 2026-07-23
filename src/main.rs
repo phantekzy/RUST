@@ -1,10 +1,14 @@
 // A Program, Using Struct
-// Refactoring with Tuples
+// Refactoring with Structs adding more meaning this time
 // Main Function
-fn main() {
-    let rect1 = (30, 50);
-    println!("The area of the rectangle is {} square pixels", area(rect1));
+
+// Rectangle Struct
+struct Recrangle {
+    width: u32,
+    height: u32,
 }
+
+fn main() {}
 
 // Area function but with a Tuple in parameters
 fn area(dimensions: (u32, u32)) -> u32 {
