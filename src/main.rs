@@ -18,5 +18,5 @@ fn main() {
     // By Default the curly brackets {} tells the println
     // to use formating known as Display: output
     // intended for direct end user consumption
-    println!("rect1 is {}", rec1);
+    println!("rect1 is {:?}", rec1);
 }
