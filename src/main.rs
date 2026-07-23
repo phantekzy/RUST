@@ -1,6 +1,7 @@
 // Refactoring with Structs adding more meaning this time
 
 // Rectangle Struct
+#[derive(Debug)]
 struct Recrangle {
     width: u32,
     height: u32,
