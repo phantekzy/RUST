@@ -1,7 +1,6 @@
 // Refactoring with Structs adding more meaning this time
 
 // Rectangle Struct
-
 struct Recrangle {
     width: u32,
     height: u32,
@@ -14,5 +13,10 @@ fn main() {
         width: 30,
         height: 50,
     };
+
+    // The println macro can do many kind of formating
+    // By Default the curly brackets {} tells the println
+    // to use formating known as Display: output
+    // intended for direct end user consumption
     println!("rect1 is {}", rec1);
 }
