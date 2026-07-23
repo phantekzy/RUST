@@ -1,6 +1,5 @@
 // A Program, Using Struct
 // Refactoring with Structs adding more meaning this time
-// Main Function
 
 // Rectangle Struct
 struct Recrangle {
@@ -8,9 +7,20 @@ struct Recrangle {
     height: u32,
 }
 
-fn main() {}
+// Main Function
+fn main() {
+    let rec1 = Recrangle {
+        width: 30,
+        height: 50,
+    };
+    println!(
+        "
+    The area of the rectangle is {} square pixels",
+        area(&rec1)
+    )
+}
 
-// Area function but with a Tuple in parameters
-fn area(dimensions: (u32, u32)) -> u32 {
-    dimensions.0 * dimensions.1
+// Area function using the rectangle reference from the struct
+fn area(rectangle: &Recrangle) -> u32 {
+    rectangle.height * rectangle.width
 }
