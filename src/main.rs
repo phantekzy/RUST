@@ -20,4 +20,10 @@ fn main() {
     // to use formating known as Display: output
     // intended for direct end user consumption
     println!("rect1 is {:?}", rec1);
+    println!("The Area calculated is {}", area(&rec1))
+}
+
+// Area calculation function
+fn area(rectangle: &Recrangle) -> u32 {
+    rectangle.width * rectangle.height
 }
