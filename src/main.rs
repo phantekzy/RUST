@@ -1,6 +1,5 @@
 // A Program, Using Struct
 // Refactoring with Tuples
-
 // Main Function
 fn main() {
     let rect1 = (30, 50);
