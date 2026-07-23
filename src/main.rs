@@ -1,4 +1,3 @@
-// A Program, Using Struct
 // Refactoring with Structs adding more meaning this time
 
 // Rectangle Struct
