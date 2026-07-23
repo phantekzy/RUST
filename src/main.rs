@@ -10,7 +10,7 @@ struct Recrangle {
     height: u32,
 }
 
-// Fixing the bug
+// Implementing the Struct
 impl Recrangle {
     fn area(self: &Self) -> u32 {
         self.width * self.height
