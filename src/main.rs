@@ -10,10 +10,11 @@ struct Recrangle {
     height: u32,
 }
 
+// Fixing the bug
 impl Recrangle {
-   fn area (&Self)  -> u32 {
-       self.width  * self.height  
-   }
+    fn area(self: &Self) -> u32 {
+        self.width * self.height
+    }
 }
 
 // Main Function
@@ -23,7 +24,5 @@ fn main() {
         width: 30,
         height: 50,
     };
-    println!("The area of the rectangle is {} square pixels.",rec1.area)
-
+    println!("The area of the rectangle is {} square pixels.", rec1.area)
 }
-
