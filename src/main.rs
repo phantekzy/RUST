@@ -1,4 +1,9 @@
 // Refactoring with Structs adding more meaning this time
+// FORMATING SPECIFIERS
+//
+// {:?} => Debug formatter
+// {:#?} => Pretty print Debug formatter
+//
 
 // Rectangle Struct
 #[derive(Debug)]
@@ -19,7 +24,10 @@ fn main() {
     // By Default the curly brackets {} tells the println
     // to use formating known as Display: output
     // intended for direct end user consumption
+    // Debug Formatter
     println!("rect1 is {:?}", rec1);
+    // Pretty Print Debug Formatter
+    println!("rect1 is {:#?}", rec1);
     println!("The Area calculated is {}", area(&rec1))
 }
 
