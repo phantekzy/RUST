@@ -10,19 +10,20 @@ struct Recrangle {
     height: u32,
 }
 
+impl Recrangle {
+   fn area (&Self)  -> u32 {
+       self.width  * self.height  
+   }
+}
+
 // Main Function
+// Defining Methods
 fn main() {
     let rec1 = Recrangle {
         width: 30,
         height: 50,
     };
+    println!("The area of the rectangle is {} square pixels.",rec1.area)
 
-    println!("rect1 is {:?}", rec1);
-    println!("rect1 is {:#?}", rec1);
-    println!("The Area calculated is {}", area(&rec1))
 }
 
-// Area calculation function
-fn area(rectangle: &Recrangle) -> u32 {
-    rectangle.width * rectangle.height
-}
