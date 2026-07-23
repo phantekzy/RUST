@@ -6,6 +6,7 @@ fn main() {
     println!("The area of the rectangle is {} square pixels", area(rect1));
 }
 
+// Area function but with a Tuple in parameters
 fn area(dimensions: (u32, u32)) -> u32 {
     dimensions.0 * dimensions.1
 }
