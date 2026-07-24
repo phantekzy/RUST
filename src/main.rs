@@ -13,6 +13,11 @@
 // Rust will automaticly add in & , &mut or *
 // so Object matches the signature of the method
 
+//
+// p1.distance(&p2)
+// (&p1).distance(&p2)
+//
+
 // Real Example
 struct Rectangle {
     height: u32,
