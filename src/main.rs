@@ -1,23 +1,4 @@
-// Rust Automatic Referencing and Dereferencing
-// Where is the -> Operator ?
-// In C and C++ , two different operators are used for calling methods : we use the . operators
-// if we are calling a method on an Object directly
-// and we use the -> operator if we are calling the method on a pointer to the object and
-// need to dereference the pointer first
-
-// In other words:
-// if object is a pointer : object -> something() is similar to : (*object).something()
-
-// So this how it works :
-// when we call a method with object.something() :
-// Rust will automaticly add in & , &mut or *
-// so Object matches the signature of the method
-
-//
-// p1.distance(&p2)
-// (&p1).distance(&p2)
-//
-
+// Methods with more Parameters
 // Real Example
 struct Rectangle {
     height: u32,
@@ -32,16 +13,16 @@ impl Rectangle {
 
 // Main Function
 fn main() {
-    // Direct Value
-    let rect = Rectangle {
+    let rect1 = Rectangle {
         width: 30,
         height: 50,
     };
-    // Reference Value
-    let rect_ref = &rect;
-
-    //Calling on the direct value
-    println!("the direct value  :{}", rect.area());
-    //Calling on the Reference
-    println!("The reference value : {}", rect_ref.area());
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+    let rect3 = Rectangle {
+        width: 60,
+        height: 45,
+    };
 }
