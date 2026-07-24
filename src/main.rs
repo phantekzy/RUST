@@ -26,4 +26,12 @@ impl Rectangle {
 }
 
 // Main Function
-fn main() {}
+fn main() {
+    // Direct Value
+    let rect = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    // Reference Value
+    let rect_ref = &rect;
+}
