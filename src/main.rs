@@ -34,4 +34,7 @@ fn main() {
     };
     // Reference Value
     let rect_ref = &rect;
+
+    //Calling on the direct value
+    println!("the direct value  :{}", rect.area());
 }
