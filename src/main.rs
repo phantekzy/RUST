@@ -13,5 +13,17 @@
 // Rust will automaticly add in & , &mut or *
 // so Object matches the signature of the method
 
+// Real Example
+struct Rectangle {
+    height: u32,
+    width: u32,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
 // Main Function
 fn main() {}
