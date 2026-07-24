@@ -1,31 +1,11 @@
-// Method Syntax
-// Mehtods are similar than Functions
-// Methods are defined within the context of a Struct
-// and their first parameter is Always 'Self'
+// Where is the -> Operator ?
+// In C and C++ , two different operators are used for calling methods : we use the . operators
+// if we are calling a method on an Object directly
+// and we use the -> operator if we are calling the method on a pointer to the object and
+// need to dereference the pointer first
 
-// Rectangle Struct
-#[derive(Debug)] // Derive Annotation
-struct Recrangle {
-    width: u32,
-    height: u32,
-}
-
-// Implementing the Struct
-impl Recrangle {
-    fn area(self: &Self) -> u32 {
-        self.width * self.height
-    }
-}
+// In other words:
+// if object is a pointer : object -> something() is similar to : (*object).something()
 
 // Main Function
-// Defining Methods
-fn main() {
-    let rec1 = Recrangle {
-        width: 30,
-        height: 50,
-    };
-    println!(
-        "The area of the rectangle is {} square pixels.",
-        rec1.area()
-    )
-}
+fn main() {}
