@@ -37,4 +37,6 @@ fn main() {
 
     //Calling on the direct value
     println!("the direct value  :{}", rect.area());
+    //Calling on the Reference
+    println!("The reference value : {}", rect_ref.area());
 }
