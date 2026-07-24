@@ -7,5 +7,10 @@
 // In other words:
 // if object is a pointer : object -> something() is similar to : (*object).something()
 
+// So this how it works :
+// when we call a method with object.something() :
+// Rust will automaticly add in & , &mut or *
+// so Object matches the signature of the method
+
 // Main Function
 fn main() {}
