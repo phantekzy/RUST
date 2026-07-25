@@ -4,9 +4,8 @@ struct Rectangle {
     height: u32,
     width: u32,
 }
-
 impl Rectangle {
-    fn area(&self) -> u32 {
+    fn _area(&self) -> u32 {
         self.width * self.height
     }
     // Implementing the method on Rectangle that takes
