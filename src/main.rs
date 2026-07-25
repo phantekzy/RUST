@@ -1,5 +1,9 @@
-// Methods with more Parameters
-// Real Example
+// Associated functions
+// We are allowed to define functions within impl blocks that don't
+// take "self" as parameter
+// we call these function "Associated functions" because they are
+// associated with the struct
+
 struct Rectangle {
     height: u32,
     width: u32,
