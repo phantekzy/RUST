@@ -4,6 +4,9 @@
 // we call these function "Associated functions" because they are
 // associated with the struct
 
+// Associated function are often used for constructors that will
+// return a new instance of the struct
+
 struct Rectangle {
     height: u32,
     width: u32,
@@ -16,6 +19,13 @@ impl Rectangle {
     // another Rectangle instanece as a parameter
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
+    }
+    // Associated Function
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            height: size,
+            width: size,
+        }
     }
 }
 
