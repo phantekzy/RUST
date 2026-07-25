@@ -9,6 +9,11 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+    // Implementing the method on Rectangle that takes
+    // another Rectangle instanece as a parameter
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
 }
 
 // Main Function
