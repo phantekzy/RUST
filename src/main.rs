@@ -21,6 +21,7 @@ impl Rectangle {
         self.width > other.width && self.height > other.height
     }
     // Associated Function
+    // To call this function we use the "::" syntax with the struct name
     fn square(size: u32) -> Rectangle {
         Rectangle {
             height: size,
