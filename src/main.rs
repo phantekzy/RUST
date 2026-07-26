@@ -10,6 +10,8 @@
 // Multiple impl Block
 // Each struct is allowed to have multiple impl blocks
 // Rectangle Struct
+// PS :
+// There is no reason to separate these methods but it is a valid syntax
 struct Rectangle {
     height: u32,
     width: u32,
