@@ -6,7 +6,6 @@
 
 // Associated function are often used for constructors that will
 // return a new instance of the struct
-
 struct Rectangle {
     height: u32,
     width: u32,
