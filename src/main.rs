@@ -2,6 +2,10 @@
 // Enums allows us to define a type by enumerating its possible values.
 // Defining an enum
 
+// Difference between a struct and enum
+// Struct means AND
+// Enums means OR
+
 // IP ADRESS ENUM
 enum IpAddrKind {
     // IpAddrKind is now a costum data TYpe
