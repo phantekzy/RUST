@@ -13,6 +13,12 @@ enum IpAddrKind {
     V6,
 }
 
+// Stock the enums
+// We define the struct
+struct IpAddr {
+    kind: IpAddrKind,
+    adress: String,
+}
 // Main Function
 fn main() {
     // Enum Values
