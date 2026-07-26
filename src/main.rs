@@ -12,7 +12,6 @@ enum IpAddrKind {
     V4,
     V6,
 }
-
 // Stock the enums
 // We define the struct
 struct IpAddr {
@@ -23,11 +22,13 @@ struct IpAddr {
 fn main() {
     // Enum Values
     // We use the double colon to separate to call the values and separate the two
-    let v4 = IpAddrKind::V4;
-    let v6 = IpAddrKind::V6;
+    let _v4 = IpAddrKind::V4;
+    let _v6 = IpAddrKind::V6;
     // And we can call this function with either variant
     route(IpAddrKind::V4);
     route(IpAddrKind::V6);
+
+    let home = IpAddr
 }
 // IpAddrKind::v4 and IpAddrKind::v6 are of the same type : IpAddrKind
 // We can then , for instance , define Functions that takes any IpAddrKind
