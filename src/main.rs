@@ -6,26 +6,32 @@
 
 // Associated function are often used for constructors that will
 // return a new instance of the struct
+
+// Multiple impl Block
+// Each struct is allowed to have multiple impl blocks
+// Rectangle Struct
 struct Rectangle {
     height: u32,
     width: u32,
 }
+
+// First Impl
 impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
-    // Implementing the method on Rectangle that takes
-    // another Rectangle instanece as a parameter
-    fn can_hold(&self, other: &Rectangle) -> bool {
-        self.width > other.width && self.height > other.height
-    }
     // Associated Function
-    // To call this function we use the "::" syntax with the struct name
     fn square(size: u32) -> Rectangle {
         Rectangle {
             height: size,
             width: size,
         }
+    }
+}
+// Second Impl
+impl Rectangle {
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
     }
 }
 
