@@ -11,6 +11,10 @@ impl User {
     fn new(username: String, age: u32) -> Self {
         User { username, age }
     }
+    // 2. Method (Instance-level , takes (&slef))
+    fn is_adult(&self) -> bool {
+        self.age >= 18
+    }
 }
 
 fn main() {}
