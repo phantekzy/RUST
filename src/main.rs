@@ -5,13 +5,12 @@ struct User {
     age: u32,
 }
 
-fn main() {
-    // 1. Creating (instantiating) a struct using { }
-    let user1 = User {
-        username: String::from("Lotfi"),
-        age: 29,
-    };
-    // 2. Reading fields using the dot operator .
-    println!("Name : {}", user1.username);
-    println!("Age : {}", user1.age);
+// Implementation of User struct
+impl User {
+    // 1. Associated Function (Type-level , so-self)
+    fn new(username: String, age: u32) -> Self {
+        User { username, age }
+    }
 }
+
+fn main() {}
