@@ -24,4 +24,5 @@ fn main() {
     let cmd1 = Command::default_cmd();
     // Instantianting Enum Variant -> using "::"
     let cmd2 = Command::Move { x: 10, y: 30 };
+    let cmd3 = Command::Write(String::from("Start"));
 }
