@@ -27,4 +27,8 @@ fn main() {
     };
     // Accessing Fields
     println!("Name : {}", user2.username);
+    // Calling Methods uses "."
+    if user1.is_adult() {
+        println!("user1 is an adult")
+    }
 }
