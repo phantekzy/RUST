@@ -1,6 +1,9 @@
 // ENUM
 // Storing the data in Structs
 // Enums are OR
+//
+// We can represent the same concept in a more concise way using
+// just an enum !
 enum IpAddKind {
     V4,
     V6,
