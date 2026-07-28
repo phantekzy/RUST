@@ -13,6 +13,10 @@ impl Command {
     fn default_cnd() -> Self {
         Command::Quit
     }
+    // Method (Instance-level , takes self as parameter)
+    fn log(&self) {
+        println!("Command executed");
+    }
 }
 // Main function
 fn main() {}
