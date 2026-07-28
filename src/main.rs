@@ -25,4 +25,11 @@ fn main() {
     // Instantianting Enum Variant -> using "::"
     let cmd2 = Command::Move { x: 10, y: 30 };
     let cmd3 = Command::Write(String::from("Start"));
+    // Accessing Data Inside the Enum
+    // PS : Requires match or if let
+    match cmd2 {
+        Command::Quit => println!("Quit Command"),
+        Command::Move { x, y } => println!("Moving to ({},{})", x, y),
+        Command::Write(text) => println!("Text {}", text),
+    }
 }
