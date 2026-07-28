@@ -20,9 +20,15 @@ fn main() {
     route(IpAddKind::V4);
     route(IpAddKind::V6);
     // Calling the struct
+    // Home
     let home = IpAddr {
         kind: IpAddKind::V4,
         address: String::from("127.0.0.1"),
+    };
+    // Loopback
+    let Loopback = IpAddr {
+        kind: IpAddKind::V6,
+        address: String::from("::1"),
     };
 }
 
