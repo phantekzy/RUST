@@ -10,7 +10,7 @@ enum Command {
 impl Command {
     // Associated function (Type-level , no-self)
     // Returns a default enum state
-    fn default_cnd() -> Self {
+    fn default_cmd() -> Self {
         Command::Quit
     }
     // Method (Instance-level , takes self as parameter)
@@ -21,5 +21,7 @@ impl Command {
 // Main function
 fn main() {
     // Calling the associated function
-    let cmd1 = Command::default_cnd();
+    let cmd1 = Command::default_cmd();
+    // Instantianting Enum Variant -> using "::"
+    let cmd2 = Command::Move { x: 10, y: 30 };
 }
