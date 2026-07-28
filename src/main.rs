@@ -7,4 +7,12 @@ enum Command {
     Move { x: i32, y: i32 },
     Write(String),
 }
+impl Command {
+    // Associated function (Type-level , no-self)
+    // Returns a default enum state
+    fn default_cnd() -> Self {
+        Command::Quit
+    }
+}
+// Main function
 fn main() {}
