@@ -20,4 +20,11 @@ impl User {
 fn main() {
     // Calling Associated function (Constructor) -> uses "::"
     let user1 = User::new(String::from("Lotfi"), 24);
+    // Direct Instantiation (Struct Literal ) -> uses " {}"
+    let user2 = User {
+        username: String::from("Lotfi"),
+        age: 46,
+    };
+    // Accessing Fields
+    println!("Name : {}", user2.username);
 }
