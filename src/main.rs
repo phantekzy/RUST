@@ -19,5 +19,5 @@ impl User {
 
 fn main() {
     // Calling Associated function (Constructor) -> uses "::"
-    let user1 = User::new(String::from("LOTFI"), 24);
+    let user1 = User::new(String::from("Lotfi"), 24);
 }
