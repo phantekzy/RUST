@@ -19,4 +19,7 @@ impl Command {
     }
 }
 // Main function
-fn main() {}
+fn main() {
+    // Calling the associated function
+    let cmd1 = Command::default_cnd();
+}
