@@ -3,9 +3,9 @@
 // Declarations and Impl Block
 // Command Enum
 enum Command {
-    Quit,
-    Move { x: i32, y: i32 },
-    Write(String),
+    Quit,                    // Unit Variant
+    Move { x: i32, y: i32 }, // Struct-like variant
+    Write(String),           // Tuple-like variant
 }
 impl Command {
     // Associated function (Type-level , no-self)
