@@ -14,6 +14,10 @@ struct Ipv4Addr {
 struct Ipv6Addr {
     // -- snip --
 }
+enum IpAddr {
+    V4(Ipv4Addr),
+    V6(Ipv6Addr),
+}
 
 // Main function
 fn main() {}
