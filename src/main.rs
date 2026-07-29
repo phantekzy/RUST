@@ -30,6 +30,11 @@ fn main() {
     // Both values are of the same type IpAddrKind
     let four = IpAddrKind::V4;
     let six = IpAddrKind::V6;
+    // We can call  the route function with either variants
+    // Calling the V4 variant
+    route(IpAddrKind::V4);
+    // Calling the V6 variant
+    route(IpAddrKind::V6);
 }
 
 // We can for instance , create a function that takes any IpAddrKind type
