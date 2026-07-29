@@ -2,10 +2,11 @@
 // Storing the data in Structs
 // Enums are OR
 //
-// There is another advantage to using an enum
+// There is another advantage to using an enum rather than Struct
+// Each variant can have different type and amounts of associated data .
 enum _IpAddKind {
-    V4,
-    V6,
+    V4(u8, u8, u8, u8),
+    V6(String),
 } // IpAddKind is now a costum Data type we can use it elsewhere in our code 
 #[derive(Debug)]
 enum IpAddr {
