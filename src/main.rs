@@ -3,7 +3,7 @@
 // Enums are OR
 //
 // There is another advantage to using an enum
-enum IpAddKind {
+enum _IpAddKind {
     V4,
     V6,
 } // IpAddKind is now a costum Data type we can use it elsewhere in our code 
