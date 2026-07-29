@@ -7,6 +7,7 @@
 
 // How the Standard Libray Defines IpAddr::
 // IP version 4 Address
+// Standard Libray type are growable data
 struct Ipv4Addr {
     // -- snip --
 }
