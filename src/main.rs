@@ -8,6 +8,10 @@
 // How the Standard Libray Defines IpAddr::
 // IP version 4 Address
 // Standard Libray type are growable data
+enum IpAddrKind {
+    V4,
+    V6,
+}
 struct Ipv4Addr {
     // -- snip --
 }
@@ -21,4 +25,12 @@ enum IpAddr {
 }
 
 // Main function
-fn main() {}
+fn main() {
+    // Creating instandces of each variant of IpAddrKind using the ":"
+    // Both values are of the same type IpAddrKind
+    let four = IpAddrKind::V4;
+    let six = IpAddrKind::V6;
+}
+
+// We can for instance , create a function that takes any IpAddrKind type
+fn route(ip_kind: IpAddrKind) {}
