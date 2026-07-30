@@ -13,7 +13,7 @@ fn main() {
     // Using a Struct
     // We create an Instance of that struct
     // The Instance
-    let user1 = User {
+    let mut user1 = User {
         username: String::from("Phantekzy"),
         email: String::from("Phantekzy@gmail.com"),
         sign_in_count: 3,
@@ -22,5 +22,6 @@ fn main() {
     // Getting specific values from the Struct
     // Changing the email value using the dot notation
     // Cannot change the values because it is immutable
+    // After using the mut we can change the values
     user1.email = String::from("xxx@email.com");
 }
