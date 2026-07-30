@@ -19,4 +19,8 @@ fn main() {
         sign_in_count: 3,
         active: false,
     };
+    // Getting specific values from the Struct
+    // Changing the email value using the dot notation
+    // Cannot change the values because it is immutable
+    user1.email = String::from("xxx@email.com");
 }
