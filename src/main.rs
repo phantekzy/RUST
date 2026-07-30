@@ -1,6 +1,7 @@
 // USING STRUCTS TO STRUCTURE RELATED DATA
 // Defining and Instantiating Structs
-// User Struct
+// User Struct Definition
+// Structs are like Objects in Languages like Javascript
 struct User {
     username: String,
     email: String,
