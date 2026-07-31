@@ -10,11 +10,14 @@ struct User {
     active: bool,
 }
 
-// Creating a function that returns a User instance with the given email and username
+// build_user that takes an email and username and returns User instance
+// Using the Field init shorthand
 fn build_user(email: String, username: String) -> User {
+    // We use the Field init shorthand when the
+    // variables and the fields have the same name
     User {
-        username: username,
-        email: email,
+        username, // Removed the username :
+        email,    // Removed the email :
         sign_in_count: 3,
         active: true,
     }
