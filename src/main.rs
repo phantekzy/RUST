@@ -9,6 +9,17 @@ struct User {
     sign_in_count: u64,
     active: bool,
 }
+
+// Creating a function that returns a User instance with the given email and username
+fn build_user(email: String, username: String) -> User {
+    User {
+        username: username,
+        email: email,
+        sign_in_count: 3,
+        active: true,
+    }
+}
+// Main function
 fn main() {
     // Using a Struct
     // We create an Instance of that struct
