@@ -35,4 +35,12 @@ fn main() {
     };
     // Changing the value in the email fied of a user Instance
     user1.email = String::from("xxx@email.com");
+    // Creating Instances from Other Instances
+    // using the Struct Update Syntax
+    let mut user2 = User {
+        email: String::from("Ferchouch"),
+        username: String::from("heyjude@something.com"),
+        sign_in_count: user1.sign_in_count,
+        active: user1.active,
+    };
 }
