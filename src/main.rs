@@ -63,4 +63,5 @@ fn main() {
 
     // Calling The Tuple Structs values
     let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
 }
