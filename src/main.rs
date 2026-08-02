@@ -68,4 +68,7 @@ fn main() {
     // Because they are instances of different tuple struct
     // Each struct we define is its own type , even though the fields within
     // the struct have the same types .
+    // Otherwise tuple struct instances behave like tuples : you can destrcture them
+    // into invidual pieces , we can use the "." followed by the index to access
+    // an individual value
 }
