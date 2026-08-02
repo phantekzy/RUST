@@ -14,6 +14,7 @@ struct User {
 // Tuple Structs are useful when you want to give the whole tuple a name
 // and make the tuple be a different type from other tuples
 struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
 
 // build_user that takes an email and username and returns User instance
 // Using the Field init shorthand
@@ -59,4 +60,7 @@ fn main() {
     // Using Struct Update Syntax to set new email and username values for a User
     // instance but user the rest of the value from the fields of the instance
     // in the user1 variable
+
+    // Calling The Tuple Structs values
+    let black = Color(0, 0, 0);
 }
