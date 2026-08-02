@@ -42,4 +42,11 @@ fn main() {
         sign_in_count: user1.sign_in_count,
         active: user1.active,
     };
+    // Using Struct Update Syntax
+    // To write less code
+    let user3 = User {
+        email: String::from("anotherex@exmple.com"),
+        username: String::from("anotherusername"),
+        ..user1
+    };
 }
