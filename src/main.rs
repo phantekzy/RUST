@@ -51,4 +51,7 @@ fn main() {
         username: String::from("anotherusername"),
         ..user1
     };
+    // Using Struct Update Syntax to set new email and username values for a User
+    // instance but user the rest of the value from the fields of the instance
+    // in the user1 variable
 }
