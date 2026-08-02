@@ -44,6 +44,8 @@ fn main() {
     };
     // Using Struct Update Syntax
     // To write less code
+    // the ".." Syntax specifies that the remining fields not explicitly set should have
+    // the same value as the fields in the given instance
     let user3 = User {
         email: String::from("anotherex@exmple.com"),
         username: String::from("anotherusername"),
