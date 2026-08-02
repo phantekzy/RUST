@@ -64,4 +64,8 @@ fn main() {
     // Calling The Tuple Structs values
     let black = Color(0, 0, 0);
     let origin = Point(0, 0, 0);
+    // Note that black and origin are different values types
+    // Because they are instances of different tuple struct
+    // Each struct we define is its own type , even though the fields within
+    // the struct have the same types .
 }
