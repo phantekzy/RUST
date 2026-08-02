@@ -2,6 +2,7 @@
 // Defining and Instantiating Structs
 // User Struct Definition
 // Structs are like Objects in Languages like Javascript
+// Using Tuple Structs Without Named Fields to create Different Types
 // The Blueprint
 struct User {
     username: String,
@@ -9,6 +10,10 @@ struct User {
     sign_in_count: u64,
     active: bool,
 }
+// We can also define Structs that looks similar to tuples, calles "Tuple Structs"
+// Tuple Structs are useful when you want to give the whole tuple a name
+// and make the tuple be a different type from other tuples
+struct Color(i32, i32, i32);
 
 // build_user that takes an email and username and returns User instance
 // Using the Field init shorthand
