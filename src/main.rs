@@ -19,6 +19,9 @@ struct UserII {
     sign_in_count: u64,
     active: bool,
 }
+// We get this error when we try to compile
+// error[E0106]: missing lifetime specifier
+
 // We can also define Structs that looks similar to tuples, calles "Tuple Structs"
 // Tuple Structs are useful when you want to give the whole tuple a name
 // and make the tuple be a different type from other tuples
