@@ -4,9 +4,18 @@
 // Structs are like Objects in Languages like Javascript
 // Using Tuple Structs Without Named Fields to create Different Types
 // The Blueprint
+// Unit-like Structs without Any Fields
 struct User {
-    username: String,
-    email: String,
+    username: string,
+    email: string,
+    sign_in_count: u64,
+    active: bool,
+}
+// Ownershop of Struct Data
+// Let try to store a reference in a struct without specifying lifetimes
+struct UserII {
+    username: &str,
+    email: &str,
     sign_in_count: u64,
     active: bool,
 }
