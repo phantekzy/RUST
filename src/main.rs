@@ -9,3 +9,8 @@
 // Creating q Program using Structs
 // Main function
 fn main() {}
+
+// Calculating Area Function
+fn Area(width: u32, height: u32) -> u32 {
+    width * height
+}
