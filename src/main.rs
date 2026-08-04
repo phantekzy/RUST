@@ -8,7 +8,16 @@
 //
 // Creating q Program using Structs
 // Main function
-fn main() {}
+fn main() {
+    // Rectangle
+    let width1 = 30;
+    let height1 = 30;
+    // Printing the Area
+    println!(
+        "The Area of the rectangle is {} square pixels",
+        Area(width1, height1)
+    )
+}
 
 // Calculating Area Function
 fn Area(width: u32, height: u32) -> u32 {
