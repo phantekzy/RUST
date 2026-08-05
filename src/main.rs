@@ -11,7 +11,7 @@
 fn main() {
     // Rectangle
     let width1 = 30;
-    let height1 = 30;
+    let height1 = 50;
     // Printing the Area
     println!(
         "The Area of the rectangle is {} square pixels",
