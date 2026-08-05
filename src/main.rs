@@ -19,7 +19,7 @@ fn main() {
     )
 }
 
-// Calculating Area Function
-fn Area(width: u32, height: u32) -> u32 {
+// Calculating the area of a rectangle specified by separate width and height variables
+fn area(width: u32, height: u32) -> u32 {
     width * height
 }
