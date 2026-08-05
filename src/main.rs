@@ -10,16 +10,13 @@
 // Main function
 fn main() {
     // Rectangle
-    let width1 = 30;
-    let height1 = 50;
+    let rect1 = (30, 50);
     // Printing the Area
-    println!(
-        "The Area of the rectangle is {} square pixels",
-        area(width1, height1)
-    )
+    println!("The Area of the rectangle is {} square pixels", area(rect1))
 }
 
 // Calculating the area of a rectangle specified by separate width and height variables
-fn area(width: u32, height: u32) -> u32 {
-    width * height
+// Refactoring with Tuple
+fn area(dimensions: (u32, u32)) -> u32 {
+    dimensions.0 * dimensions.1
 }
