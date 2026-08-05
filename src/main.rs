@@ -16,11 +16,8 @@ fn main() {
 }
 
 // Calculating the area of a rectangle specified by separate width and height variables
-// Refactoring with Tuple
-// Specifying the width and height of the Rectangle with a Tuple
-// One problem with tuples is that they arent clear
-// Tuples don't name their elements
-// Our calculation has become more confusing
+// Refactoring with Structs
+// We add structs to add meaning by labeling the data
 fn area(dimensions: (u32, u32)) -> u32 {
     dimensions.0 * dimensions.1
 }
