@@ -13,11 +13,17 @@ struct Rectangle {
     height: u32,
 }
 // Main function
-fn main() {}
+fn main() {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    println!(
+        "The Area of the rectangle is {} square pixels.",
+        area(&rect1)
+    )
+}
 
-// Calculating the area of a rectangle specified by separate width and height variables
-// Refactoring with Structs
-// We add structs to add meaning by labeling the data
 fn area(rectangle: &Rectangle) -> u32 {
     rectangle.width * rectangle.height
 }
