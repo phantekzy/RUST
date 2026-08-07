@@ -24,6 +24,8 @@ fn main() {
     )
 }
 
+// The function takes the Rectangle Struct as parameter
+// It is an immutable borrow because its a read only
 fn area(rectangle: &Rectangle) -> u32 {
     rectangle.width * rectangle.height
 }
