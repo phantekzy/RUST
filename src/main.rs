@@ -8,4 +8,10 @@ struct Rectangle {
     height: u32,
 }
 // Main function
-fn main() {}
+fn main() {
+    // Instance of Rectangle Struct
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+}
