@@ -7,6 +7,9 @@ struct Rectangle {
     width: u32,
     height: u32,
 }
+// help: the trait `std::fmt::Display` is not implemented for `Rectangle`
+// note: in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+// Lets try this formats
 // Main function
 fn main() {
     // Instance of Rectangle Struct
