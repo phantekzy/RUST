@@ -3,6 +3,7 @@
 // Let's try to print the instance of rectangle while debugging
 
 // Rectangle Struct
+#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
