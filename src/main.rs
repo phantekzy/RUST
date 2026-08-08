@@ -18,6 +18,7 @@ fn main() {
         width: 30,
         height: 50,
     };
-
-    println!("rect1 is {:?}", rect1); //required by this formatting parameter
+    // Adding the annotation to derevie the Debug trait and printing the Rectangle instance using
+    // debug formating
+    println!("rect1 is {:?}", rect1);
 }
