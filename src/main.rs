@@ -18,5 +18,5 @@ fn main() {
         height: 50,
     };
 
-    println!("rect1 is {}", rect1); //required by this formatting parameter
+    println!("rect1 is {:?}", rect1); //required by this formatting parameter
 }
