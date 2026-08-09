@@ -1,7 +1,6 @@
-// USING STRUCTS TO STRUCTURE RELATED DATA
-// Adding usefull functionalities with Derived Traits
-// Let's try to print the instance of rectangle while debugging
-
+// Method Syntax
+// Methods are similar to functions : they're declared with the fn keyword and their name
+// they can have parameters and return a value
 // Rectangle Struct
 #[derive(Debug)]
 struct Rectangle {
