@@ -4,5 +4,11 @@
 // Methods always have Self as first parameter
 // Defining Methods
 
+// Rectangle Struct
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
 // Main function
 fn main() {}
