@@ -10,8 +10,7 @@ struct Rectangle {
     height: u32,
 }
 impl Rectangle {
-    // Defining a method
-    // It has self in parameters
+    // Defining an area method on the Rectangle struct
     fn area(&self) -> u32 {
         self.height * self.width
     }
