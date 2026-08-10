@@ -11,6 +11,7 @@ struct Rectangle {
 }
 impl Rectangle {
     // Defining a method
+    // It has self in parameters
     fn area(&self) -> u32 {
         self.height * self.width
     }
@@ -22,5 +23,8 @@ fn main() {
         width: 30,
         height: 50,
     };
-    print!("The area of the rectangle is {} square pixels.")
+    print!(
+        "The area of the rectangle is {} square pixels.",
+        rect1.area()
+    )
 }
