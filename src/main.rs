@@ -9,6 +9,12 @@ struct Rectangle {
     width: u32,
     height: u32,
 }
+impl Rectangle {
+    // Defining a method
+    fn area(&self) -> u32 {
+        self.height * self.width
+    }
+}
 
 // Main function
 fn main() {
@@ -17,9 +23,4 @@ fn main() {
         height: 50,
     };
     print!("The area of the rectangle is {} square pixels.")
-}
-
-// Area calculation function
-fn area(rectangle: &Rectangle) -> u32 {
-    rectangle.height * rectangle.width
 }
