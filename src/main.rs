@@ -1,7 +1,6 @@
 // Method
 // Associated Functions
-// Associated functions are often used for constructors that will return a new instance
-// of the struct
+// Associated functions are often used for constructors that will return a new instance of the struct
 
 // Rectangle Struct
 struct Rectangle {
@@ -11,6 +10,14 @@ struct Rectangle {
 impl Rectangle {
     // Added _ so the compiler shut the hell up
     // Method
+    // PS : All Methods are Associated function in Rust
+    // A Method is simply an Associated function that takes self , &self or &mut self
+    // as its first params
+    // HOW METHOD CALLING WORKS UNDER THE HOOD
+    // rect1.can_hold(&rect2);
+    // The Rust compiler automatically translates it into the fully qualified Associated function
+    // call syntax using " :: "
+
     fn _area(&self) -> u32 {
         self.width * self.height
     }
