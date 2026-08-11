@@ -17,6 +17,7 @@ impl Rectangle {
     // rect1.can_hold(&rect2);
     // The Rust compiler automatically translates it into the fully qualified Associated function
     // call syntax using " :: "
+    // Rectangle::can_hold(&rect1 , &rect2);
 
     fn _area(&self) -> u32 {
         self.width * self.height
