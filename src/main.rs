@@ -1,5 +1,7 @@
 // Method
-// Assocated Functions
+// Associated Functions
+// Associated functions are often used for constructors that will return a new instance
+// of the struct
 
 // Rectangle Struct
 struct Rectangle {
