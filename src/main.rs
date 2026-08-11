@@ -1,19 +1,9 @@
-// Method Syntax
-// Methods are similar to functions : they're declared with the fn keyword and their name
-// they can have parameters and return a value
-// Methods always have Self as first parameter
-// Defining Methods
-// Where is the -> Operator
-// In languages like C and C++ you have to manualy switch operators depending on whether you hold
-// the object directly or hold a pointer to it
-// Direct object : object.method();
-// Pointer to object : object_ptr->method(); (which is syntax sugar for (*object_ptr).method();)
-// Rust eliminates the -> operator entirely
-// In Rust you always use the dot operator for methods calls
-// When we call a method in Rust with object.something();
-// Rust automatically adds in & , &mut , or * so object matchts the signature of method
-// p1.distance(&p2);
-// (&p1).distance(&p2);
+// Method
+// Methods with more Parameters
+// Let us implement a second method on the Rectangle struct
+// This time , i want an instance of Rectangle to take another instance of Rectangle
+// and return true if the second Rectangle can fit completely within self
+// otherwise it should return false
 
 // Rectangle Struct
 struct Rectangle {
