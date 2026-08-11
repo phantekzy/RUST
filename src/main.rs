@@ -19,6 +19,8 @@ impl Rectangle {
         self.width > other.width && self.height > other.height
     }
     // Associated function
+    // There is no self in params so its an Associated function
+    // To call an Associated function we use the " :: " syntax
     fn square(size: u32) -> Rectangle {
         Rectangle {
             width: size,
