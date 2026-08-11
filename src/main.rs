@@ -9,6 +9,7 @@ struct Rectangle {
     width: u32,
     height: u32,
 }
+// Implementation block
 impl Rectangle {
     // Defining an area method on the Rectangle struct
     fn area(&self) -> u32 {
