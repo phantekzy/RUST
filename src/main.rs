@@ -9,7 +9,9 @@ struct Rectangle {
     width: u32,
     height: u32,
 }
-// We could also write the methods and functions in different impl
+// Rewriting using multiple impl blocks
+// ps : There is no reason to separate these methods into multiple impl blocks
+// but this is valid syntax
 // First impl for area Method
 impl Rectangle {
     fn area(&self) -> u32 {
