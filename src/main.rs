@@ -20,7 +20,7 @@ impl Rectangle {
     }
     // Associated function
     // There is no self in params so its an Associated function
-    // To call an Associated function we use the " :: " syntax
+
     fn square(size: u32) -> Rectangle {
         Rectangle {
             width: size,
@@ -46,4 +46,7 @@ fn main() {
     // Printing the Results
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
+
+    // To call an Associated function we use the " :: " syntax
+    let sq = Rectangle::square(3);
 }
