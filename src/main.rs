@@ -8,7 +8,11 @@
 // the object directly or hold a pointer to it
 // Direct object : object.method();
 // Pointer to object : object_ptr->method(); (which is syntax sugar for (*object_ptr).method();)
-//
+// Rust eliminates the -> operator entirely
+// In Rust you always use the dot operator for methods calls
+// When we call a method in Rust with object.something();
+// Rust automatically adds in & , &mut , or * so object matchts the signature of method
+
 // Rectangle Struct
 struct Rectangle {
     width: u32,
