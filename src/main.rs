@@ -7,7 +7,8 @@
 // In languages like C and C++ you have to manualy switch operators depending on whether you hold
 // the object directly or hold a pointer to it
 // Direct object : object.method();
-// Pointer to object : object_ptr->method();
+// Pointer to object : object_ptr->method(); (which is syntax sugar for (*object_ptr).method();)
+//
 // Rectangle Struct
 struct Rectangle {
     width: u32,
