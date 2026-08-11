@@ -1,39 +1,18 @@
 // Method
 // Associated Functions
 // Associated functions are often used for constructors that will return a new instance of the struct
+// Multiple impl Blocks
 
 // Rectangle Struct
+// Each struct is allowed to have multiple impl blocks
 struct Rectangle {
     width: u32,
     height: u32,
 }
+// We could also write the methods and functions in different impl
 impl Rectangle {
-    // Added _ so the compiler shut the hell up
-    // Method
-    // PS : All Methods are Associated function in Rust
-    // A Method is simply an Associated function that takes self , &self or &mut self
-    // as its first params
-    // HOW METHOD CALLING WORKS UNDER THE HOOD
-    // rect1.can_hold(&rect2);
-    // The Rust compiler automatically translates it into the fully qualified Associated function
-    // call syntax using " :: "
-    // Rectangle::can_hold(&rect1 , &rect2);
-
-    fn _area(&self) -> u32 {
+    fn area(&self) -> u32 {
         self.width * self.height
-    }
-    // Method
-    fn can_hold(&self, other: &Rectangle) -> bool {
-        self.width > other.width && self.height > other.height
-    }
-    // Associated function
-    // There is no self in params so its an Associated function
-
-    fn square(size: u32) -> Rectangle {
-        Rectangle {
-            width: size,
-            height: size,
-        }
     }
 }
 
