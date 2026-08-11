@@ -10,9 +10,16 @@ struct Rectangle {
     height: u32,
 }
 // We could also write the methods and functions in different impl
+// First impl for area Method
 impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
+    }
+}
+// Second impl for can_hold Method
+impl Rectangle {
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
     }
 }
 
