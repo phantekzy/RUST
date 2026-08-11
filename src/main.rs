@@ -12,6 +12,8 @@
 // In Rust you always use the dot operator for methods calls
 // When we call a method in Rust with object.something();
 // Rust automatically adds in & , &mut , or * so object matchts the signature of method
+// p1.distance(&p2);
+// (&p1).distance(&p2);
 
 // Rectangle Struct
 struct Rectangle {
