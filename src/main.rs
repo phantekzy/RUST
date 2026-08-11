@@ -3,7 +3,11 @@
 // they can have parameters and return a value
 // Methods always have Self as first parameter
 // Defining Methods
-
+// Where is the -> Operator
+// In languages like C and C++ you have to manualy switch operators depending on whether you hold
+// the object directly or hold a pointer to it
+// Direct object : object.method();
+// Pointer to object : object_ptr->method();
 // Rectangle Struct
 struct Rectangle {
     width: u32,
