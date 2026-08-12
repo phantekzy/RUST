@@ -1,3 +1,5 @@
+use std::net::IpAddr;
+
 // CUSTOM TYPES
 // ENUMS AND PATTERN MATCHING
 // Defining an Enum
@@ -17,16 +19,8 @@ struct IpAddr {
 }
 // Main function
 fn main() {
-    // Enum Values
-    let four = IpAddrKind::V4;
-    let six = IpAddrKind::V6;
-    // Calling route function
-    route(four);
-    route(six);
+    let home = IpAddr {
+        kind: IpAddrKind::V4,
+        adress: String::from("127.0.0.1"),
+    };
 }
-
-// Note that the variants of the enums are namespaced under its indentifier.
-// We use a double colon to separate the two.
-// Both values IpAddrKind::V4 and IpAddrKind::V6 are of the same type : IpAddrKind.
-// We can then , for instance, define a function that takes any IpAddrKind
-fn route(ip_kind: IpAddrKind) {}
