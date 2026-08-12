@@ -16,3 +16,5 @@ fn main() {
 // Note that the variants of the enums are namespaced under its indentifier.
 // We use a double colon to separate the two.
 // Both values IpAddrKind::V4 and IpAddrKind::V6 are of the same type : IpAddrKind.
+// We can then , for instance, define a function that takes any IpAddrKind
+fn route(ip_kind: IpAddrKind) {}
