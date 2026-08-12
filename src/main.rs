@@ -11,6 +11,9 @@ fn main() {
     // Enum Values
     let four = IpAddrKind::V4;
     let six = IpAddrKind::V6;
+    // Calling route function
+    route(four);
+    route(six);
 }
 
 // Note that the variants of the enums are namespaced under its indentifier.
