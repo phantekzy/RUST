@@ -1,5 +1,3 @@
-use std::net::IpAddr;
-
 // CUSTOM TYPES
 // ENUMS AND PATTERN MATCHING
 // Defining an Enum
