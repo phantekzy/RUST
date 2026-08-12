@@ -7,4 +7,8 @@ enum IpAddrKind {
     V6,
 }
 // Main function
-fn main() {}
+fn main() {
+    // Enum Values
+    let four = IpAddrKind::V4;
+    let six = IpAddrKind::V6;
+}
