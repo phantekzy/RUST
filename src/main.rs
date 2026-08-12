@@ -1,6 +1,9 @@
 // CUSTOM TYPES
 // ENUMS AND PATTERN MATCHING
 // Defining an Enum
+// Using enums has even more advantages
+// We do not have a way to store the actual IP adress data
+// We only know what kind it is
 enum IpAddrKind {
     // IpAddrKind is now a custom data type
     V4,
