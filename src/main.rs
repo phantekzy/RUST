@@ -10,8 +10,11 @@ struct Ipv4Addr {}
 
 // IP version 6
 struct Ipv6Addr {}
-// Main function
-fn main() {
-    let home = IpAddrKind::V4(127, 0, 0, 1);
-    let loopback = IpAddrKind::V6(String::from("::1"));
+
+// Enum IpAddr
+enum IpAddr {
+    V4(Ipv4Addr),
+    V6(Ipv4Addr),
 }
+// Main function
+fn main() {}
