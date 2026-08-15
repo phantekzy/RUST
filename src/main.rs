@@ -6,6 +6,7 @@
 // We only know what kind it is
 // Enum
 // We can represent the same concept in a more concise way using an enum
+// PS : Enum -> OR  // Struct -> AND
 enum IpAddrKind {
     // IpAddrKind is now a custom data type
     V4(String),
