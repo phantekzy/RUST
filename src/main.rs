@@ -5,6 +5,7 @@
 // But it embeds the address data inside the variants in the form
 // of two different structs , which are defined differently for each variant :
 
+// This code illustrates that you can put any type of data
 // IP version 4
 struct Ipv4Addr {}
 
