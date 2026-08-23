@@ -24,5 +24,6 @@ struct MoveMessage {
     x: i32,
     y: i32,
 }
+struct WriteMessage(String); // Tupple Struct 
 // Main function
 fn main() {}
