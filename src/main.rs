@@ -35,4 +35,7 @@ struct MoveMessage {
 struct WriteMessage(String); // Tuple Struct 
 struct ChangeColorMessage(i32, i32, i32); // Tuple Struct
 // Main function
-fn main() {}
+fn main() {
+    let m = Message::Write(String::from("Hello world"));
+    m.call();
+}
