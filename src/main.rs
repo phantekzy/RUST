@@ -16,5 +16,8 @@ enum Message {
     Write(String),
     ChangeColor(i32, i32, i32),
 }
+// Defining an enum with variants such as the one in the upper enum
+// is similar to defining different kinds of struct definition , except the enum doesn't use
+// the struct keyword and all the variant s are grouped together under the Message type .
 // Main function
 fn main() {}
