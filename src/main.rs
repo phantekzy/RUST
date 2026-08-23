@@ -24,6 +24,7 @@ struct MoveMessage {
     x: i32,
     y: i32,
 }
-struct WriteMessage(String); // Tupple Struct 
+struct WriteMessage(String); // Tuple Struct 
+struct ChangeColorMessage(i32, i32, i32); // Tuple Struct
 // Main function
 fn main() {}
