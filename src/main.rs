@@ -3,6 +3,9 @@
 
 // Another exemple of an enum in that has a wide
 // variety of types embedded in its variants
+// There is one more similarity between enums and structs :
+// just as we'rre able to define methods on structs using impl , we're also able
+// to define methods on enums
 
 // A Message enum whose variants each store different amounts and types values
 // This enum has four variants with different types :
@@ -15,6 +18,11 @@ enum Message {
     Move { x: i32, y: i32 },
     Write(String),
     ChangeColor(i32, i32, i32),
+}
+impl Message {
+    fn call(&self) {
+        // Method Body would be defined here
+    }
 }
 // Defining an enum with variants such as the one in the upper enum
 // is similar to defining different kinds of struct definition , except the enum doesn't use
