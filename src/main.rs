@@ -8,6 +8,9 @@ enum IpAddrkind {
 fn main() {
     let four = IpAddrkind::V4; // Four and six are of the same type IpAddrkind
     let six = IpAddrkind::V6;
+    // We call this function with either variants
+    route(four);
+    route(six);
 }
 // We can then , for instance , define a function htat takes any IpAddrkind
 fn route(ip_kind: IpAddrkind) {}
