@@ -2,10 +2,12 @@
 // Enum values
 // We can create instances of each of the two variants of IpAddrkind
 enum IpAddrkind {
+    // Custom type
     V4,
     V6,
 }
-struct IpAdr {
+struct IpAddr {
+    // Struct
     kind: IpAddrkind,
     address: String,
 }
