@@ -15,4 +15,9 @@ fn main() {
     // IP Versions
     let four = IpAddrkind::V4;
     let six = IpAddrkind::V6;
+    // Home Ip Address v4
+    let _home = IpAddr {
+        kind: four,
+        address: String::from("127.0.0.1"),
+    };
 }
