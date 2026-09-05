@@ -16,6 +16,7 @@ fn main() {
     // IP Versions
     let four = IpAddrkind::V4;
     let six = IpAddrkind::V6;
+    // STORING THE DATA AND IpAddrkind VARIANT OF AN IP ADRESS USING A STRUCT
     // Home Ip Address v4
     let _home = IpAddr {
         kind: four,
