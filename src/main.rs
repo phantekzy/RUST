@@ -11,4 +11,8 @@ struct IpAddr {
     kind: IpAddrkind,
     address: String,
 }
-fn main() {}
+fn main() {
+    // IP Versions
+    let four = IpAddrkind::V4;
+    let six = IpAddrkind::V6;
+}
