@@ -1,6 +1,6 @@
 // CUSTOM TYPES
 // Enum values
-// Wide variety of types embedded in this enum variants
+// Message enum whose variants each store different amounts and types of values
 enum Message {
     Quit,
     Move { x: i32, y: i32 },
