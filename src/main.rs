@@ -1,20 +1,10 @@
 // CUSTOM TYPES
 // Enum values
-
-struct Ipv4Addr {
-    // -- snip
+// Wide variety of types embedded in this enum variants
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    ChangeColor(i32, i32, i32),
 }
-
-struct Ipv6Addr {
-    // -- snip
-}
-
-enum IpAddr {
-    V4(Ipv4Addr),
-    V6(Ipv6Addr),
-}
-
-// This code illustrates that you can put any kind of data inside an enum variant : strings ,
-// numeric types or structs ,  We can even include another enum
-
 fn main() {}
