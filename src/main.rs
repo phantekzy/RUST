@@ -14,4 +14,7 @@ enum IpAddr {
     V6(Ipv6Addr),
 }
 
+// This code illustrates that you can put any kind of data inside an enum variant : strings ,
+// numeric types or structs ,  We can even include another enum
+
 fn main() {}
