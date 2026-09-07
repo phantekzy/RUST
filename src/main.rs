@@ -1,5 +1,4 @@
 // CUSTOM TYPES
-// Enum values
 // Message enum whose variants each store different amounts and types of values
 enum Message {
     Quit,
