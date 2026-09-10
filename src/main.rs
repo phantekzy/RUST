@@ -7,5 +7,4 @@ enum Message {
     Write(String),              // write includes a single String
     ChangeColor(i32, i32, i32), // ChangeColor includes three i32 values
 }
-
 fn main() {}
