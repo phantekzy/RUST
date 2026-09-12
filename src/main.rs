@@ -1,40 +1,8 @@
-// CUSTOM TYPES
-// Defining Methods on enums
-// Message enum whose variants each store different amounts and types of values
-enum Message {
-    // This Enum has four variants
-    Quit,                       // Quit has no data associated with it at all
-    Move { x: i32, y: i32 },    // Move includes an anonymous struct iniside of it
-    Write(String),              // write includes a single String
-    ChangeColor(i32, i32, i32), // ChangeColor includes three i32 values
-}
-// impl a method for the enum
-impl Message {
-    fn call(&self) {
-        // Method body would be defined here
-    }
-}
-// Definingh an enum of variants such as the one before is similar to defining
-// different kinds of struct definitions , except the enum doesn't use the struct keyword
-// and all the variants are grouped together under the message type
-
-// QuitMessage Struct is a unit struct
-struct QuitMessage; // Unit Struct 
-
-// MoveMessage
-struct MoveMessage {
-    x: i32,
-    y: i32,
-}
-
-// WriteMessage struct is a tuple struct
-struct WriteMessage(String);
-
-// ChangeColormessage is also a tuple struct
-struct ChangeColorMessage(i32, i32, i32);
-
+// The option Enum and its Advantages over Null Values
+// In the previous section , we looked at thow the IpAddr enum let us use Rust's type system
+// to encode more information than just the data into our program.
+// This section explores a case study of "Option", which is another enum defined by
+// the Standard Library.
+//
 // Main function
-fn main() {
-    let m = Message::Write(String::from("Phantekzy"));
-    m.call();
-}
+fn main() {}
