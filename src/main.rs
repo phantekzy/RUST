@@ -29,6 +29,10 @@ enum Option<T> {
 //
 // The variants of Option :
 // Some and None
-// We can use Some and None directly without the Option:: prefix
+// We can use Some and None directly without the Option:: prefix .
+// Option enum can hold one piece of data of any type
 // Main function
-fn main() {}
+fn main() {
+    let some_number = Some(5);
+    let some_string = Some("a String");
+}
