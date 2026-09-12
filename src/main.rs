@@ -23,5 +23,8 @@ struct MoveMessage {
 // WriteMessage struct is a tuple struct
 struct WriteMessage(String);
 
+// ChangeColormessage is also a tuple struct
+struct ChangeColorMessage(i32, i32, i32);
+
 // Main function
 fn main() {}
