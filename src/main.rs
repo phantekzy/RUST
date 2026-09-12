@@ -29,5 +29,6 @@ enum Option<T> {
 //
 // The variants of Option :
 // Some and None
+// We can use Some and None directly without the Option:: prefix
 // Main function
 fn main() {}
