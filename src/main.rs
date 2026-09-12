@@ -34,4 +34,7 @@ struct WriteMessage(String);
 struct ChangeColorMessage(i32, i32, i32);
 
 // Main function
-fn main() {}
+fn main() {
+    let m = Message::Write(String::from("Phantekzy"));
+    m.call();
+}
