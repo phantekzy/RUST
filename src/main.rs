@@ -13,6 +13,8 @@
 //
 // Programming languages design is ofter thought of in terms of which features you include ,
 // but the features you exclude are important too.
+// Rust doesn't have the null feature that many other languages have . Null is a value that means
+// there is no value there
 
 // Main function
 fn main() {}
