@@ -7,4 +7,8 @@ enum Message {
     Write(String),              // write includes a single String
     ChangeColor(i32, i32, i32), // ChangeColor includes three i32 values
 }
+// Definingh an enum of variants such as the one before is similar to defining
+// different kinds of struct definitions , except the enum doesn't use the struct keyword
+// and all the variants are grouped together under the message type
+
 fn main() {}
