@@ -20,5 +20,8 @@ struct MoveMessage {
     y: i32,
 }
 
+// WriteMessage struct is a tuple struct
+struct WriteMessage(String);
+
 // Main function
 fn main() {}
