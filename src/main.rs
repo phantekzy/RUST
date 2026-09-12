@@ -1,4 +1,5 @@
 // CUSTOM TYPES
+// Defining Methods on enums
 // Message enum whose variants each store different amounts and types of values
 enum Message {
     // This Enum has four variants
