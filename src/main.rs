@@ -11,4 +11,6 @@ enum Message {
 // different kinds of struct definitions , except the enum doesn't use the struct keyword
 // and all the variants are grouped together under the message type
 
+struct QuitMessage; // Unit Struct 
+
 fn main() {}
