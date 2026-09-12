@@ -16,6 +16,13 @@
 // Rust doesn't have the null feature that many other languages have . Null is a value that means
 // there is no value there
 // In languages with null , variables can always be in one of two states : null or not-null.
-
+//
+// Rust does not have nulls, but it does have an enum that can encode the concept of a value
+// being present or absent
+// This enum is Option<T> , and it is defined by the standard library as follows :
+enum Option<T> {
+    Some(T),
+    None,
+}
 // Main function
 fn main() {}
