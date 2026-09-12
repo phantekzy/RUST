@@ -24,5 +24,7 @@ enum Option<T> {
     Some(T),
     None,
 }
+// The Option<T> enum is very usefull that it's even included in the prelude ;
+// We don't need to bring it into scope explicitly
 // Main function
 fn main() {}
