@@ -15,6 +15,7 @@
 // but the features you exclude are important too.
 // Rust doesn't have the null feature that many other languages have . Null is a value that means
 // there is no value there
+// In languages with null , variables can always be in one of two states : null or not-null.
 
 // Main function
 fn main() {}
