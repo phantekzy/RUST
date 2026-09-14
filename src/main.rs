@@ -20,6 +20,8 @@
 // Rust does not have nulls, but it does have an enum that can encode the concept of a value
 // being present or absent
 // This enum is Option<T> , and it is defined by the standard library as follows :
+// <T> means the Some variant of the Option Enum
+// it can hold one piece of data of any type
 enum Option<T> {
     Some(T),
     None,
