@@ -22,10 +22,6 @@
 // This enum is Option<T> , and it is defined by the standard library as follows :
 // <T> means the Some variant of the Option Enum
 // it can hold one piece of data of any type
-enum Option<T> {
-    Some(T),
-    None,
-}
 // The Option<T> enum is very usefull that it's even included in the prelude ;
 // We don't need to bring it into scope explicitly.
 //
