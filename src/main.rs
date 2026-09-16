@@ -1,4 +1,5 @@
 // OPTION TYPE
+// Option<T> Enum
 // Main function
 fn main() {
     let x: i8 = 5;
