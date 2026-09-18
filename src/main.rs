@@ -23,5 +23,11 @@ fn main() {
     // So the compiler won't let us use an Option<T> value
     // as if it were definitely a valid value
     // Exemple :
-    let 
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+    let sum = x + y;
+    // We are having this error when we try to add them
+    // 1. cannot add `Option<i8>` to `i8`
+    //the trait `Add<Option<i8>>` is not implemented for `i8` [E0277]
+    //internal_macros.rs:22:9: the following other types implement trait `Add<Rhs>`
 }
