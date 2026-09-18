@@ -16,4 +16,8 @@ fn main() {
     // When we have a None value , in some sense , it means the
     // same thing as null : we don't have a valid value .
     // WHY THE HELL WE have to use Option<T> if its null ???
+    // THE ANSWER :
+    // In short , because Option<T> and T where T can be
+    // any type are different Types
+    // so it means Option<T> it self and The "T" are diff
 }
