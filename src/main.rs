@@ -11,4 +11,9 @@ fn main() {
     // value is held within the Some
     let some_number = Some(5);
     let some_string = Some("a String");
+
+    // I have a question
+    // When we have a None value , in some sense , it means the
+    // same thing as null : we don't have a valid value .
+    // WHY THE HELL WE have to use Option<T> if its null ???
 }
