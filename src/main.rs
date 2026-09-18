@@ -20,4 +20,6 @@ fn main() {
     // In short , because Option<T> and T where T can be
     // any type are different Types
     // so it means Option<T> it self and The "T" are diff
+    // So the compiler won't let us use an Option<T> value
+    // as if it were definitely a valid value
 }
