@@ -14,7 +14,7 @@ fn value_in_cents(coin: Coin) -> u8 {
     // Match expression
     match coin {
         // Patterns
-        Coin::Penny => 1,
+        Coin::Penny => 1, // Match arms
         Coin::Nickel => 5,
         Coin::Dime => 10,
         Coin::Quarter => 25,
@@ -23,6 +23,7 @@ fn value_in_cents(coin: Coin) -> u8 {
     // But there is a big difference :
     // With If : the expression needs to return a Bollean value ,
     // but here with the match expresssion , it can be any type.
+    // The type of coin in this example is the Coin enum
 }
 
 // Main function
