@@ -31,5 +31,7 @@ fn main() {
     //
     // We want some other code to run if we have a None value , and that code
     // doesn't have a T value available
-    // The match expression is a control flow construct that does just this when sed with enums
+    // The match expression is a control flow construct that does just this when used with enums
+    // It will run different code depending on which variant of the enum it has,
+    // and that code can use the data inside the matching value
 }
