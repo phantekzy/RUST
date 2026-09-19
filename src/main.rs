@@ -19,6 +19,10 @@ fn value_in_cents(coin: Coin) -> u8 {
         Coin::Dime => 10,
         Coin::Quarter => 25,
     }
+    // this seems very similar to an expression used with if ?
+    // But there is a big difference :
+    // With If : the expression needs to return a Bollean value ,
+    // but here with the match expresssion , it can be any type.
 }
 
 // Main function
