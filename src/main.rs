@@ -9,6 +9,7 @@ enum Coin {
 }
 // Value in cents function
 fn value_in_cents(coin: Coin) -> u8 {
+    // Match
     match coin {
         Coin::Penny => 1,
         Coin::Nickel => 5,
