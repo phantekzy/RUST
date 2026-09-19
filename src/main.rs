@@ -16,7 +16,7 @@ fn value_in_cents(coin: Coin) -> u8 {
         // Patterns
         Coin::Penny => 1,  // Match arms
         Coin::Nickel => 5, // An arm has two parts : a pattern and some code.
-        Coin::Dime => 10,
+        Coin::Dime => 10,  // we separate the patern and the code using the "=>" Operator
         Coin::Quarter => 25,
     }
     // this seems very similar to an expression used with if ?
