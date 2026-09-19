@@ -6,8 +6,8 @@ fn main() {
     let _some_number = Some(5);
     let _some_string = Some("a String");
 
-    let x: i8 = 5;
-    let y: Option<i8> = Some(5); // In order to have a value that can possibly be null,
+    let _x: i8 = 5;
+    let _y: Option<i8> = Some(5); // In order to have a value that can possibly be null,
     // we must explicitly opt in by making
     // the type of that value Option<T>
     // Then, when using that value , we are reauired to explicitly handle the case
@@ -26,5 +26,4 @@ fn main() {
     //
     // The Option<T> enum has a large number of methids that are useful in a variety of situations
     // In order to use an Option<T> value , we want to have code that will handle each variant
-    let sum = x + y;
 }
