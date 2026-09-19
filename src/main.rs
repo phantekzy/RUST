@@ -30,4 +30,5 @@ fn main() {
     // 1. cannot add `Option<i8>` to `i8`
     //the trait `Add<Option<i8>>` is not implemented for `i8` [E0277]
     //internal_macros.rs:22:9: the following other types implement trait `Add<Rhs>`
+    // This error means that Rust does not understand how to add an i8 and an Option<T>
 }
