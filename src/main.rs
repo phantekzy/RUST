@@ -1,37 +1,5 @@
 // OPTION TYPE
 // Option<T> Enum
+// Match Control Flow Operator
 // Main function
-fn main() {
-    let _absent_number: Option<i32> = None;
-    let _some_number = Some(5);
-    let _some_string = Some("a String");
-
-    let _x: i8 = 5;
-    let _y: Option<i8> = Some(5); // In order to have a value that can possibly be null,
-    // we must explicitly opt in by making
-    // the type of that value Option<T>
-    // Then, when using that value , we are reauired to explicitly handle the case
-    // when the value is null
-    // Everywhere that a value has a type that isn't an Option<T> , we can safetly assume that the
-    // value isnt null
-
-    // We cant add because they are different types
-    // We have to convert an Option<T>  to a T before performing T operations with it.
-    // This helps catch one of the most common issues with null :
-    // assuming  that something isnt't null when it actually is.
-    //
-    //
-    // How we get the value T out of a Some variant when we have a value
-    // of type Option<T>
-    //
-    // The Option<T> enum has a large number of methids that are useful in a variety of situations
-    // In order to use an Option<T> value , we want to have code that will handle each variant
-    // We want some code that will run only when whe have a Some(T) value , and this code is allowed
-    // to use the inner T.
-    //
-    // We want some other code to run if we have a None value , and that code
-    // doesn't have a T value available
-    // The match expression is a control flow construct that does just this when used with enums
-    // It will run different code depending on which variant of the enum it has,
-    // and that code can use the data inside the matching value
-}
+fn main() {}
