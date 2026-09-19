@@ -28,4 +28,8 @@ fn main() {
     // In order to use an Option<T> value , we want to have code that will handle each variant
     // We want some code that will run only when whe have a Some(T) value , and this code is allowed
     // to use the inner T.
+    //
+    // We want some other code to run if we have a None value , and that code
+    // doesn't have a T value available
+    // The match expression is a control flow construct that does just this when sed with enums
 }
