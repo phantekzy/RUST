@@ -19,5 +19,8 @@ fn main() {
     // We have to convert an Option<T>  to a T before performing T operations with it.
     // This helps catch one of the most common issues with null :
     // assuming  that something isnt't null when it actually is.
+    //
+    //
+    // How we get the value T out of a Some variant
     let sum = x + y;
 }
