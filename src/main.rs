@@ -14,8 +14,8 @@ fn value_in_cents(coin: Coin) -> u8 {
     // Match expression
     match coin {
         // Patterns
-        Coin::Penny => 1, // Match arms
-        Coin::Nickel => 5,
+        Coin::Penny => 1,  // Match arms
+        Coin::Nickel => 5, // An arm has two parts : a pattern and some code.
         Coin::Dime => 10,
         Coin::Quarter => 25,
     }
