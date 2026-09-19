@@ -21,6 +21,10 @@ fn main() {
     // assuming  that something isnt't null when it actually is.
     //
     //
-    // How we get the value T out of a Some variant
+    // How we get the value T out of a Some variant when we have a value
+    // of type Option<T>
+    //
+    // The Option<T> enum has a large number of methids that are useful in a variety of situations
+    // In order to use an Option<T> value , we want to have code that will handle each variant
     let sum = x + y;
 }
