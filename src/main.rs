@@ -6,5 +6,7 @@
 // which pattern matches.
 // Patterns can be made up of literal values ,
 // variables names , wildcards , and many other things;
+// The power of match comes from the expressiveness of the patterns
+// and the fact that the compiler confirms that all possible cases are handled
 // Main function
 fn main() {}
