@@ -3,6 +3,7 @@
 // Coins Enum
 // An enum and a match expression that has
 // the variants of the enum as its patterns
+
 enum Coin {
     Penny,
     Nickel,
