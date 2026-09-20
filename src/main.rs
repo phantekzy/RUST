@@ -15,6 +15,8 @@ fn value_in_cents(coin: Coin) -> u8 {
     // Match expression
     match coin {
         // Patterns
+        // If a pattern matches the value , the code associated with that pattern is executed.
+        // If that pattern doesn't match the value , execution continues to the next arm .
         Coin::Penny => 1,    // Match arms
         Coin::Nickel => 5,   // An arm has two parts : a pattern and some code.
         Coin::Dime => 10,    // we separate the patern and the code using the "=>" Operator
