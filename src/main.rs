@@ -24,6 +24,10 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
     // The code associated with each arm is an expression, and the resulting value of the expression
     // in the matching arm is the value that gets returned for the entire match expression.
+
+    // Curly brackers typically aren't used if the match arm code is short .
+
+    // If we want to run mulitple lines of code in a match arm , we can use curly brackets
 }
 
 // Main function
