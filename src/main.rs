@@ -29,6 +29,17 @@ fn value_in_cents(coin: Coin) -> u8 {
 
 // If we want to run mulitple lines of code in a match arm , we can use curly brackets
 // Example :
+fn other_values_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => {
+            println!("Lucky Penny");
+            1
+        }
+        Coin::Dime => 10,
+        Coin::Nickel => 5,
+        Coin::Quarter => 25,
+    }
+}
 
 // Main function
 fn main() {}
