@@ -22,11 +22,8 @@ fn value_in_cents(coin: Coin) -> u8 {
         Coin::Dime => 10,    // we separate the patern and the code using the "=>" Operator
         Coin::Quarter => 25, // that separates the pattern and the code to run
     }
-    // this seems very similar to an expression used with if ?
-    // But there is a big difference :
-    // With If : the expression needs to return a Bollean value ,
-    // but here with the match expresssion , it can be any type.
-    // The type of coin in this example is the Coin enum
+    // The code associated with each arm is an expression, and the resulting value of the expression
+    // in the matching arm is the value that gets returned for the entire match expression.
 }
 
 // Main function
