@@ -2,6 +2,7 @@
 // Another useful feature of match arms is that they cn bind to the
 // parts of the values that match the pattern.
 // This is how we can extract values out of enum variants .
+#[derive(Debug)] // So we can inspect the state in a minute
 enum UsState {
     Alabama,
     Alaska,
