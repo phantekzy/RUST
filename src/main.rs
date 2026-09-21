@@ -9,7 +9,7 @@ enum UsState {
     NewYork,
     California,
 }
-
+// A Coin enum in which the Quarter variant aslo holds a UsState value
 enum Coin {
     Penny,
     Nickel,
