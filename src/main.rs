@@ -8,5 +8,12 @@ enum UsState {
     NewYork,
     California,
 }
+
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter(UsState),
+}
 // Main function
 fn main() {}
