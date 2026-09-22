@@ -14,6 +14,7 @@ enum UsState {
     Alaska,
     NewYork,
     California,
+    // -- snip --
 }
 // A Coin enum in which the Quarter variant aslo holds a UsState value
 enum Coin {
