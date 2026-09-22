@@ -44,6 +44,8 @@ fn value_in_cents(coin: Coin) -> u8 {
         }
     }
 }
+// If we were to call value_in_cents(Coins::Quarters(UsState::Alaska))
+// It would be Coin::Quarters(UsState::Alaska)
 
 // Main function
 fn main() {}
