@@ -23,5 +23,9 @@ enum Coin {
     Dime,
     Quarter(UsState),
 }
+// Let's imagine that a friend of ours is trying to collect all 50 state quarters.
+// while we sort our loose change by coin type , we'll also call out the name of the state
+// assicuated with each quarter so if it's one our friend doesn't have , the can add it to their
+// collection
 // Main function
 fn main() {}
