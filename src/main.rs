@@ -45,7 +45,11 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 // If we were to call value_in_cents(Coins::Quarters(UsState::Alaska))
-// It would be Coin::Quarters(UsState::Alaska)
+// It would be Coin::Quarters(UsState::Alaska) .
+// When we compare that value with each of the match arms , none of them match until we reach
+// Coin::Quarter(State) . At that point , the binding for state will be the value UsState::Alaska.
+// We can then use that binding in the printlin! expression , thus getting the inner state value out
+// of the Coin enum variant for Quarter .
 
 // Main function
 fn main() {}
