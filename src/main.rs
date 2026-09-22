@@ -27,3 +27,7 @@ fn main() {
 // We then compare that against each match arm .
 // The Some(5) value doesn't match the pattern None , se we continue to next arm.
 // Does Some(5) match Some(i) ?
+// Why yes it does !
+// We have the same variant . the i binds to the value contained in Some , so i takes the value 5.
+// The code in the match arm is then executed , so we add 1 to the value of i and create a new Some
+// value  with out total 6 inside .
