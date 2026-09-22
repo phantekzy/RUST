@@ -31,5 +31,9 @@ enum Coin {
 // In the match expression for this  code , we add a variable called state to the pattern that
 // matches values of the variant Coin::Quarter.
 // when a Coin::Quarter matches , the state variable will bind to the value of that quarter's state
+// Then we can use state in the code fot that arm :
+
+fn value_in_cents(coin: Coin) -> u8 {}
+
 // Main function
 fn main() {}
