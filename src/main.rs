@@ -33,7 +33,17 @@ enum Coin {
 // when a Coin::Quarter matches , the state variable will bind to the value of that quarter's state
 // Then we can use state in the code fot that arm :
 
-fn value_in_cents(coin: Coin) -> u8 {}
+fn value_in_cents(coin: Coin) -> u8 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter(state) => {
+            println!("State quarter from {:?}!", state);
+            25
+        }
+    }
+}
 
 // Main function
 fn main() {}
