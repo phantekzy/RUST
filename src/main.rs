@@ -27,5 +27,9 @@ enum Coin {
 // while we sort our loose change by coin type , we'll also call out the name of the state
 // assicuated with each quarter so if it's one our friend doesn't have , the can add it to their
 // collection
+//
+// In the match expression for this  code , we add a variable called state to the pattern that
+// matches values of the variant Coin::Quarter.
+// when a Coin::Quarter matches , the state variable will bind to the value of that quarter's state
 // Main function
 fn main() {}
