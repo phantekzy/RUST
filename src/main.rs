@@ -31,3 +31,7 @@ fn main() {
 // We have the same variant . the i binds to the value contained in Some , so i takes the value 5.
 // The code in the match arm is then executed , so we add 1 to the value of i and create a new Some
 // value  with out total 6 inside .
+// Let's consider the second call of plus_one , where x is None .
+// We enter the match and compare to the first arm .
+// IT MATCHES ! there's no value to add to , so the program stops and returns the None value on the
+// right of => . Because the first arm matched , no other arms are compared
