@@ -15,9 +15,15 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
         Some(i) => Some(i + 1),
     }
 }
+
+//
 // Main function
 fn main() {
     let five = Some(5);
     let six = plus_one(five);
     let none = plus_one(None);
 }
+// When we call plus_one(five) , the variable x in the body of plus_one will have the value Some(5)
+// We then compare that against each match arm .
+// The Some(5) value doesn't match the pattern None , se we continue to next arm.
+// Does Some(5) match Some(i) ?
