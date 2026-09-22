@@ -8,6 +8,7 @@
 // , adds 1 to that value , If there isn't a value inside , the function should return the None
 // value and not attempt to perform any operations .
 
+// A function that uses a match expression on an Option<u32>
 fn plus_one(x: Option<i32>) -> Option<i32> {
     match x {
         None => None,
@@ -15,4 +16,8 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
     }
 }
 // Main function
-fn main() {}
+fn main() {
+    let five = Some(5);
+    let six = plus_one(five);
+    let none = plus_one(None);
+}
