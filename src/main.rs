@@ -35,3 +35,6 @@ fn main() {
 // We enter the match and compare to the first arm .
 // IT MATCHES ! there's no value to add to , so the program stops and returns the None value on the
 // right of => . Because the first arm matched , no other arms are compared
+// Combining match and enums is useful in many situations :
+// We will see this pattern a lot in Rust code : match against an enum , bind a variable to the data
+// inside , and then execute code based on it .
