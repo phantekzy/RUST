@@ -4,10 +4,14 @@
 fn plus_one(x: Option<i32>) -> Option<i32> {
     match x {
         // I didn't handle the None case , so this code will cause a bug
+        // If we try to compile the code , we will get an error
         Some(i) => Some(i + 1),
     }
 }
+// Rust knows that we didn't cover every possible case and even knows wihich pattern i forgot !
+// Matches in Rust are exhaustive : we must exhaust every last possibility in order for the code to
+// be valid .
+// Especially in the case of Option<T>
 
-//
 // Main function
 fn main() {}
