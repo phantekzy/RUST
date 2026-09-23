@@ -3,6 +3,7 @@
 // a bug and won't compile :
 fn plus_one(x: Option<i32>) -> Option<i32> {
     match x {
+        // I didn't handle the None case , so this code will cause a bug
         Some(i) => Some(i + 1),
     }
 }
