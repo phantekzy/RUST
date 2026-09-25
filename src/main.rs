@@ -27,4 +27,8 @@ fn main() {
     // However , we lose the exhaustive checking that match enforces.
     // Chossing between match and if let depends on what we are doing in our particular situation
     // and wheter gaining conciseness in an appropriate trade-off for losing exhaustive chacking .
+    //
+    // We can include an else with an if let .
+    // The block of code that goes with the else is the same as the block of code that would go with
+    // the  _ case in the match expresssion that is equivalent to the if let and else .
 }
