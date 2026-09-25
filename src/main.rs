@@ -45,10 +45,10 @@ fn main() {
 // The block of code that goes with the else is the same as the block of code that would go with
 // the  _ case in the match expresssion that is equivalent to the if let and else .
 
+// Or we could use an if let and else expression :
 fn value_in_cents(coin: Coin) {
     let mut count = 0;
-    match coin {
-        Coin::Quarter(state) => println!("State Quarter from {:?}!", state),
-        _ => count += 1,
+    if let Coin::Quarter(state) = coin {
+        println!("state Quarter from {:?}!", state)
     }
 }
