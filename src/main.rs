@@ -18,4 +18,6 @@ fn main() {
     // The () is just the unit value , so nothing will happen in the _ case.
     // As result , we can say that we want to do nothing for all the possible values
     // that we don't list before the _ placeholder .
+    // However , the match expression can be a bit wordy in a situation in which
+    // we care about only "one" of the cases
 }
