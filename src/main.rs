@@ -31,21 +31,16 @@ fn main() {
     if let Some(3) = some_u8_value {
         println!("three");
     }
-    // The syntax if let takes a pattern and an expression separated by an equal sign.
-    // It works the same way as a match , where the expression is given to the match and the pattern
-    // is its first arm .
-    // Using if let means less typing , less indentation , and less boilerplate code .
-    //
-    // However , we lose the exhaustive checking that match enforces.
-    // Chossing between match and if let depends on what we are doing in our particular situation
-    // and wheter gaining conciseness in an appropriate trade-off for losing exhaustive chacking .
-    //
-    // We can include an else with an if let .
-    // The block of code that goes with the else is the same as the block of code that would go with
-    // the  _ case in the match expresssion that is equivalent to the if let and else .
-    let mut count = 0;
-    match Coin {
-        Coin::Quarter(state) => println!("State Quarter from {:?}!", state),
-        _ => count += 1,
-    }
 }
+// The syntax if let takes a pattern and an expression separated by an equal sign.
+// It works the same way as a match , where the expression is given to the match and the pattern
+// is its first arm .
+// Using if let means less typing , less indentation , and less boilerplate code .
+//
+// However , we lose the exhaustive checking that match enforces.
+// Chossing between match and if let depends on what we are doing in our particular situation
+// and wheter gaining conciseness in an appropriate trade-off for losing exhaustive chacking .
+//
+// We can include an else with an if let .
+// The block of code that goes with the else is the same as the block of code that would go with
+// the  _ case in the match expresssion that is equivalent to the if let and else .
