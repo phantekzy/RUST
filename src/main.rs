@@ -5,5 +5,5 @@
 // Fortunately , we don't have to .
 // Main function
 fn main() {
-    let some_u8_value = 0u8;
+    let some_u8_value = 0u8; // Initializing 0 as an explicit 0-bit unsigned integer.
 }
