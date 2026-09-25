@@ -6,4 +6,11 @@
 // Main function
 fn main() {
     let some_u8_value = 0u8; // Initializing 0 as an explicit 0-bit unsigned integer.
+    match some_u8_value {
+        1 => println!("one"),
+        3 => println!("thre"),
+        5 => println!("five"),
+        7 => println!("sever"),
+        _ => (),
+    }
 }
