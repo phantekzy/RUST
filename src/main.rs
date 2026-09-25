@@ -13,4 +13,7 @@ fn main() {
         7 => println!("sever"),
         _ => (),
     }
+    // The _ pattern will match any value . By puttting it after out other arms ,
+    // The _ will match all the possible cases that aren't specified before it.
+    //
 }
