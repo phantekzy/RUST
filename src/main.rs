@@ -15,5 +15,7 @@ fn main() {
     }
     // The _ pattern will match any value . By puttting it after out other arms ,
     // The _ will match all the possible cases that aren't specified before it.
-    //
+    // The () is just the unit value , so nothing will happen in the _ case.
+    // As result , we can say that we want to do nothing for all the possible values
+    // that we don't list before the _ placeholder .
 }
