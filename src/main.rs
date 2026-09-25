@@ -1,6 +1,7 @@
 // Concise Control Flow with if let
 // The if let syntax lets us combine if and let into a less verbose way to handle values that match
 // one pattern while ignoring the rest .
+#[derive(Debug)]
 enum UsState {
     Alabama,
     Alaska,
@@ -43,4 +44,7 @@ fn main() {
     // The block of code that goes with the else is the same as the block of code that would go with
     // the  _ case in the match expresssion that is equivalent to the if let and else .
     let mut count = 0;
+    match Coin {
+        Coin::Quarter(state)
+    }
 }
