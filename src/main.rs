@@ -1,7 +1,18 @@
 // Concise Control Flow with if let
 // The if let syntax lets us combine if and let into a less verbose way to handle values that match
 // one pattern while ignoring the rest .
+enum UsState {
+    Alabama,
+    Alaska,
+    Newyork,
+}
 
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter(UsState),
+}
 //  Main Function
 fn main() {
     let some_u8_value = Some(0u8);
@@ -31,4 +42,5 @@ fn main() {
     // We can include an else with an if let .
     // The block of code that goes with the else is the same as the block of code that would go with
     // the  _ case in the match expresssion that is equivalent to the if let and else .
+    let mut count = 0;
 }
