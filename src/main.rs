@@ -23,4 +23,8 @@ fn main() {
     // It works the same way as a match , where the expression is given to the match and the pattern
     // is its first arm .
     // Using if let means less typing , less indentation , and less boilerplate code .
+    //
+    // However , we lose the exhaustive checking that match enforces.
+    // Chossing between match and if let depends on what we are doing in our particular situation
+    // and wheter gaining conciseness in an appropriate trade-off for losing exhaustive chacking .
 }
