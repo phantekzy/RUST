@@ -14,4 +14,9 @@ fn main() {
     // or the None value .
     // To satisfy the match expression , we have to add _ => () after procession just one variant ,
     // which is a lot of boileerplate code to add .
+    //
+    // Instead, we could write this in a shorter way using if let :
+    if let Some(3) = some_u8_value {
+        println!("three");
+    }
 }
