@@ -45,6 +45,7 @@ fn main() {
     // the  _ case in the match expresssion that is equivalent to the if let and else .
     let mut count = 0;
     match Coin {
-        Coin::Quarter(state)
+        Coin::Quarter(state) => println!("State Quarter from {:?}!", state),
+        _ => count += 1,
     }
 }
