@@ -4,5 +4,5 @@
 // 1,3,5 and 7 , we dont want tot have to list out 0,2,4,6,8,9 all the way to 255
 // Main function
 fn main() {
-    let some_u8_value = Ou8;
+    let some_u8_value = 0u8;
 }
