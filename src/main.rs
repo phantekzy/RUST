@@ -50,5 +50,7 @@ fn value_in_cents(coin: Coin) {
     let mut count = 0;
     if let Coin::Quarter(state) = coin {
         println!("state Quarter from {:?}!", state)
+    } else {
+        count += 1;
     }
 }
