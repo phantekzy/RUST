@@ -15,5 +15,8 @@
 //
 // In addition to grouping functionality , encapsulating imple;entation details lets us reuse code
 // at a higher level : once we've implemented an operation,other code can call that code via the
-// code's public interface without knowing how the imple;entation works .
+// code's public interface without knowing how the implementation works .
+// The way we write the code defines whoch parts are public for other code to use and whch parts
+// are private implementation details that we reserve the right to change . This is another way to
+// limit the amount of detail we have to keep in our head .
 fn main() {}
