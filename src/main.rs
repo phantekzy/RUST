@@ -8,5 +8,7 @@
 //  Creating custom types to use in our API ensures type safety :
 //      The compiler will make certain your functions get only values of the type each
 //      function expects .
+//  In order to provide a well-orgnizwed API to our users that is straight-forward to use and only
+//  exposes exactly what our users will need .
 //  Main Function
 fn main() {}
