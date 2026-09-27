@@ -4,5 +4,9 @@
 //  to prevent errors .
 //  Wehn enum values have data inside them , we can use match or if let to extract and use
 //  those values , depending on how many cases we need to handle .
+//  Our Rust programs can now express concepts in our domain using structs and enums .
+//  Creating custom types to use in our API ensures type safety :
+//      The compiler will make certain your functions get only values of the type each
+//      function expects .
 //  Main Function
 fn main() {}
