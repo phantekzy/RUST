@@ -1,56 +1,8 @@
-// Concise Control Flow with if let
-// The if let syntax lets us combine if and let into a less verbose way to handle values that match
-// one pattern while ignoring the rest .
-#[derive(Debug)]
-enum UsState {
-    Alabama,
-    Alaska,
-    Newyork,
-}
-
-enum Coin {
-    Penny,
-    Nickel,
-    Dime,
-    Quarter(UsState),
-}
+//  We've now covered how to use enums to create custom types that
+//  can be one of a set of enumerated values
+//  We've shown how the standard library's Option<T> type helps us to use the type system
+//  to prevent errors .
+//  Wehn enum values have data inside them , we can use match or if let to extract and use
+//  those values , depending on how many cases we need to handle .
 //  Main Function
-fn main() {
-    let some_u8_value = Some(0u8);
-    // A match that only cares about executing code when the value is Some(3)
-    match some_u8_value {
-        Some(3) => println!("three"),
-        _ => (),
-    }
-    // We want t o do sonething with the Some(3) match but do nothing with any other Some<u8> value
-    // or the None value .
-    // To satisfy the match expression , we have to add _ => () after procession just one variant ,
-    // which is a lot of boileerplate code to add .
-    //
-    // Instead, we could write this in a shorter way using if let :
-    if let Some(3) = some_u8_value {
-        println!("three");
-    }
-}
-// The syntax if let takes a pattern and an expression separated by an equal sign.
-// It works the same way as a match , where the expression is given to the match and the pattern
-// is its first arm .
-// Using if let means less typing , less indentation , and less boilerplate code .
-//
-// However , we lose the exhaustive checking that match enforces.
-// Chossing between match and if let depends on what we are doing in our particular situation
-// and wheter gaining conciseness in an appropriate trade-off for losing exhaustive chacking .
-//
-// We can include an else with an if let .
-// The block of code that goes with the else is the same as the block of code that would go with
-// the  _ case in the match expresssion that is equivalent to the if let and else .
-
-// Or we could use an if let and else expression :
-fn value_in_cents(coin: Coin) {
-    let mut count = 0;
-    if let Coin::Quarter(state) = coin {
-        println!("state Quarter from {:?}!", state)
-    } else {
-        count += 1;
-    }
-}
+fn main() {}
