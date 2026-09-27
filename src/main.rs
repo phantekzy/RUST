@@ -6,4 +6,8 @@
 // By regrouping related functionality and separating code with distinct features , we'll clarify
 // where to find code that implements a particular feature and where to go to change how
 // a feature works .
+//
+// The programms we've weitten so far have been in one module in one file .
+// As a project grows , we can organize code by splitting it into multiple modules and then
+// multiply files .
 fn main() {}
