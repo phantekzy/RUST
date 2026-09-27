@@ -12,4 +12,8 @@
 // multiply files .
 // A package can contain multiple binary crates and optionally one library crate .
 // As a package grows , we can extract parts into separate crates that become external dependencies
+//
+// In addition to grouping functionality , encapsulating imple;entation details lets us reuse code
+// at a higher level : once we've implemented an operation,other code can call that code via the
+// code's public interface without knowing how the imple;entation works .
 fn main() {}
