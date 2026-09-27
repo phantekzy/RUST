@@ -20,6 +20,8 @@
 // are private implementation details that we reserve the right to change . This is another way to
 // limit the amount of detail we have to keep in our head .
 // A related conceptt is scope : the nested context in which code is written has a set of names that
-// are defined as "in scope".
+// are defined as "in scope". When reading , writing , and compiling code , programmers and
+// compilersneed to know wheter a particular name at a particular spot refers to a variables ,
+// function m struct , enum , module , constant , or other item and what
 
 fn main() {}
