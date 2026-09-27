@@ -19,4 +19,7 @@
 // The way we write the code defines whoch parts are public for other code to use and whch parts
 // are private implementation details that we reserve the right to change . This is another way to
 // limit the amount of detail we have to keep in our head .
+// A related conceptt is scope : the nested context in which code is written has a set of names that
+// are defined as "in scope".
+
 fn main() {}
