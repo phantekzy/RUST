@@ -22,6 +22,7 @@
 // A related conceptt is scope : the nested context in which code is written has a set of names that
 // are defined as "in scope". When reading , writing , and compiling code , programmers and
 // compilersneed to know wheter a particular name at a particular spot refers to a variables ,
-// function m struct , enum , module , constant , or other item and what
+// function m struct , enum , module , constant , or other item and what that item means .
+// We can create scopes and change which names are in or out of scope .
 
 fn main() {}
