@@ -30,6 +30,8 @@
 // details are exposed. whoch details are private , and what names are in each scope in our
 // programs.
 // These feattures , sometimes collectively referred to as the module system , include :
-// Packages : A cargo feature that lets us build , test , and share crates .
+// - Packages : A cargo feature that lets us build , test , and share crates .
+// - Crates : A tree of modules that produces a library or executable Modules and use .
+// Let us control the organization  , scope , and  privacy of paths
 
 fn main() {}
