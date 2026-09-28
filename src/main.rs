@@ -26,5 +26,10 @@
 // We can create scopes and change which names are in or out of scope .
 // We can't have two items with the same name in the same scope; tools are available to resolve name
 // conflicts .
+// Rustt has a number of features that allow us to  manage our code's organization, including which
+// details are exposed. whoch details are private , and what names are in each scope in our
+// programs.
+// These feattures , sometimes collectively referred to as the module system , include :
+// Packages : A cargo feature that lets us build , test , and share crates .
 
 fn main() {}
