@@ -24,5 +24,7 @@
 // compilersneed to know wheter a particular name at a particular spot refers to a variables ,
 // function m struct , enum , module , constant , or other item and what that item means .
 // We can create scopes and change which names are in or out of scope .
+// We can't have two items with the same name in the same scope; tools are available to resolve name
+// conflicts .
 
 fn main() {}
