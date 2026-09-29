@@ -24,5 +24,6 @@
 // the same name as the package .
 // Likewise , Cargo knows that if the package directory contains src/lib.rs , the package contains a
 // library crate with the same name as the package , and src/lib.rs is its crate root .
+// Cargo passes the crate root files to rustc to build the library or binary.
 // Main function
 fn main() {}
