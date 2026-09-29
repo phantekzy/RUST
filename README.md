@@ -4,7 +4,7 @@ This repository follows a structured reading list to master Rust, moving from co
 
 ### 1. The Rust Programming Language (Current)
 * **Status:** In Progress
-* **Focus:** Syntax , ownership, borrowing, lifetimes, and the standard library. This is the official baseline guide for understanding the language rules.
+* **Focus:** Syntax , ownership , borrowing, lifetimes, and the standard library. This is the official baseline guide for understanding the language rules.
 
 ### 2. Programming Rust (Next)
 * **Focus:** Deep dive into memory layout, compiler behavior, and language internals. This book explains *why* Rust operates the way it does under the hood and covers advanced traits, async, and FFI.
