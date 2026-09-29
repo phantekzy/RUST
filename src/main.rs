@@ -18,7 +18,9 @@
 //   ls phantekzy/src
 //   main.rs
 //
-//When we entered the command , Cargo created a Cargo.toml file , giving us a package .
-//
+// When we entered the command , Cargo created a Cargo.toml file , giving us a package .
+// Looking at the contents of Cargo.toml , there is no mention of src/main.rs because
+// Cargo follows a convention that src/main.rs is the crate root of a binary crate with
+// the same name as the package .
 // Main function
 fn main() {}
