@@ -5,6 +5,5 @@
 // starts from and makes up the root module of our crate .
 //
 //
-//
 // Main function
 fn main() {}
