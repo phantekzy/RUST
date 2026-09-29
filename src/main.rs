@@ -25,5 +25,9 @@
 // Likewise , Cargo knows that if the package directory contains src/lib.rs , the package contains a
 // library crate with the same name as the package , and src/lib.rs is its crate root .
 // Cargo passes the crate root files to rustc to build the library or binary.
+//
+// Here we have a package that only contains src/main.rs , meaning it only contains a binary crate
+// names phantekzy . If a package contains src/main.rs and src/lib.rs , it has two crates : a
+// library and a binary , both with the same name as the package .
 // Main function
 fn main() {}
