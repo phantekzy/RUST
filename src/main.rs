@@ -18,5 +18,7 @@
 //   ls phantekzy/src
 //   main.rs
 //
+//When we entered the command , Cargo created a Cargo.toml file , giving us a package .
+//
 // Main function
 fn main() {}
