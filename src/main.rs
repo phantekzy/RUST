@@ -7,7 +7,16 @@
 //
 // Several rules determine what a package can contain . A package must contain zero or one library
 // crates , and no more . It can contain as many binary crates as we'd like , but it must contain at
-// least one crate (either library or binary)
+// least one crate (either library or binary).
+//
+// What happens when we create a package :
+// cargo new phantekzy
+//   Created binary (application)  `phantekzy` package
+//   ls phantekzy
+//   Cargo.toml
+//   src
+//   ls phantekzy/src
+//   main.rs
 //
 // Main function
 fn main() {}
