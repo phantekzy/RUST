@@ -36,6 +36,9 @@
 // Number " provides functionality that generates random numbers. We can use that functionality in
 // our own projects by bringing the rand crate into our project's scope.
 // All the functionality provided by the rand crate is accessible through the crate's name , rand .
+// Keeping a crate's functionality in its own scope clarifies whether particular functionality is
+// defined in our crate or the rand crate and prevents potential conflicts . For example , the rand
+// crate provides a trait named Rng.
 // Main function
 fn main() {
     let one = 1;
