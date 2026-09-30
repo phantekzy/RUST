@@ -42,5 +42,7 @@
 // We can also define a struct named Rng in our own crate . Because a crate's functionality is
 // namespaced in its own scope, when we add rand as a dependency, the compiler isn't confused about
 // what the name Rng refers to .
+// In our crate, it refers to the struct Rng that we defined . We woould access the Rng trait from
+// the rand crate as rand::Rng .
 // Main function
 fn main() {}
