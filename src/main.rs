@@ -39,6 +39,9 @@
 // Keeping a crate's functionality in its own scope clarifies whether particular functionality is
 // defined in our crate or the rand crate and prevents potential conflicts . For example , the rand
 // crate provides a trait named Rng.
+// We can also define a struct named Rng in our own crate . Because a crate's functionality is
+// namespaced in its own scope, when we add rand as a dependency, the compiler isn't confused about
+// what the name Rng refers to .
 // Main function
 fn main() {
     let one = 1;
