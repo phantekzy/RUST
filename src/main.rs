@@ -43,7 +43,4 @@
 // namespaced in its own scope, when we add rand as a dependency, the compiler isn't confused about
 // what the name Rng refers to .
 // Main function
-fn main() {
-    let one = 1;
-    let two = 2;
-}
+fn main() {}
