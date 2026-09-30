@@ -37,4 +37,7 @@
 // our own projects by bringing the rand crate into our project's scope.
 // All the functionality provided by the rand crate is accessible through the crate's name , rand .
 // Main function
-fn main() {}
+fn main() {
+    let one = 1;
+    let two = 2;
+}
