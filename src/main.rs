@@ -46,3 +46,7 @@
 // the rand crate as rand::Rng .
 // Main function
 fn main() {}
+
+// So based of what i understood here :
+// rust package must have these rules :
+// zero or one Library crate root and many Binary crates
