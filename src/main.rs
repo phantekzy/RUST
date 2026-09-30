@@ -31,5 +31,7 @@
 // library and a binary , both with the same name as the package .
 // A package can have multiple binary crates by placing files in the src/bin directory : each file
 // will be separate binary crate.
+// A crate will group related functionality together in a scope so the functionality is easy to
+// share between multiple projects .
 // Main function
 fn main() {}
