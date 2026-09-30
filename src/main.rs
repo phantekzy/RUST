@@ -32,6 +32,8 @@
 // A package can have multiple binary crates by placing files in the src/bin directory : each file
 // will be separate binary crate.
 // A crate will group related functionality together in a scope so the functionality is easy to
-// share between multiple projects .
+// share between multiple projects . For exemple , the rand crate we used in "Generating a Secret
+// Number " provides functionality that generates random numbers. We can use that functionality in
+// our own projects by bringing the rand crate into our project's scope.
 // Main function
 fn main() {}
