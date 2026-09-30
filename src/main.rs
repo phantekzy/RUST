@@ -35,5 +35,6 @@
 // share between multiple projects . For exemple , the rand crate we used in "Generating a Secret
 // Number " provides functionality that generates random numbers. We can use that functionality in
 // our own projects by bringing the rand crate into our project's scope.
+// All the functionality provided by the rand crate is accessible through the crate's name , rand .
 // Main function
 fn main() {}
