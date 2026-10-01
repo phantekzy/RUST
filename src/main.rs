@@ -9,6 +9,11 @@
 // As an example , let's write a libray crate that provides the functionality of a restautrant .
 // We'll define the signatures of functions but leave their bodies empty to concentrate on the
 // organization of the code , rather than actually implement a resaurant in code .
+// In the restairant industry , some parts of a restaurant are referred to as front of house and
+// others as back of house .
+// Front of house is where customers are ; this is where hosts seat customers , servers take orders
+// and payement , and bartenders make drinks .
+//
 //
 // Main function
 fn main() {}
