@@ -14,3 +14,8 @@ mod front_of_house {
         fn take_payment() {}
     }
 }
+
+// We define a module by starting with the mod keyword and then specify the name of the module (in
+// this case , front_of_house ) and place a curly brackets around the body of the module
+// Inside modules , we can have other modules , as in this case with the modules 'hosting' and
+// 'serving'
