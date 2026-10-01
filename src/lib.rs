@@ -21,3 +21,8 @@ mod front_of_house {
 // 'serving' .
 // Modules can also hold definitions for other items , such as structs , enums , constants , traits.
 // PS : Definition is the logic
+//
+// By using modules , we can group related definitions together and name why they're related .
+// Programmers using this code will have an easier time finding the definitions they wanted to use
+// beacuse they could navigate the code based on the groups rather having to read through all the
+// definitions
