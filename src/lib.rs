@@ -28,3 +28,7 @@ mod front_of_house {
 // definitions.
 // Programmers adding new functionality to this code would know where to place the code to keep the
 // program organized .
+//
+// Earlier , we mentioned that src/main.rs and src/lib.rs are called crate roots .
+// The reason  for their name is that the contents of either of these two files form a module named
+// crate at the root of the crate's module structure , known as the module tree .
