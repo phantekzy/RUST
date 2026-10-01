@@ -36,4 +36,5 @@ mod front_of_house {
 //
 // In our last exemple it shows that some of the modules nest inside one another ( hosting nests
 // inside front_of_house) .
-// The tree also shows that some modules are siblings to each other
+// The tree also shows that some modules are siblings to each other , meaning they're defined in the
+// same module (hosting and serving are defined within front_of_house).
