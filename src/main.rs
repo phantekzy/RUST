@@ -13,6 +13,8 @@
 // others as back of house .
 // Front of house is where customers are ; this is where hosts seat customers , servers take orders
 // and payement , and bartenders make drinks .
+// Back of the house is where the chefs and cooks work in the kitchen , dishwashers clean up , and
+// managers do administrative work .
 //
 //
 // Main function
