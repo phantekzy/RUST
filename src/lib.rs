@@ -40,3 +40,7 @@ mod front_of_house {
 // same module (hosting and serving are defined within front_of_house).
 // To continue the family metaphor , if module A is contained inside module B , we say that module A
 // is the child of module B and that module B is the parent of module A .
+//
+// Notice that the entire module tree is rooter under the implicit module named crate .
+// The module tree might remind us of the filesystem's directory tree on Linux , this is a very apt
+// comparison ! jsust like directories in file system , we can use modules to organize our code .
