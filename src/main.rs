@@ -19,6 +19,10 @@
 // functions into nested modules
 // To create a nez libray named restaurant we run 'cargo new --lib restaurant '
 //
+// Ps: If you have already a project just create the lib.rs manualy , because that methode
+// will create a new src file inside your project .
+//
+//
 //
 // Main function
 fn main() {}
