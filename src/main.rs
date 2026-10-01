@@ -6,6 +6,9 @@
 // Modules let us organizw code within a crate into groups for readability and easy reuse .
 // Modules also control the privacy of items , which is whether an item can be used by outside code
 // (public) or is an internal implementation detail and not available for outside use (private)
+// As an example , let's write a libray crate that provides the functionality of a restautrant .
+// We'll define the signatures of functions but leave their bodies empty to concentrate on the
+// organization of the code , rather than actually implement a resaurant in code .
 //
 // Main function
 fn main() {}
