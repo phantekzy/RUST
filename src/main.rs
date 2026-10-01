@@ -15,6 +15,9 @@
 // and payement , and bartenders make drinks .
 // Back of the house is where the chefs and cooks work in the kitchen , dishwashers clean up , and
 // managers do administrative work .
+// To structure our crate in the same way that a real restaurant works , we can organize the
+// functions into nested modules
+// To create a nez libray named restaurant we run 'cargo new --lib restaurant '
 //
 //
 // Main function
