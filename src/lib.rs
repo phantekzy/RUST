@@ -25,4 +25,6 @@ mod front_of_house {
 // By using modules , we can group related definitions together and name why they're related .
 // Programmers using this code will have an easier time finding the definitions they wanted to use
 // beacuse they could navigate the code based on the groups rather having to read through all the
-// definitions
+// definitions.
+// Programmers adding new functionality to this code would know where to place the code to keep the
+// program organized .
