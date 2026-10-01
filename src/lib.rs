@@ -38,3 +38,5 @@ mod front_of_house {
 // inside front_of_house) .
 // The tree also shows that some modules are siblings to each other , meaning they're defined in the
 // same module (hosting and serving are defined within front_of_house).
+// To continue the family metaphor , if module A is contained inside module B , we say that module A
+// is the child of module B and that module B is the parent of module A .
