@@ -33,3 +33,7 @@ mod front_of_house {
 // The reason  for their name is that the contents of either of these two files form a module named
 // crate at the root of the crate's module structure , known as the module tree .
 //
+//
+// In our last exemple it shows that some of the modules nest inside one another ( hosting nests
+// inside front_of_house) .
+// The tree also shows that some modules are siblings to each other
