@@ -34,3 +34,8 @@ pub fn eat_at_restaurant() {
 // The first time we call the add_to_waitlist function in eat_at_restaurant, we use an absolute path
 // The add_to_waitlist function is defined in the same crate as eat_at_restaurant, whoch means we
 // can use the create keywordto start an absolute path .
+//
+// After crate , we include each of the succesive modules until we make our way to add_to_waitlist .
+// We can imagine a filesystem with the same structure , and we'd specify the path
+// /front_of_house/hosting/add_to_waitlist to run the add_to_waitlist program ; using the crate name
+// to start from the crate root is like using  '/' to start from the filesystem root in our shell .
