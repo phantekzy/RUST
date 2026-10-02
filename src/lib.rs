@@ -31,3 +31,6 @@ pub fn eat_at_restaurant() {
     front_of_house::hosting::add_to_waitlist()
 }
 // Calling the add_to_waitlist function using absolute and relative paths
+// The first time we call the add_to_waitlist function in eat_at_restaurant, we use an absolute path
+// The add_to_waitlist function is defined in the same crate as eat_at_restaurant, whoch means we
+// can use the create keywordto start an absolute path .
