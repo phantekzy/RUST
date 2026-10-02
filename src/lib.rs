@@ -19,8 +19,8 @@
 //
 // Example :
 mod front_of_house {
-    mod hosting {
-        fn add_to_waitlist() {}
+    pub mod hosting {
+        pub fn add_to_waitlist() {}
     }
 }
 
