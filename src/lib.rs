@@ -39,3 +39,9 @@ pub fn eat_at_restaurant() {
 // We can imagine a filesystem with the same structure , and we'd specify the path
 // /front_of_house/hosting/add_to_waitlist to run the add_to_waitlist program ; using the crate name
 // to start from the crate root is like using  '/' to start from the filesystem root in our shell .
+//
+// The second time we call add_to_waitlist in eat_at_restaurant , we use a relative path . the path
+// starts with front_of_house , the name of the module defined at the same level of the module tree
+// as eat_at_restaurant .
+// Here the filesystem equivalent would be using the path front_of_house/hosting/add_to_waitlist.
+//
