@@ -2,3 +2,7 @@
 //
 // To show Rust where to find an item in module tree , we use a path in the same way we use a path
 // when navigating a filesystem .
+// If we want to call  a function , we need to know its path : A path can take two forms :
+// An absolute path starts fron a crate root by using a crate name or a literal crate .
+// A relative path starts from the current module and uses self , super , or an identifier in the
+// current module .
