@@ -14,3 +14,6 @@
 // our ode a bit by removing sone of the modules and functions .
 // I will show two ways to call the add_to_waitlist function from a new function eat_at_restaurant
 // difned in the crate root .
+// The eat_at_restaurant function is part of our library crate's public API , so we mark it with the
+// pub keyword , In Exposing Paths with the pub keyword , we will go into more detail about pub.
+//
