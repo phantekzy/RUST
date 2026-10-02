@@ -43,4 +43,4 @@ mod front_of_house {
 //
 // Notice that the entire module tree is rooter under the implicit module named crate .
 // The module tree might remind us of the filesystem's directory tree on Linux , this is a very apt
-// comparison ! jsust like directories in file system , we can use modules to organize our code .
+// comparison ! just like directories in file system , we can use modules to organize our code .
