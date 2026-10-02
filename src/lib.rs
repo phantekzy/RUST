@@ -6,3 +6,6 @@
 // An absolute path starts fron a crate root by using a crate name or a literal crate .
 // A relative path starts from the current module and uses self , super , or an identifier in the
 // current module .
+//
+// Both absolute and relative paths are followwed by one or more identifiers separated by double
+// colons " :: "
