@@ -9,3 +9,6 @@
 //
 // Both absolute and relative paths are followwed by one or more identifiers separated by double
 // colons " :: "
+//
+// let's Return to our last exemple , How do we call the add_to_waitlist function ? , we simplified
+// our ode a bit by removing sone of the modules and functions .
