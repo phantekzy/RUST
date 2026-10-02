@@ -44,4 +44,8 @@ pub fn eat_at_restaurant() {
 // starts with front_of_house , the name of the module defined at the same level of the module tree
 // as eat_at_restaurant .
 // Here the filesystem equivalent would be using the path front_of_house/hosting/add_to_waitlist.
+// Starting with a name means that the path is relative .
 //
+// Choosing whether to use a relative or absolute path is a decision we will make based on your
+// project . The decision should depend on wheter we are more likely to move item definition code
+// separately from or together with the code that uses the item .
