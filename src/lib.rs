@@ -23,3 +23,7 @@ mod front_of_house {
         fn add_to_waitlist() {}
     }
 }
+
+pub fn eat_at_restaurant() {
+    // absolute Path
+}
