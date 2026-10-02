@@ -49,3 +49,5 @@ pub fn eat_at_restaurant() {
 // Choosing whether to use a relative or absolute path is a decision we will make based on your
 // project . The decision should depend on wheter we are more likely to move item definition code
 // separately from or together with the code that uses the item .
+// For Example , if we move the front_of_house module and the eat_at_restaurant function into a
+// module name customer_experience
