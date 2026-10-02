@@ -50,4 +50,5 @@ pub fn eat_at_restaurant() {
 // project . The decision should depend on wheter we are more likely to move item definition code
 // separately from or together with the code that uses the item .
 // For Example , if we move the front_of_house module and the eat_at_restaurant function into a
-// module name customer_experience
+// module name customer_experience we'd need to update the absolote path to add_to_waitlist , but
+// the relative path would still be valid .
