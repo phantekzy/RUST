@@ -12,3 +12,5 @@
 //
 // let's Return to our last exemple , How do we call the add_to_waitlist function ? , we simplified
 // our ode a bit by removing sone of the modules and functions .
+// I will show two ways to call the add_to_waitlist function from a new function eat_at_restaurant
+// difned in the crate root .
