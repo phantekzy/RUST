@@ -52,3 +52,6 @@ pub fn eat_at_restaurant() {
 // For Example , if we move the front_of_house module and the eat_at_restaurant function into a
 // module name customer_experience we'd need to update the absolote path to add_to_waitlist , but
 // the relative path would still be valid .
+// Howerver , if we moved the eat_at_restaurant function separately into a module named dining , the
+// absolote path to the add_to_waitlist call would stay the same  , but the relative path would need
+// to be updated  .
