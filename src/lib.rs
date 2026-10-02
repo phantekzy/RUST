@@ -17,3 +17,9 @@
 // The eat_at_restaurant function is part of our library crate's public API , so we mark it with the
 // pub keyword , In Exposing Paths with the pub keyword , we will go into more detail about pub.
 //
+// Example :
+mod front_of_house {
+    mod hosting {
+        fn add_to_waitlist() {}
+    }
+}
