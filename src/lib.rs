@@ -30,3 +30,4 @@ pub fn eat_at_restaurant() {
     // Relative path
     front_of_house::hosting::add_to_waitlist()
 }
+// Calling the add_to_waitlist function using absolute and relative paths
