@@ -17,3 +17,8 @@ pub fn eat_at_restaurant() {
 
 // Serveing orders function
 fn serve_order() {}
+
+mod back_of_house {
+    fn fix_incorrect_order() {}
+    fn cook_order() {}
+}
