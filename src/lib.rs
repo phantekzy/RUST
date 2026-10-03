@@ -9,7 +9,8 @@
 mod front_of_house {
     // Declaring the hosting module as pub to use it from eat_at_restaurant
     pub mod hosting {
-        fn add_to_waitlist() {}
+        // let's also make the add_to_waitlist function public by adding the pub keyword
+        pub fn add_to_waitlist() {} // No compiling error !
     }
 }
 
@@ -25,3 +26,4 @@ pub fn eat_at_restaurant() {
 // The pub keyword on a module only lets code in its ancestor modules refer to it .
 // The compiling errors we had say that the add_to_waitlist function is private.
 // The privacy rules apply to structs , enums , fuctions and methods as well as modules .
+//
