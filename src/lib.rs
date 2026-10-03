@@ -24,3 +24,7 @@ pub fn eat_at_restaurant() {
 // Modules aren't useful only for organazing our code . They also define Rust's privacy boundary :
 // The line that encapsulates the implementation details make an item like a function or struct
 // private , we put it in a module .
+// The way privacy works in Rust is that all items (functions , methods , structs , enums and
+// modules , and constants) are private by default . items in parent module can't use the private
+// items inside child modules , but items in child modules can use the items in their ancestor
+// module .
