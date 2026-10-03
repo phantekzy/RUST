@@ -30,3 +30,9 @@ pub fn eat_at_restaurant() {
 // module .
 // The reason is that child modules wrap and hide their implementation details , but the child
 // modules can see the context in whoich they're defined .
+//
+//
+// Rust chose to have the modules system function this way so that hiding inner implementation
+// details is the default . that way , you know which parts of the inner code you can change without
+// breaking outer code . But you can expose inner parts of child modules code to outer ancestor by
+// using the pub keyword to make an item public .
