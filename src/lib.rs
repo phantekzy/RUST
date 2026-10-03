@@ -28,3 +28,5 @@ pub fn eat_at_restaurant() {
 // modules , and constants) are private by default . items in parent module can't use the private
 // items inside child modules , but items in child modules can use the items in their ancestor
 // module .
+// The reason is that child modules wrap and hide their implementation details , but the child
+// modules can see the context in whoich they're defined .
