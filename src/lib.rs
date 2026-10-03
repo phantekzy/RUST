@@ -26,3 +26,9 @@ mod back_of_house {
     }
     fn cook_order() {}
 }
+// The fix_incorrect_order function is in the back_of_house module , so we can use super to go to
+// the parent module of back_of_house , which in this case is crate , the root . From there , we
+// look for serve_order and find it . Success! we think the back_of_house module and the serve_order
+// functions are likely to stay in the same relationship to each other and get moved together should
+// we decide to reorganiwe the crate's module tree . Therefore , we used super so we'll have fewer
+// places to updates code in the furure if this code gets moved to a different module .
