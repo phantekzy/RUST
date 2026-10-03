@@ -7,7 +7,8 @@
 //
 // Example :
 mod front_of_house {
-    mod hosting {
+    // Declaring the hosting module as pub to use it from eat_at_restaurant
+    pub mod hosting {
         fn add_to_waitlist() {}
     }
 }
