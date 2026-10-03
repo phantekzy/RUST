@@ -23,3 +23,5 @@ pub fn eat_at_restaurant() {
 // With this change , if we can access front_of_house , we can access hosting . but the contents of
 // hosting is still private ; making the module public doen't make its contents public .
 // The pub keyword on a module only lets code in its ancestor modules refer to it .
+// The compiling errors we had say that the add_to_waitlist function is private.
+// The privacy rules apply to structs , enums , fuctions and methods as well as modules .
