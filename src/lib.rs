@@ -19,6 +19,10 @@ pub fn eat_at_restaurant() {
 fn serve_order() {}
 
 mod back_of_house {
-    fn fix_incorrect_order() {}
+    fn fix_incorrect_order() {
+        cook_order();
+        super::serve_order();
+        // Calling a function using a relative path starting with super
+    }
     fn cook_order() {}
 }
