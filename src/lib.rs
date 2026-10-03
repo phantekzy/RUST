@@ -8,3 +8,10 @@
 // what's in season and in stock .
 // The available fruit changes quickly , so customers can't choose the fruit or even see which fruit
 // they'll get .
+
+mod back_of_house {
+    pub struct Breakfast {
+        pub toast: String,
+        seasonal_fruit: String,
+    }
+}
