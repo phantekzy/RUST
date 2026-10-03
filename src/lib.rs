@@ -20,3 +20,7 @@ pub fn eat_at_restaurant() {
 // The error messages say that the module hosting is private . in other words, we have the correct
 // paths for the hosting module and the add_to_waitlist function , but Rust won't let us use them
 // because it does't have access to private sections .
+//
+// Modules aren't useful only for organazing our code . They also define Rust's privacy boundary :
+// The line that encapsulates the implementation details make an item like a function or struct
+// private , we put it in a module .
