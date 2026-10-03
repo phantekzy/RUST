@@ -21,4 +21,5 @@ pub fn eat_at_restaurant() {
 }
 // What happend ? Adding the pub keyword in front of mod hosting makes the module public .
 // With this change , if we can access front_of_house , we can access hosting . but the contents of
-// hosting is still private ; making the module public doen;t make its contents public .
+// hosting is still private ; making the module public doen't make its contents public .
+// The pub keyword on a module only lets code in its ancestor modules refer to it .
