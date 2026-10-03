@@ -6,3 +6,5 @@
 // seasonal_fruit field . This models the case in a restaurant where the customer can pick the type
 // of bread that comes with a meal , but the chef decides which fruit accompanies the meal based on
 // what's in season and in stock .
+// The available fruit changes quickly , so customers can't choose the fruit or even see which fruit
+// they'll get .
