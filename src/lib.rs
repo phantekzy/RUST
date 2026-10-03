@@ -23,3 +23,7 @@ mod back_of_house {
         }
     }
 }
+
+pub fn eat_at_restaurant() {
+    // Order a breakfast in the summer with Rye toast
+}
