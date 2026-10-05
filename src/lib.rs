@@ -30,4 +30,7 @@ pub fn eat_at_restaurant() {
     // Change our mind about what bread we'd like
     meal.toast = String::from("Wheat");
     println!("I'd like {} toast please", meal.toast);
+    // The next line won't compile if we uncoment it ; we're not allowd to see or modify
+    // seasonal_fruit that comes with the meal .
+    // meal.seasonal_fruit = String::from("Bananas");
 }
