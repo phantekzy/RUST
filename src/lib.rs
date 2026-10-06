@@ -17,3 +17,8 @@ use crate::front_of_house::hostin; // Bringing a module into scope with use
 pub fn eat_at_restaurant() {
     hostin::add_to_waitlist();
 }
+
+// Adding use and a path in a scope is similar to creating a symbolic link in the filesystem .
+// By adding use crate::front_of_house::hostin in the crate root , hostin is now a valid name in
+// that scope . just as though the hostin module has been defined in the crate root .
+// Paths brought into scope with use also check privacy , like any other paths .
