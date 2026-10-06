@@ -10,4 +10,8 @@ mod back_of_house {
     }
 }
 
-pub fn eat_at_restaurant() {}
+pub fn eat_at_restaurant() {
+    let order1 = back_of_house::Appetizer::Soup;
+    let order2 = back_of_house::Appetizer::Salad;
+}
+// Designating an enum as public makes all its variants public.
