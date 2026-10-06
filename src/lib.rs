@@ -15,3 +15,8 @@ pub fn eat_at_restaurant() {
     let order2 = back_of_house::Appetizer::Salad;
 }
 // Designating an enum as public makes all its variants public.
+//
+// Because we made the Appetizer enum public , we can use the Soup and Salad variants in eat_at_restaurant .
+// Enums aren't very usefull unless their variants are public ; it would be annoying to have to
+// annotate all enums varants with pub in every case , so the default for enums variants is to be
+// public .
