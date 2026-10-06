@@ -20,3 +20,5 @@ pub fn eat_at_restaurant() {
 // Enums aren't very usefull unless their variants are public ; it would be annoying to have to
 // annotate all enums varants with pub in every case , so the default for enums variants is to be
 // public .
+// Structs are ofter useful without their fields being public , so struct fields follow the general
+// rule of everything being private by default unlesss annotated with pub .
