@@ -37,4 +37,6 @@ pub fn eat_at_restaurant() {
     // eat_at_restaurantwe can write and read the toast field using do notaion .
     // Notice that we can't use the seasonal_fruit field in eat_at_restaurant Because
     // seasonal_fruitis private .
+    // Also, Because back_of_house::Breakfast has a private field , the struct needs to provide a
+    // public associated function that constructs an instance of Breakfast (we've named it summer)
 }
