@@ -22,3 +22,5 @@ pub fn eat_at_restaurant() {
 // public .
 // Structs are ofter useful without their fields being public , so struct fields follow the general
 // rule of everything being private by default unlesss annotated with pub .
+// There is one more situation involving pub that we haven't covered , and that is our last module
+// system feature : the use keyword .
