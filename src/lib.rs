@@ -11,3 +11,9 @@ mod front_of_house {
         pub fn add_to_waitlist() {}
     }
 }
+// Using the 'use' Keyword
+use crate::front_of_house::hostin;
+
+pub fn eat_at_restaurant() {
+    hostin::add_to_waitlist();
+}
