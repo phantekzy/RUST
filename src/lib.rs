@@ -20,3 +20,7 @@ mod front_of_house {
 }
 // Brining module into scope with use and a relative path starting with self .
 use self::front_of_house::hostin;
+
+pub fn eat_at_restaurant() {
+    hostin::add_to_waitlist();
+}
