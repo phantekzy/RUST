@@ -35,5 +35,6 @@ pub fn eat_at_restaurant() {
     // meal.seasonal_fruit = String::from("Bananas");
     // Because the toast field in the back_of_house::Breakfast struct is public , in
     // eat_at_restaurantwe can write and read the toast field using do notaion .
-    //
+    // Notice that we can't use the seasonal_fruit field in eat_at_restaurant Because
+    // seasonal_fruitis private .
 }
