@@ -24,3 +24,6 @@ use self::front_of_house::hostin;
 pub fn eat_at_restaurant() {
     hostin::add_to_waitlist();
 }
+
+// Note that using self in this way might not be necessary in the future ; it's an inconsistency in
+// the language that Rust developers are working to eliminate
