@@ -12,7 +12,7 @@ mod front_of_house {
     }
 }
 // Using the 'use' Keyword
-use crate::front_of_house::hostin;
+use crate::front_of_house::hostin; // Bringing a module into scope with use
 
 pub fn eat_at_restaurant() {
     hostin::add_to_waitlist();
