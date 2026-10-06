@@ -33,4 +33,7 @@ pub fn eat_at_restaurant() {
     // The next line won't compile if we uncoment it ; we're not allowd to see or modify
     // seasonal_fruit that comes with the meal .
     // meal.seasonal_fruit = String::from("Bananas");
+    // Because the toast field in the back_of_house::Breakfast struct is public , in
+    // eat_at_restaurantwe can write and read the toast field using do notaion .
+    //
 }
