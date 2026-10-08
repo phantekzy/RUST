@@ -8,6 +8,9 @@ mod front_of_house {
         pub fn add_to_waitlist() {}
     }
 }
+// Bringin HashMap into scope in an idiomatic way
+use std::collections::HashMap;
+
 // Bringing the add_to_waitlist function into scope with use , which is unidiomatic
 use crate::front_of_house::hosting::add_to_waitlist;
 pub fn eat_at_restaurant() {
@@ -23,4 +26,7 @@ pub fn eat_at_restaurant() {
 // to specify the full path .
 //
 // Main function
-fn main() {}
+fn main() {
+    let mut map = HashMap::new();
+    map.insert(1, 2);
+}
