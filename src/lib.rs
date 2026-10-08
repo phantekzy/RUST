@@ -13,3 +13,8 @@ use crate::front_of_house::hosting::add_to_waitlist;
 pub fn eat_at_restaurant() {
     add_to_waitlist();
 }
+// Although both listings accomplish the same task , the first is the adiomatic way to bring a
+// function inso scope with use .
+// Bringing the function's parent module into scope with use so we have to specify the parent module
+// when calling the function makes it clear that the function isn't locally defined while still
+// minimizing repetition of the full path .
