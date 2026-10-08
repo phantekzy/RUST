@@ -18,3 +18,6 @@ pub fn eat_at_restaurant() {
 // Bringing the function's parent module into scope with use so we have to specify the parent module
 // when calling the function makes it clear that the function isn't locally defined while still
 // minimizing repetition of the full path .
+//
+// On the other hand , when Bringing in structs , enums , and other items wuth use , it's idiomatic
+// to specify the full path .
