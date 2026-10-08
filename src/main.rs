@@ -1,28 +1,26 @@
-// Defining Modules to Control Scope and Privacy
-// In this section i will talk about modules and other parts of the module system, namely 'paths'
-// that allow us to name items , the use keyword that brings a path into scope , and the pub keyword
-// to make items public .
-// Modules :
-// Modules let us organizw code within a crate into groups for readability and easy reuse .
-// Modules also control the privacy of items , which is whether an item can be used by outside code
-// (public) or is an internal implementation detail and not available for outside use (private)
-// As an example , let's write a libray crate that provides the functionality of a restautrant .
-// We'll define the signatures of functions but leave their bodies empty to concentrate on the
-// organization of the code , rather than actually implement a resaurant in code .
-// In the restairant industry , some parts of a restaurant are referred to as front of house and
-// others as back of house .
-// Front of house is where customers are ; this is where hosts seat customers , servers take orders
-// and payement , and bartenders make drinks .
-// Back of the house is where the chefs and cooks work in the kitchen , dishwashers clean up , and
-// managers do administrative work .
-// To structure our crate in the same way that a real restaurant works , we can organize the
-// functions into nested modules
-// To create a nez libray named restaurant we run 'cargo new --lib restaurant '
+// Creating Idiomatic use Path
+// If you have wondred why we specified use crate::front_of_house::hosting and thenb called
+// hosting::add_to_waitlist in eat_at_restaurant rather than sepcifying the use path all the way out
+// to the add_to_waitlist function to achieve the same result .
+
+mod front_of_house {
+    pub mod hosting {
+        pub fn add_to_waitlist() {}
+    }
+}
+// Bringing the add_to_waitlist function into scope with use , which is unidiomatic
+use crate::front_of_house::hosting::add_to_waitlist;
+pub fn eat_at_restaurant() {
+    add_to_waitlist();
+}
+// Although both listings accomplish the same task , the first is the adiomatic way to bring a
+// function inso scope with use .
+// Bringing the function's parent module into scope with use so we have to specify the parent module
+// when calling the function makes it clear that the function isn't locally defined while still
+// minimizing repetition of the full path .
 //
-// Ps: If you have already a project just create the lib.rs manualy , because that methode
-// will create a new src file inside your project .
-//
-//
+// On the other hand , when Bringing in structs , enums , and other items wuth use , it's idiomatic
+// to specify the full path .
 //
 // Main function
 fn main() {}
