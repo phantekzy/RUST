@@ -15,6 +15,9 @@ use std::collections::HashMap;
 //
 // The exception in this idiom is if we're bringing two items with the same name into scope with use
 // statement , because Rust doesn't allow that .
+//
+// In this example we will show how to bring two Results types into scope that have the same name
+// but different parent module and how to refer to them .
 
 // Bringing the add_to_waitlist function into scope with use , which is unidiomatic
 use crate::front_of_house::hosting::add_to_waitlist;
