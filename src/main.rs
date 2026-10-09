@@ -10,6 +10,7 @@ mod front_of_house {
 }
 // Bringing fmt and io to scope
 use std::{fmt, io};
+// Bringing two types with the same name into the same scope requires using their parent modules .
 // Bringin HashMap into scope in an idiomatic way
 use std::collections::HashMap;
 // There is no strong reason behind this idiom : it's just a convention that has emerged , and folks
