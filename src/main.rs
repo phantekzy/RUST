@@ -8,6 +8,7 @@ mod front_of_house {
         pub fn add_to_waitlist() {}
     }
 }
+use core::fmt;
 // Bringin HashMap into scope in an idiomatic way
 use std::collections::HashMap;
 // There is no strong reason behind this idiom : it's just a convention that has emerged , and folks
@@ -18,6 +19,10 @@ use std::collections::HashMap;
 //
 // In this example we will show how to bring two Results types into scope that have the same name
 // but different parent module and how to refer to them .
+
+fn function1() -> fmt::Result {
+    // --snip--
+}
 
 // Bringing the add_to_waitlist function into scope with use , which is unidiomatic
 use crate::front_of_house::hosting::add_to_waitlist;
