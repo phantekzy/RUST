@@ -10,6 +10,8 @@ mod front_of_house {
 }
 // Bringin HashMap into scope in an idiomatic way
 use std::collections::HashMap;
+// There is no strong reason behind this idiom : it's just a convention that has emerged , and folks
+// have gotten used to reading and writing Rust code this way
 
 // Bringing the add_to_waitlist function into scope with use , which is unidiomatic
 use crate::front_of_house::hosting::add_to_waitlist;
