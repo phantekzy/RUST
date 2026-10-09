@@ -8,7 +8,8 @@ mod front_of_house {
         pub fn add_to_waitlist() {}
     }
 }
-use core::fmt;
+// Bringing fmt and io to scope
+use std::{fmt, io};
 // Bringin HashMap into scope in an idiomatic way
 use std::collections::HashMap;
 // There is no strong reason behind this idiom : it's just a convention that has emerged , and folks
@@ -21,6 +22,10 @@ use std::collections::HashMap;
 // but different parent module and how to refer to them .
 
 fn function1() -> fmt::Result {
+    // --snip--
+}
+
+fn function2() -> io::Result<()> {
     // --snip--
 }
 
