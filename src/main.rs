@@ -12,6 +12,9 @@ mod front_of_house {
 use std::collections::HashMap;
 // There is no strong reason behind this idiom : it's just a convention that has emerged , and folks
 // have gotten used to reading and writing Rust code this way
+//
+// The exception in this idiom is if we're bringing two items with the same name into scope with use
+// statement , because Rust doesn't allow that .
 
 // Bringing the add_to_waitlist function into scope with use , which is unidiomatic
 use crate::front_of_house::hosting::add_to_waitlist;
