@@ -9,6 +9,10 @@ mod front_of_house {
     }
 }
 // Bringing fmt and io to scope
+// A we can see , using parent modules distinguishes the two Result types
+// If instead we specified use std:fmt::Result and use std::io:Result , we'd have two Result types
+// in the same scope and Rust wouldn't know which one we meant when we used Result
+//
 use std::{fmt, io};
 // Bringing two types with the same name into the same scope requires using their parent modules .
 // Bringin HashMap into scope in an idiomatic way
@@ -21,6 +25,7 @@ use std::collections::HashMap;
 //
 // In this example we will show how to bring two Results types into scope that have the same name
 // but different parent module and how to refer to them .
+//
 
 fn function1() -> fmt::Result {
     // --snip--
