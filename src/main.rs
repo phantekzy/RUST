@@ -20,3 +20,4 @@ fn main() {
 // But we do need to refer to it with use to bring items from there into our package's scope.
 // For example with Hashmap we would use this line :
 // use std::collections::Hashmap ;
+// This is an absolute path starting with std , the name of the standard library crate .
