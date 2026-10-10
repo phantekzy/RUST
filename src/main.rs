@@ -18,7 +18,7 @@ use std::{cmp::Ordering, io}; // Specifying a nested path to bring multiple item
 
 // The common part of these two paths is std::io , and that's the complete first path .
 // To merge these two paths into one statement , we can use self in the nested path :
-use std::io::{self, Write};
+use std::io::{self, Write}; // Combining the paths into one use statemnt 
 // Main function
 //
 fn main() {}
