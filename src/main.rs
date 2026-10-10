@@ -1,6 +1,3 @@
-use Rusting::hosting;
-
+// Using External Packages
 // Main function
-fn main() {
-    hosting::add_to_waitlist();
-}
+fn main() {}
