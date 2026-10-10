@@ -15,8 +15,10 @@ use std::{cmp::Ordering, io}; // Specifying a nested path to bring multiple item
 // statements that share a subpath.
 // For example in this listing it shows two use statements : one that brings std::io into scope and
 // one that brings std::io:Write into scope .
-use std::io;
-use std::io::Write;
+
+// The common part of these two paths is std::io , and that's the complete first path .
+// To merge these two paths into one statement , we can use self in the nested path :
+use std::io::{self, Write};
 // Main function
 //
 fn main() {}
