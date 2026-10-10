@@ -6,8 +6,16 @@
 // bringing an item into scope but also making that item available for others to bring into their
 // scope .
 
+use crate::front_of_house::hosting;
+
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
     }
+}
+
+pub fn eat_at_restaurant() {
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
 }
