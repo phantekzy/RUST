@@ -11,7 +11,12 @@ use std::{cmp::Ordering, io}; // Specifying a nested path to bring multiple item
 // prefix into scope
 // In Bigger programs , bringing many items into scope from the same package or module using nested
 // paths can reduce the number of separate use statements needed by a lot ! .
-
+// We can use a nested path at any level in a path , which is useful when combining two use
+// statements that share a subpath.
+// For example in this listing it shows two use statements : one that brings std::io into scope and
+// one that brings std::io:Write into scope .
+use std::io;
+use std::io::Write;
 // Main function
 //
 fn main() {}
