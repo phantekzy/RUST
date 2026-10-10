@@ -11,5 +11,9 @@ fn function1() -> Result {
 fn function2() -> IoResult<()> {
     // --snip --
 }
+// In the second use statement , we chose the new name IoResult for the std::io::Result type , which
+// won't conflict with the Result from std::fmt that we've also brought into scope
+// Both here are considered idiomatic , so the choice is up to you .
+
 // Main function
 fn main() {}
