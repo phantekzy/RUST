@@ -3,5 +3,7 @@
 // its own line can take up a lot of vertical psace in our files .
 // For example , these two use statements we had in the Guessing Game bring items from std into
 // scope :
+use ::std::io;
+use std::cmp::Ordering;
 // Main function
 fn main() {}
