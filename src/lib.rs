@@ -19,3 +19,6 @@ pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
     hosting::add_to_waitlist();
 }
+
+// By using pub use , external code can now call the add_to_waitlist function using
+// hosting::add_to_waitlist function using hosting::add_to_waitlist
