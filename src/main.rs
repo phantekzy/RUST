@@ -9,6 +9,8 @@
 // a list of the parts of the paths that differ .
 use std::{cmp::Ordering, io}; // Specifying a nested path to bring multiple items with the same
 // prefix into scope
+// In Bigger programs , bringing many items into scope from the same package or module using nested
+// paths can reduce the number of separate use statements needed by a lot ! .
 
 // Main function
 //
