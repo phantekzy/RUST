@@ -7,6 +7,9 @@
 // Instead we can use nested paths to bring the same items into scope in one line . We do this by
 // specifying the common part of the path , followed by two colons , and then curly brackets arround
 // a list of the parts of the paths that differ .
-use std::{cmp::Ordering, io};
+use std::{cmp::Ordering, io}; // Specifying a nested path to bring multiple items with the same
+// prefix into scope
+
 // Main function
+//
 fn main() {}
