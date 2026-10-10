@@ -3,6 +3,8 @@
 // scope with use : after the path , we can specify as and a new local name , or alias , for the
 // type .
 use std::fmt::Result;
+// Renaming a type when it's brought into scope with the as Keyword
+use std::io::Result as IoResult;
 fn function1() -> Result {
     // --snip --
 }
