@@ -13,3 +13,8 @@ use rand::Rng;
 fn main() {
     let secret_number = rand::thread_rng().gen_range(1, 101);
 }
+
+// Note that the standard library (std) is also a crate that's external to our package .
+// Because the standard library is shipped with the Rust langauge , we do not need to change
+// cargo.toml to include std.
+// But we do need to refer to it with use to bring items from there into our package's scope.
