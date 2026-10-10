@@ -1,6 +1,6 @@
-use Rusting::connect;
+use Rusting::hosting;
 
 // Main function
 fn main() {
-    connect();
+    hosting::add_to_waitlist();
 }
