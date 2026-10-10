@@ -1,2 +1,6 @@
+use Rusting::connect;
+
 // Main function
-fn main() {}
+fn main() {
+    connect();
+}
