@@ -25,3 +25,10 @@ pub fn eat_at_restaurant() {
 // If we hadn't specified pub use m the eat_at_restaurant function could call
 // hosting::add_to_waitlist in it's scope , but external code couldn't take advantage of this new
 // path .
+// Re-exporting is usefull when the internal structure of our code is different from how programmers
+// calling your code would think about the domain .
+// For example , in this restaurant metaphor , the people running the restaurant think  about 'fron
+// of house' and 'back of house' . But customers visiting a restaurant probably won't think about
+// the parts of the restaurant in those terms . With pub use , we can write our code with one
+// structure but expose a different structure . Doing so makes our library wll organized for
+// programmers working on the library and programmers calling the library .
