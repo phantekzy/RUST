@@ -5,3 +5,9 @@
 // code's scope , we can combine pub and use . This technique is called Re-exporting because we're
 // bringing an item into scope but also making that item available for others to bring into their
 // scope .
+
+mod front_of_house {
+    pub mod hosting {
+        pub fn add_to_waitlist() {}
+    }
+}
