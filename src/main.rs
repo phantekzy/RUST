@@ -18,3 +18,5 @@ fn main() {
 // Because the standard library is shipped with the Rust langauge , we do not need to change
 // cargo.toml to include std.
 // But we do need to refer to it with use to bring items from there into our package's scope.
+// For example with Hashmap we would use this line :
+// use std::collections::Hashmap ;
