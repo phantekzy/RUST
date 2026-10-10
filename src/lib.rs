@@ -6,8 +6,8 @@
 // bringing an item into scope but also making that item available for others to bring into their
 // scope .
 
-use crate::front_of_house::hosting;
-
+pub use crate::front_of_house::hosting; // Making a name available for any code to use a new scope
+// with pub use .
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
