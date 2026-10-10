@@ -21,4 +21,7 @@ pub fn eat_at_restaurant() {
 }
 
 // By using pub use , external code can now call the add_to_waitlist function using
-// hosting::add_to_waitlist function using hosting::add_to_waitlist
+// hosting::add_to_waitlist function using hosting::add_to_waitlist .
+// If we hadn't specified pub use m the eat_at_restaurant function could call
+// hosting::add_to_waitlist in it's scope , but external code couldn't take advantage of this new
+// path .
