@@ -6,5 +6,10 @@
 // dependencies from crates.io and make rand available to our project .
 // Then , to bring rand definitions into the scope of our Packages , we added a use line starting
 // with the name of the package , rand , and listed the items we wanted to bring into scope .
+
+use rand::Rng;
+
 // Main function
-fn main() {}
+fn main() {
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+}
