@@ -32,3 +32,6 @@ mod database {
         }
     }
 }
+
+// Re-Export : We bring 'connect' up to the front door and make it public
+pub use database::postgres::connect;
