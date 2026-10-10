@@ -22,3 +22,13 @@ pub fn eat_at_restaurant() {
 
 // By using pub use , external code can now call the add_to_waitlist function using
 // hosting::add_to_waitlist function using hosting::add_to_waitlist
+//
+// Testing the public exporting
+// A deeplu hidden internal module
+mod database {
+    pub mod postgres {
+        pub fn connect() {
+            println!("Connected to postgreSQL");
+        }
+    }
+}
