@@ -12,4 +12,7 @@ fn main() {
     // Attempting to add an element to a vector while holding a reference to an item
     v.push(6);
     println!("The first element is : {}", first)
+    // This code triggers a borrow checker error , but this code look like it should work : why
+    // should a reference to the first element care about waht changes at the end of the vector ??
+    //
 }
