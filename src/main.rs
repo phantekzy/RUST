@@ -7,6 +7,7 @@
 // Main function
 fn main() {
     let v = vec![100, 32, 57];
+    // Printing each element in a vector by iterating over the elements using a for loop
     for i in &v {
         println!("{}", i)
     }
