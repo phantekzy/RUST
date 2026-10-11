@@ -25,5 +25,6 @@ fn main() {
     // This method is best used when we want our program to crash if there's an attempt to access an
     // element past the end of the vector .
     // When the get method is passed an index is outside the vector , it returns None without
-    // panicking .
+    // panicking . We would use this method if accessing an element beyound the range of the vector
+    // happens occasionally under normal circumstances .
 }
