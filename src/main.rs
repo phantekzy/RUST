@@ -14,5 +14,7 @@ fn main() {
     println!("The first element is : {}", first)
     // This code triggers a borrow checker error , but this code look like it should work : why
     // should a reference to the first element care about waht changes at the end of the vector ??
-    //
+    // This error is due to the way vectors work  : adding a new element onto the end of the vector
+    // might require allocating new memory and copying the old elements to the new space , if there
+    // isn't enoough room to put all the elements next to each other where the vector currently is.
 }
