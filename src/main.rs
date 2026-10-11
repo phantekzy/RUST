@@ -11,10 +11,17 @@
 // variants will be considered the same type : that of the enum .
 // Then we can create a vector that holds that enums and so
 // #[derive(Debug)]
-enum spreadsheetCell {
+enum SpreadsheetCell {
+    // Defining an enum to store values of different types in one vector
     Int(i32),
     Float(f64),
     Text(String),
 }
 // Main function
-fn main() {}
+fn main() {
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Text(String::from("phantekzy")),
+        SpreadsheetCell::Float(10.12),
+    ];
+}
