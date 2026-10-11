@@ -10,4 +10,7 @@ fn main() {
     // Creating a New Vector :
     // To create a new,empty vector , we can call the vec::new function
     let v: Vec<i32> = Vec::new(); // Creating a new , empty vector to hold values of type i32;
+    // Note that we added a type annotation here . Because we aren't inserting any values into this
+    // vector , Rust doesn't know what kind of elements we intend to store .
+    // This is an important point . Vectors are implemented using generics;
 }
