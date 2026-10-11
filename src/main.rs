@@ -26,4 +26,7 @@ fn main() {
     ];
 }
 // Rust needs to know what types will be in the vector at compile time so it knows exactly how much
-// memory on the heap will be needed to store each element
+// memory on the heap will be needed to store each element.
+// A secondary advantage is that we can be explicit about what types are allowed in this vector .
+// If Rust allowd a vector to hold any type , there would be a change that one or more of the types
+// would cause errors with the operations performed on the elements of the vector .
