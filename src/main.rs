@@ -18,4 +18,6 @@ fn main() {
     // dne refers to does not exist
     let dne = &v[100];
     let dne = v.get(100);
+    // When we run thgis code , the first [] method will cause the program to panic because it
+    // references a nonexistent element .
 }
