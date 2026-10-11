@@ -16,8 +16,10 @@
 fn main() {
     let v = vec![1, 2, 3, 4, 5];
     // dne refers to does not exist
-    let dne = &v[100];
+    // let dne = &v[100];
     let dne = v.get(100);
+    // Printing the results
+    println!("{:?}", dne); // Shows None instead of panicking !
     // When we run thgis code , the first [] method will cause the program to panic because it
     // references a nonexistent element .
     // This method is best used when we want our program to crash if there's an attempt to access an
