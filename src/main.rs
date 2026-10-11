@@ -15,4 +15,8 @@ fn main() {
     // This is an important point . Vectors are implemented using generics;
     // In more realistic code , Rust can often infer the type of value you want tot store once you
     // insert values , so you rarely need to do this type annotation .
+    // It's more common to create a Vec<T> that has initial values , and Rust provides the vec!
+    // macro for convenience .
+    // The macro will create a new vector that holds the values you give it .
+    let y = vec![1, 2, 3];
 }
