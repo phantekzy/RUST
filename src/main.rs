@@ -18,6 +18,6 @@ fn main() {
     // It's more common to create a Vec<T> that has initial values , and Rust provides the vec!
     // macro for convenience .
     // The macro will create a new vector that holds the values you give it .
-    let y = vec![1, 2, 3];
+    let y = vec![1, 2, 3]; // Creating a new vector containing values 
     println!("{:?}", y);
 }
