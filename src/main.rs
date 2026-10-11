@@ -14,3 +14,7 @@ fn main() {
         None => println!("There is no third element"),
     }
 }
+// Note two details here , First , we use the index value of 2 to get the third element : vectors
+// are indexed by number , starting at zero . Second , the two ways to get the third element are by
+// using & and [] , which gives us a reference , or by using the get method with the index passed
+// as an argument , which gives us an Option<&T> .
