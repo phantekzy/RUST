@@ -12,3 +12,5 @@ fn main() {
         println!("{}", i)
     }
 }
+// We can also iterate over mutable references to each element in a mutable vector in order to make
+// change to all the elements
