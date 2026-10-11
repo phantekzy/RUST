@@ -7,5 +7,7 @@
 // an enum !
 // For example , say we want to get values from a row in a spreadsheet in which some of the columns
 // in the row contain integers , some floating point numbers and some strings .
+// We can define an enum whose variants will hold the diferent values types , and then all the enum
+// variants will be considered the same type : that of the enum .
 // Main function
 fn main() {}
