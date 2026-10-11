@@ -12,6 +12,6 @@ fn main() {
     // change to all the elements
     for i in &mut v {
         // Iterating over mutable references to elements in a vector
-        *i += 50
+        *i += 50; // Dereferensing 
     }
 }
