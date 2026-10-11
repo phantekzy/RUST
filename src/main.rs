@@ -8,9 +8,10 @@
 fn main() {
     let v = vec![100, 32, 57];
     // Printing each element in a vector by iterating over the elements using a for loop
-    for i in &v {
-        println!("{}", i)
+    // We can also iterate over mutable references to each element in a mutable vector in order to make
+    // change to all the elements
+    for i in &mut v {
+        // Iterating over mutable references to elements in a vector
+        *i += 50
     }
 }
-// We can also iterate over mutable references to each element in a mutable vector in order to make
-// change to all the elements
