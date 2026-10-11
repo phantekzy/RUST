@@ -12,3 +12,5 @@ fn main() {
     // Print to screen
     println!("{:?}", v);
 }
+// As with any variable  , iif we want to be able to change its value , we need to make it mutable
+// using the mut keyword .
