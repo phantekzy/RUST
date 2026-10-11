@@ -35,4 +35,6 @@ fn main() {
     // When the program has a valid reference , the borrow checker enforces the ownership and
     // borrowing rules to ensure this reference and any other references to the contents of the
     // vector remain valid .
+    // Recall the rule that states you can't have mutable and immutable references in the same
+    // scope.
 }
