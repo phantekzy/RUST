@@ -9,5 +9,6 @@
 // in the row contain integers , some floating point numbers and some strings .
 // We can define an enum whose variants will hold the diferent values types , and then all the enum
 // variants will be considered the same type : that of the enum .
+// Then we can create a vector that holds that enums and so
 // Main function
 fn main() {}
