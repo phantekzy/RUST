@@ -20,3 +20,5 @@ fn main() {
 // as an argument , which gives us an Option<&T> .
 // Rust has two ways to reference an element so we can choose how the program behaves when we try to
 // use an index value that the vector doesn't have an element for .
+// Let's see what a program will do if it has a vector that holds five elements and then tries to
+// access an element at index 100 :
