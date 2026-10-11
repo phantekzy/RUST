@@ -19,4 +19,5 @@ fn main() {
     // macro for convenience .
     // The macro will create a new vector that holds the values you give it .
     let y = vec![1, 2, 3];
+    println!("{:?}", y);
 }
