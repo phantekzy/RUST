@@ -28,4 +28,7 @@ fn main() {
     // panicking . We would use this method if accessing an element beyound the range of the vector
     // happens occasionally under normal circumstances .
     // Our code  will then have logicto handle having either Some(&element) or None.
+    // For example , the index could be comming from a person entering a number . if they accidently
+    // enter a number that's too large and the program gets a None value , we could tell the user
+    // how many items are in the current vector and give them another chance to enter a valid value
 }
