@@ -32,4 +32,7 @@ fn main() {
     // enter a number that's too large and the program gets a None value , we could tell the user
     // how many items are in the current vector and give them another chance to enter a valid value.
     // That would be more user-friendly than crashing the program due to a type !
+    // When the program has a valid reference , the borrow checker enforces the ownership and
+    // borrowing rules to ensure this reference and any other references to the contents of the
+    // vector remain valid .
 }
