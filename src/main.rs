@@ -9,5 +9,5 @@
 fn main() {
     // Creating a New Vector :
     // To create a new,empty vector , we can call the vec::new function
-    let v: Vec<i32> = Vec::new();
+    let v: Vec<i32> = Vec::new(); // Creating a new , empty vector to hold values of type i32;
 }
