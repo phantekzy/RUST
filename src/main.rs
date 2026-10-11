@@ -25,3 +25,5 @@ fn main() {
         SpreadsheetCell::Float(10.12),
     ];
 }
+// Rust needs to know what types will be in the vector at compile time so it knows exactly how much
+// memory on the heap will be needed to store each element
