@@ -16,4 +16,6 @@ fn main() {
     // This error is due to the way vectors work  : adding a new element onto the end of the vector
     // might require allocating new memory and copying the old elements to the new space , if there
     // isn't enoough room to put all the elements next to each other where the vector currently is.
+    // In that case , the referebce to the first element would be pointing to dellocated memory .
+    // The borrowing rules prevent programs from ending up in this situation .
 }
