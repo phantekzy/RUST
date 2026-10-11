@@ -1,16 +1,5 @@
 // COMMON COLLECTIONS
-// Updating a Vector
-// To create a vector then add elements to it , we can use the push method :
-// Main function
-fn main() {
-    let mut v = Vec::new();
-    // Using the push method to add values to a vector
-    v.push(5);
-    v.push(6);
-    v.push(9);
-    v.push(1);
-    // Print to screen
-    println!("{:?}", v);
-}
+// Dropping a Vector Drops its Elements
+fn main() {}
 // As with any variable  , iif we want to be able to change its value , we need to make it mutable
 // using the mut keyword .
