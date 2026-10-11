@@ -27,4 +27,5 @@ fn main() {
     // When the get method is passed an index is outside the vector , it returns None without
     // panicking . We would use this method if accessing an element beyound the range of the vector
     // happens occasionally under normal circumstances .
+    // Our code  will then have logicto handle having either Some(&element) or None.
 }
