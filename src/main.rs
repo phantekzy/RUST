@@ -20,4 +20,6 @@ fn main() {
     // The macro will create a new vector that holds the values you give it .
     let y = vec![1, 2, 3]; // Creating a new vector containing values 
     println!("{:?}", y);
+    // Because we've given initials i32 values , Rust can infer that the type of y is Vec<i32> , and
+    // type annotation isn't necessary.
 }
