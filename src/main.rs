@@ -18,3 +18,5 @@ fn main() {
 // are indexed by number , starting at zero . Second , the two ways to get the third element are by
 // using & and [] , which gives us a reference , or by using the get method with the index passed
 // as an argument , which gives us an Option<&T> .
+// Rust has two ways to reference an element so we can choose how the program behaves when we try to
+// use an index value that the vector doesn't have an element for .
