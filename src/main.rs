@@ -13,4 +13,6 @@ fn main() {
     // Note that we added a type annotation here . Because we aren't inserting any values into this
     // vector , Rust doesn't know what kind of elements we intend to store .
     // This is an important point . Vectors are implemented using generics;
+    // In more realistic code , Rust can often infer the type of value you want tot store once you
+    // insert values , so you rarely need to do this type annotation .
 }
