@@ -14,4 +14,6 @@ fn main() {
         // Iterating over mutable references to elements in a vector
         *i += 50; // Dereferensing 
     }
+    // To change the value that the mutable reference refers to, we have to use the dereference
+    // operator (*) to get to the value in i before we can use the += operator .
 }
