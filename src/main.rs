@@ -10,5 +10,11 @@
 // We can define an enum whose variants will hold the diferent values types , and then all the enum
 // variants will be considered the same type : that of the enum .
 // Then we can create a vector that holds that enums and so
+// #[derive(Debug)]
+enum spreadsheetCell {
+    Int(i32),
+    Float(f64),
+    Text(String),
+}
 // Main function
 fn main() {}
