@@ -22,4 +22,6 @@ fn main() {
     // references a nonexistent element .
     // This method is best used when we want our program to crash if there's an attempt to access an
     // element past the end of the vector .
+    // When the get method is passed an index is outside the vector , it returns None without
+    // panicking .
 }
