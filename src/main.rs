@@ -16,5 +16,6 @@
 // CString , and CStr. Library crates can provide even more ooptions for storing string data . see
 // how those names all end in String or Str? They refer to owned and borrowed variants , just like
 // the String and or Str.
+// This string types can store text in different encodings or be represnted in memory in a diff way.
 // Main function
 fn main() {}
