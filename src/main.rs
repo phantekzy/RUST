@@ -36,5 +36,9 @@ fn main() {
     // This code creates a string containing initial contents.
     // We can also use the function String::from to create a String from a string literal .
     let sl = String::from("initial contents"); // Using the String::from function to create a String
-    // from a string literal
+    // from a string literal.
+    // Because strings are used for so many things , we can use many different genericv APIs for
+    // strings , providing us with a lot of options . Some of them can seem redundant,but they all
+    // have their place ! In this case , String::from and to_string do the same thing , so which we
+    // choose is a matter of style .
 }
