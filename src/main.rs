@@ -5,5 +5,7 @@
 // propensity for exposing possible errors , strings being a more complicated data structurethan
 // many programmers give them credit for , and UTF-8 . These factors combine in a way that seem
 // difficult when we are comming from other programming languages .
+// It's useful to discuss strings in the context of collections because strings are implemented as a
+// collection of bytes .
 // Main function
 fn main() {}
