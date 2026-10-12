@@ -17,5 +17,11 @@
 // how those names all end in String or Str? They refer to owned and borrowed variants , just like
 // the String and or Str.
 // This string types can store text in different encodings or be represnted in memory in a diff way.
+//
 // Main function
-fn main() {}
+fn main() {
+    // Creating a New String
+    // Many of the same operations available with Vec<T> are available with String as well, starting
+    // with the new function to create a string :
+    let mut s = String::new();
+}
