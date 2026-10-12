@@ -23,4 +23,6 @@ fn main() {
     // here turns &s2 into &s2[..] . we'll talk about deref coercion later .
     // Because add does not take ownership of the s parameter , s2 will still be a valid String
     // after this operation.
+    // Second we can see the signature that add takes ownership of self , because self does not have
+    // an &. This means s1 will me moved into add call and no longer be valid after that.
 }
