@@ -1,15 +1,5 @@
 // COMMON COLLECTIONS
 // Updating a String
-// A String can grow in size and its contents can change , just like the contents of a Vec<T> , if
-// we push more data into it .
-// In addition , we can convenently use the + operator for the format! macro to concatenate String
-// values .
-//
-
+// Concatenation with the + Operator or the format! Macro
 // Main function
-fn main() {
-    // The push method takes a single character as a parameter and adds it to the String  :
-    let mut s = String::from("lotf");
-    s.push('i'); // Adding one character to a String value using push .
-    println!("{}", s);
-}
+fn main() {}
