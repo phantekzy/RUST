@@ -32,3 +32,6 @@ fn main() {
 // would cause errors with the operations performed on the elements of the vector .
 // Using an enum plus a match expression means that Rust will ensure at compile time that every
 // possible case is handled .
+// When we're writing a program , if we don't know the exhaustive set of types the program will get
+// at runtime to store in a vector , the enum techniaue won't work . Instead, we can ue a trait
+// object .
