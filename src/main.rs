@@ -17,5 +17,10 @@ fn main() {
     // S2 has an &, meaaning that we're adding a refernece of the second string to the first string
     // because of the s parameter in the add function : we can only add a &str to a String ; we
     // can't add two String valuees together . but wait the type of &s2 is &String ,not &str , as
-    // specified in the second parameter to add
+    // specified in the second parameter to add .
+    // The reason we're able to use &s2 in the call to add is that the compiler can "coerce" the
+    // &String argument into a &str. When we call the add method, Rust uses a deref coercion, which
+    // here turns &s2 into &s2[..] . we'll talk about deref coercion later .
+    // Because add does not take ownership of the s parameter , s2 will still be a valid String
+    // after this operation.
 }
