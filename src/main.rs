@@ -10,5 +10,5 @@
 fn main() {
     // The push method takes a single character as a parameter and adds it to the String  :
     let mut s = String::from("lotf");
-    s.push('i');
+    s.push('i'); // Adding one character to a String value using push .
 }
