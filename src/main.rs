@@ -17,6 +17,8 @@ fn main() {
     // its contents to s1 .
     let mut s1 = String::from("foo"); // Rust allocates space on the heap , copies the letters "foo"
     // into it , and assigns it to s1 .
+    // Because we used let mut . we are explicitly telling Rust : "i am going to modify this string
+    // later :" s1 owns this data .
     let s2 = "bar";
     s1.push_str(s2);
     println!("s2 is {}", s2);
