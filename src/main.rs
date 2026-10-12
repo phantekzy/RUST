@@ -26,4 +26,6 @@ fn main() {
     let mut s = String::new(); // Creating a new , empty string 
     // This line creates a new , empty string called s , which we can then load data to it .
     // Often , we'll have some initial data that we want to start the string with .
+    // For that , we use the to_string method, which is available on any type that implements the
+    // Display trait , as string literals do :
 }
