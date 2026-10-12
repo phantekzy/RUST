@@ -23,9 +23,11 @@ fn main() {
     // Creating a New String
     // Many of the same operations available with Vec<T> are available with String as well, starting
     // with the new function to create a string :
-    let mut s = String::new(); // Creating a new , empty string 
     // This line creates a new , empty string called s , which we can then load data to it .
     // Often , we'll have some initial data that we want to start the string with .
     // For that , we use the to_string method, which is available on any type that implements the
     // Display trait , as string literals do :
+    let data = "initial contents";
+    let s = data.to_string();
+    println!("{}", s)
 }
