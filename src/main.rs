@@ -14,4 +14,6 @@ fn main() {
     // signature of the method that gets called when we use the + operator .
     // The + operator uses the add method , whose signature looks like this :
     // fn add(self, s: &str) -> String {}
+    // S2 has an &, meaaning that we're adding a refernece of the second string to the first string
+    // because of the s parameter in the add function : we can only add a &str to a String ;
 }
