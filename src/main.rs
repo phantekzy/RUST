@@ -12,5 +12,9 @@
 // &str types , not just one of those types . Although i will talk largely about Strings , both
 // types are used heavily in Rust's standard library , and both String and string slices are UTF-8
 // encoded .
+// Rust's standard library also includes a number of other string types , such as OsString , OsStr ,
+// CString , and CStr. Library crates can provide even more ooptions for storing string data . see
+// how those names all end in String or Str? They refer to owned and borrowed variants , just like
+// the String and or Str.
 // Main function
 fn main() {}
