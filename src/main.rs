@@ -11,4 +11,7 @@ fn main() {
     let s3 = String::from("toe");
     let s = s1 + "-" + &s2 + "-" + &s3;
     println!("{}", s);
+    // at this point , s will be "tic-tac-toe" . With all of the + and " characters, it's difficult
+    // to see what's going on .
+    // For more complicated string combining , we can use the format! macro :
 }
