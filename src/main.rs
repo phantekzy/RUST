@@ -25,4 +25,8 @@ fn main() {
     // after this operation.
     // Second we can see the signature that add takes ownership of self , because self does not have
     // an &. This means s1 will me moved into add call and no longer be valid after that.
+    // So although let s3 = s1+&s2; looks like it will copy both strings and create a new one , this
+    // statement actualy takes ownership of s1 , appends a copy of the contents of s2 , and then
+    // returns ownership of the result . In other words , it looks like it's making a lot of copies
+    // but isn't ; the implementation is more efficient than copying .
 }
