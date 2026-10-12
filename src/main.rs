@@ -11,5 +11,6 @@ fn main() {
     // Appending to a String with push_str and push :
     // We can grow a String by using the push_str mehtod to append a string slice :
     let mut s = String::from("foo");
+    // Appending a string slice to a String using the push_str method
     s.push_str("bar");
 }
