@@ -6,12 +6,12 @@ use std::fmt::Debug;
 // Main function
 fn main() {
     // If we need to concatenate multiple strings , the behavior of the + operator gets unwidldy :
-    let s1 = String::from("tic");
-    let s2 = String::from("tac");
-    let s3 = String::from("toe");
-    let s = s1 + "-" + &s2 + "-" + &s3;
-    println!("{}", s);
     // at this point , s will be "tic-tac-toe" . With all of the + and " characters, it's difficult
     // to see what's going on .
     // For more complicated string combining , we can use the format! macro :
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+    let s = format!("{}-{}-{}", s1, s2, s3);
+    println!("{}", s);
 }
