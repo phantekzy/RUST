@@ -13,4 +13,8 @@ fn main() {
     let mut s = String::from("foo");
     // Appending a string slice to a String using the push_str method
     s.push_str("bar");
+    // After these two lines , s will contain "foobar" . The push_str method takes a string slice
+    // because we don't necessarily want tot take ownership of the parameter.
+    // In this code shows that it would be unfortunate if we weren't avle to use s2 after appending
+    // its contents to s1 .
 }
