@@ -9,6 +9,8 @@
 // The String type , which is provided by Rust's standard library rather than coded into the core
 // language , is a growable , mutable , own , UTF-8 encoded string type .
 // When Rustaceans refer to "strings" in Rust , they usualy mean the String and the string slice
-// &str types , not just one of those types .
+// &str types , not just one of those types . Although i will talk largely about Strings , both
+// types are used heavily in Rust's standard library , and both String and string slices are UTF-8
+// encoded .
 // Main function
 fn main() {}
