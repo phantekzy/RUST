@@ -30,3 +30,5 @@ fn main() {
 // A secondary advantage is that we can be explicit about what types are allowed in this vector .
 // If Rust allowd a vector to hold any type , there would be a change that one or more of the types
 // would cause errors with the operations performed on the elements of the vector .
+// Using an enum plus a match expression means that Rust will ensure at compile time that every
+// possible case is handled .
