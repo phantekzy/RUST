@@ -19,7 +19,10 @@ fn main() {
     // into it , and assigns it to s1 .
     // Because we used let mut . we are explicitly telling Rust : "i am going to modify this string
     // later :" s1 owns this data .
-    let s2 = "bar";
+    let s2 = "bar"; // Creating a string slice "hard coded"
+    // Rust creates a string literal "&str" pointing to the text "bar" baked directly into the
+    // program's binary file .
+    // s2 is just a lightweight view/pointer . it doesn't own a heap buffer . it just looks at text.
     s1.push_str(s2);
     println!("s2 is {}", s2);
 }
