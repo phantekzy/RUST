@@ -10,11 +10,14 @@
 fn main() {
     // Appending to a String with push_str and push :
     // We can grow a String by using the push_str mehtod to append a string slice :
-    let mut s = String::from("foo");
     // Appending a string slice to a String using the push_str method
-    s.push_str("bar");
     // After these two lines , s will contain "foobar" . The push_str method takes a string slice
     // because we don't necessarily want tot take ownership of the parameter.
     // In this code shows that it would be unfortunate if we weren't avle to use s2 after appending
     // its contents to s1 .
+    let mut s1 = String::from("foo"); // Rust allocates space on the heap , copies the letters "foo"
+    // into it , and assigns it to s1 .
+    let s2 = "bar";
+    s1.push_str(s2);
+    println!("s2 is {}", s2);
 }
