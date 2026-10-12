@@ -28,6 +28,7 @@ fn main() {
     // For that , we use the to_string method, which is available on any type that implements the
     // Display trait , as string literals do :
     let data = "initial contents";
+    // Using the to_string method to create a string from a string literal
     let _s = data.to_string();
     // The method also works on a literal directly :
     let s = "initial contents".to_string();
