@@ -35,5 +35,6 @@ fn main() {
     println!("{}", s);
     // This code creates a string containing initial contents.
     // We can also use the function String::from to create a String from a string literal .
-    let sl = String::from("initial contents");
+    let sl = String::from("initial contents"); // Using the String::from function to create a String
+    // from a string literal
 }
