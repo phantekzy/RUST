@@ -14,4 +14,8 @@ fn main() {
     let s3 = String::from("toe");
     let s = format!("{}-{}-{}", s1, s2, s3);
     println!("{}", s);
+    // this code also sets s to "tic-tac-toe". The format! macro works in the same way as println!(""),
+    // but instead of printing the output to the screen it retruns a String with the contents.
+    // The version of the code using format! is much easier to read and doesnt take ownership of any
+    // of its parameters
 }
