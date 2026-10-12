@@ -8,5 +8,9 @@
 // It's useful to discuss strings in the context of collections because strings are implemented as a
 // collection of bytes, plus some methodes to provide usefull functionality when those bytes are
 // interpreted as text .
+// We will talk about operations on String that every collection type has , such as creating ,
+// updating , and reading . we'll also discuss the ways in which String is different from the other
+// collections , namely how indexing into a String is complicated by the differences between how
+// people and computers interpret String data .
 // Main function
 fn main() {}
