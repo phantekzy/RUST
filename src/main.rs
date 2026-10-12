@@ -24,5 +24,8 @@ fn main() {
     // program's binary file .
     // s2 is just a lightweight view/pointer . it doesn't own a heap buffer . it just looks at text.
     s1.push_str(s2); // Appending without Stealing 
+    // Rust reads the letter from s2"b,a,r" and copies them onto the end of s1's
+    // heap memory . now s1 holds "foobar"
+    // "push_str" it acepts a borrowed string slice "&str" not ownership of the string .
     println!("s2 is {}", s2);
 }
