@@ -32,5 +32,8 @@ fn main() {
     let _s = data.to_string();
     // The method also works on a literal directly :
     let s = "initial contents".to_string();
-    println!("{}", s)
+    println!("{}", s);
+    // This code creates a string containing initial contents.
+    // We can also use the function String::from to create a String from a string literal .
+    let sl = String::from("initial contents");
 }
