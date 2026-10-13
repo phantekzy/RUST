@@ -5,4 +5,7 @@
 // However, if you try to access parts of a String using indexing syntax in Rust, we we'll get an
 // error
 // Main function
-fn main() {}
+fn main() {
+    let s1 = String::from("hello");
+    let h = s1[0]; // We get an error !
+}
