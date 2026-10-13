@@ -17,4 +17,6 @@
 // operations are expected to alwaus take constant time (0(1)). But isn't possible to guarantee that
 // performance with a String, because Rust would have to walk through the contents from the
 // beginning to the index to determine how many valid characters there were .
+//
+// REVIEW THIS PART I WAS SO SLEEPY TO UNDERSTANT THIS CHAPTER
 fn main() {}
