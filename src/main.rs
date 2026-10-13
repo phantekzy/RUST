@@ -7,4 +7,7 @@
 // That's 18 bytes and is how computers ultimately store this data . If we look at tthem as Unicode
 // scalar values , which are Rust's char type is it would look letter by letter
 // Unicode scalar values = char type .
+// And in this example there are six char vallues here , but the fourth and sixth are not letters :
+// they're diacritics that don't make sense on their own . Finally, if we look at them as grapheme
+// clusters , we'd get what a person would call the four letters that make up the Hindi word .
 fn main() {}
