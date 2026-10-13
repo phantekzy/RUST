@@ -8,4 +8,5 @@
 fn main() {
     let s1 = String::from("hello");
     let h = s1[0]; // We get an error !
+    // The error and the note tell the story : Rust strings don't support indexing .
 }
