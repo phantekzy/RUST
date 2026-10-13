@@ -14,4 +14,5 @@ fn main() {
     // scalar value .
     let hello = "你好";
     let answer = &hello[0];
+    println!("{}", answer);
 }
