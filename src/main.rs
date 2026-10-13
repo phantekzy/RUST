@@ -14,5 +14,7 @@
 // each program can choose the interpretation it needds , no matter what human language the data is
 // in .
 // A final reason Rust doesn't allow us to index into a String to get a character is that indexing
-// operations are expected to alwaus take constant time (0(1)).
+// operations are expected to alwaus take constant time (0(1)). But isn't possible to guarantee that
+// performance with a String, because Rust would have to walk through the contents from the
+// beginning to the index to determine how many valid characters there were .
 fn main() {}
