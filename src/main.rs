@@ -12,4 +12,6 @@ fn main() {
     // 6 : That's the number of bytes it takes to encode 你好 in UTF-8, because each Unicode scalar value in that string takes 3 bytes of storage .
     // Therefore , an index into the string's  byte will not always correlate to a valid Unicode
     // scalar value .
+    let hello = "你好";
+    let answer = &hello[0];
 }
