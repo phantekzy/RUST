@@ -18,5 +18,4 @@
 // performance with a String, because Rust would have to walk through the contents from the
 // beginning to the index to determine how many valid characters there were .
 //
-// REVIEW THIS PART I WAS SO SLEEPY TO UNDERSTANT THIS CHAPTER
 fn main() {}
