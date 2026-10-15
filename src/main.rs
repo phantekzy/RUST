@@ -7,7 +7,12 @@
 //
 // Main function
 fn main() {
+    // Chars methode :
     for c in "नमस्ते".chars() {
         println!("{}", c);
+    }
+    // Bytes methode :
+    for b in "नमस्ते".bytes() {
+        println!("{}", b);
     }
 }
