@@ -13,4 +13,6 @@ fn main() {
     let hello = "hello";
     let s = &hello[0..3];
     println!("{}", s);
+    // Here , will be a &str that contains the first 3 bytes of the string , Earlier we mentioned t
+    // hat each of there characters was 2 bytes , or 1 if its english etc
 }
