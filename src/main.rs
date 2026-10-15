@@ -9,4 +9,8 @@
 // indexing using [] with a single number m you can use [] with a range to create a string slice
 // containing particular bytes :
 // Main function
-fn main() {}
+fn main() {
+    let hello = "hello";
+    let s = &hello[0..3];
+    println!("{}", s);
+}
