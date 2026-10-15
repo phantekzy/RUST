@@ -15,4 +15,7 @@ fn main() {
     for b in "नमस्ते".bytes() {
         println!("{}", b);
     }
+    // But be sure to remember that valid Unicde scalar values may be made up of more than 1 byte
+    // Getting a graphame clusters from strings is complex , so this functionaliyu is not provided
+    // by the standard library
 }
