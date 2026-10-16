@@ -13,4 +13,6 @@ fn main() {
     // Accessing the score for the Fc Barcelona team stored on the HashMap
     let score = scores.get(&team_name);
     println!("{:?}", score);
+    // Here , score will have the value that's associated with the blue team, and the result will be
+    // Some(4);
 }
