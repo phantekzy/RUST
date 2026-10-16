@@ -19,9 +19,9 @@ use std::collections::HashMap;
 // Main function
 fn main() {
     // Another way of constructing a hash map is by using the collect method on a vector of tuples ,
-    // where each tuple consists of a key and its value . the collect method gathers data  into a
+    // where each tuple consists of a key and its value . the collect method gathers data into a
     // number of colection types , including HashMap . For example : if we had the team names and
-    // initial scores in two separate vectors , we could use t he zip method to create a vector of
+    // initial scores in two separate vectors , we could use the zip method to create a vector of
     // tuples where "blue" is paired with 10 , and so forth . Then we can use the collect method to
     // turn that vector of tuples into a hash map .
 }
