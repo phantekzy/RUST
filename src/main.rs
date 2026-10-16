@@ -10,6 +10,7 @@ fn main() {
     scores.insert(String::from("Real Madrid CF"), 2);
 
     let team_name = String::from("FC Barcelona");
+    // Accessing the score for the Fc Barcelona team stored on the HashMap
     let score = scores.get(&team_name);
     println!("{:?}", score);
 }
