@@ -3,13 +3,6 @@
 version = 4
 
 [[package]]
-name = "Rusting"
-version = "0.1.0"
-dependencies = [
- "rand",
-]
-
-[[package]]
 name = "bitflags"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -63,6 +56,13 @@ name = "rand_core"
 version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0e5937858e6fd18cd595d558f90bb5de3b72ae23f9e3763af0e805949b04ef60"
+
+[[package]]
+name = "rusting"
+version = "0.1.0"
+dependencies = [
+ "rand",
+]
 
 [[package]]
 name = "winapi"

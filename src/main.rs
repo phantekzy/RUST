@@ -11,4 +11,5 @@ fn main() {
     let field_value = String::from("Blue");
 
     let mut map = HashMap::new();
+    map.insert(filed_name, field_value);
 }
