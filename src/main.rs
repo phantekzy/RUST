@@ -25,4 +25,7 @@ fn main() {
     // Inserting some keys and values
     scores.insert(String::from("Blue"), 10);
     scores.insert(String::from("Green"), 50);
+    // Note that we need to first use the hachmap from the collections portion of the standard
+    // library . Of our three  common collections ,this is the least often used , so it's not
+    // inclueded in the features brought into scope automatically in the prelude .
 }
