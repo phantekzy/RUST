@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 // COMMON COLLECTIONS
 // Updating a Hash Map :
 // Although the number of keys and values is growable , each key can only have one value associated
@@ -11,4 +13,11 @@
 // Even though the code in the last example calls insert twice , the hash map will only contain one
 // key/value pair because we're inserting the value for the Blue team's key both times .
 // Main function
-fn main() {}
+fn main() {
+    let mut scores = HashMap::new();
+
+    scores.insert(String::from("Blue"), 10);
+    // Replacing a value stored with a particular key
+    scores.insert(String::from("Blue"), 24);
+    println!("{:?}", scores);
+}
