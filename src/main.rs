@@ -12,6 +12,11 @@ use std::collections::HashMap;
 // , the value associated with that key will be replaced .
 // Even though the code in the last example calls insert twice , the hash map will only contain one
 // key/value pair because we're inserting the value for the Blue team's key both times .
+//
+// Only Inserting a Value If the key has No value :
+// It's commom to check whether a particular key has a value and , if it doesn't ,insert a value for
+// it . Hash Maps have a special API for this called entry that takes the key we want to check as a
+// parameter .
 // Main function
 fn main() {
     let mut scores = HashMap::new();
