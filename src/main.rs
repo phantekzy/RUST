@@ -12,4 +12,5 @@ fn main() {
 
     let mut map = HashMap::new();
     map.insert(filed_name, field_value);
+    // filed_name and field_value are invalid at this point !
 }
