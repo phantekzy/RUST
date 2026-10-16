@@ -20,4 +20,5 @@ fn main() {
     // Replacing a value stored with a particular key
     scores.insert(String::from("Blue"), 24);
     println!("{:?}", scores);
+    // This code will print {"Blue : 24"}. The original value of 10 has been overwritten .
 }
