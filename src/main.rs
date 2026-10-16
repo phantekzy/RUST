@@ -8,4 +8,8 @@ fn main() {
     let mut scores = HashMap::new();
     scores.insert(String::from("FC Barcelona"), 4);
     scores.insert(String::from("Real Madrid CF"), 2);
+
+    let team_name = String::from("FC Barcelona");
+    let score = scores.get(&team_name);
+    println!("{:?}", score);
 }
