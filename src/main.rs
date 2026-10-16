@@ -25,8 +25,8 @@ fn main() {
     let mut scores = HashMap::new();
 
     scores.insert(String::from("Blue"), 10);
-    // Replacing a value stored with a particular key
-    scores.insert(String::from("Blue"), 24);
+    // Using the Entry method to only insert if the key does not already have a value
+    scores.entry(String::from("Yellow")).or_insert(50);
+    scores.entry(String::from("Blue")).or_insert(50);
     println!("{:?}", scores);
-    // This code will print {"Blue : 24"}. The original value of 10 has been overwritten .
 }
