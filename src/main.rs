@@ -11,5 +11,7 @@
 // For example , in a game , we could keep track of each team's score in a hash map in which each
 // key is a team's name and the values are each team's score ,
 // Given a team name , we can retrieve its score .
+// We'll go over the basic API of hash maps in this section , but many more goodies are hiding in
+// the functions defined on HashMap<K,V> by the standard library.
 // Main function
 fn main() {}
