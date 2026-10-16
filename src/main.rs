@@ -18,25 +18,10 @@ use std::collections::HashMap;
 //
 // Main function
 fn main() {
-    // Creating a New Hash map
-    // We can create an empty hash map with new and add element with insert .
-    // Creating a new Hash map
-    let mut scores = HashMap::new();
-    // Inserting some keys and values
-    scores.insert(String::from("Blue"), 10);
-    scores.insert(String::from("Green"), 50);
-    // Note that we need to first use the hachmap from the collections portion of the standard
-    // library . Of our three  common collections ,this is the least often used , so it's not
-    // inclueded in the features brought into scope automatically in the prelude .
-    // Hash maps also have less support from the standard library ; there's no built in macro to
-    // construct htem , for exmaple .
-    // Just like vectors , hash maps store their data on the heap . This HashMap has keys of type
-    // String and values of type i32 . Like vectors , hash maps are homogeneous : all the keys must
-    // have the same type , and all of the values must have the same type .
     // Another way of constructing a hash map is by using the collect method on a vector of tuples ,
     // where each tuple consists of a key and its value . the collect method gathers data  into a
     // number of colection types , including HashMap . For example : if we had the team names and
     // initial scores in two separate vectors , we could use t he zip method to create a vector of
     // tuples where "blue" is paired with 10 , and so forth . Then we can use the collect method to
-    // turn that  vector of tuples into a hash map .
+    // turn that vector of tuples into a hash map .
 }
