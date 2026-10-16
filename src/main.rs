@@ -14,5 +14,6 @@ fn main() {
     let score = scores.get(&team_name);
     println!("{:?}", score);
     // Here , score will have the value that's associated with the blue team, and the result will be
-    // Some(4);
+    // Some(4); The result is wrapped in Some because get returns Option<&V>; if there's no value
+    // for that key in the map , get will return None .
 }
