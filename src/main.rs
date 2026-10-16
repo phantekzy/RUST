@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 // COMMON COLLECTIONS
 // Storing Keys with Associated Values in Hash maps
 // The last of our common collections is the hash map. The Type HashMap<k , v> stores a mapping of
@@ -17,4 +19,8 @@
 // Main function
 fn main() {
     // Creating a New Hash map
+    // We can create an empty hash map with new and add element with insert .
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Green"), 50);
 }
