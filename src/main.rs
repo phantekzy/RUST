@@ -24,6 +24,7 @@ fn main() {
     // initial scores in two separate vectors , we could use the zip method to create a vector of
     // tuples where "blue" is paired with 10 , and so forth . Then we can use the collect method to
     // turn that vector of tuples into a hash map .
+    // Creating a hash map from a list of teams and a list of scores .
     let teams = vec![String::from("blue"), String::from("Green")];
     let initial_scores = vec![10, 50];
     let scores: HashMap<_, _> = teams.iter().zip(initial_scores.iter()).collect();
