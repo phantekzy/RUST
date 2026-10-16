@@ -5,5 +5,10 @@
 // handle the case when a key has already a value assigned . We could replae the old value with the
 // new value , completely disregarding the old value . We could keep the old value and ignore the
 // new value . Or we could combine the old value and the new value.
+// Overwriting a value :
+// If we insert a key and a value into a hash map and then insert that same key with different value
+// , the value associated with that key will be replaced .
+// Even though the code in the last example calls insert twice , the hash map will only contain one
+// key/value pair because we're inserting the value for the Blue team's key both times .
 // Main function
 fn main() {}
