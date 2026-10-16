@@ -33,4 +33,10 @@ fn main() {
     // Just like vectors , hash maps store their data on the heap . This HashMap has keys of type
     // String and values of type i32 . Like vectors , hash maps are homogeneous : all the keys must
     // have the same type , and all of the values must have the same type .
+    // Another way of constructing a hash map is by using the collect method on a vector of tuples ,
+    // where each tuple consists of a key and its value . the collect method gathers data  into a
+    // number of colection types , including HashMap . For example : if we had the team names and
+    // initial scores in two separate vectors , we could use t he zip method to create a vector of
+    // tuples where "blue" is paired with 10 , and so forth . Then we can use the collect method to
+    // turn that  vector of tuples into a hash map .
 }
