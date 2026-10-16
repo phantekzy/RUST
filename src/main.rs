@@ -28,4 +28,6 @@ fn main() {
     // Note that we need to first use the hachmap from the collections portion of the standard
     // library . Of our three  common collections ,this is the least often used , so it's not
     // inclueded in the features brought into scope automatically in the prelude .
+    // Hash maps also have less support from the standard library ; there's no built in macro to
+    // construct htem , for exmaple .
 }
