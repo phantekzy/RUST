@@ -31,5 +31,10 @@ fn main() {
     println!("{:?}", scores);
     // The or_insert method on Entry is defined to return a mutable reference to the value for the
     // corresponding Entry key if that key exists , and if not , inserts the parameter as the new
-    // value for this key and returns a mutable reference to the new value .
+    // value for this key and returns a mutable reference to the new value . This technique is much
+    // cleaner thant writing the logic ourselves and , in addition , plays more nicely with the
+    // borrow checker .
+    // The first call to entry will insert the key for the Yellow team with the value 50 because the
+    // Yellow team doesn't havge a value already . The second call to entry will not change the hash
+    // map because the blue team already has the value 10 .
 }
