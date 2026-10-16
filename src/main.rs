@@ -18,6 +18,8 @@ use std::collections::HashMap;
 // it . Hash Maps have a special API for this called entry that takes the key we want to check as a
 // parameter . The return value of the entry method is an enum called Entry that represents a value
 // that might or might not exist .
+// Let's say we want to check wether the key for the Yellow team has a value associated with it .
+// If it doen't exist , we want to insert the value 50, and the same for the Blue team .
 // Main function
 fn main() {
     let mut scores = HashMap::new();
