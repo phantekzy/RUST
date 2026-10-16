@@ -20,7 +20,9 @@ use std::collections::HashMap;
 fn main() {
     // Creating a New Hash map
     // We can create an empty hash map with new and add element with insert .
+    // Creating a new Hash map
     let mut scores = HashMap::new();
+    // Inserting some keys and values
     scores.insert(String::from("Blue"), 10);
     scores.insert(String::from("Green"), 50);
 }
