@@ -13,5 +13,8 @@
 // Given a team name , we can retrieve its score .
 // We'll go over the basic API of hash maps in this section , but many more goodies are hiding in
 // the functions defined on HashMap<K,V> by the standard library.
+//
 // Main function
-fn main() {}
+fn main() {
+    // Creating a New Hash map
+}
