@@ -28,4 +28,8 @@ fn main() {
     let teams = vec![String::from("blue"), String::from("Green")];
     let initial_scores = vec![10, 50];
     let scores: HashMap<_, _> = teams.iter().zip(initial_scores.iter()).collect();
+    // The type annotation HashMap<_,_> is needed here because it's possible to collect into many
+    // different data structeres and Rust doen't know which you want unless you sepcify . For the
+    // parameters for the key and values types,however , we use underscores , and Rust can infer the
+    // types that the has map contains based on the types of the data in the vectors .
 }
