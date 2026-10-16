@@ -8,5 +8,8 @@
 // name , as hash , map , object , hash table , dictionary , or assoicative array.
 // Hash maps are usefull when you want to look up data not by using an index , as you can with
 // vectors , but by using a key that can be of any type.
+// For example , in a game , we could keep track of each team's score in a hash map in which each
+// key is a team's name and the values are each team's score ,
+// Given a team name , we can retrieve its score .
 // Main function
 fn main() {}
