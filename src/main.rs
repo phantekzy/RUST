@@ -8,18 +8,14 @@ use std::collections::HashMap;
 // we've seen that word . If it's the first time we've seen a word , we'll insert the value 0.
 // Main function
 fn main() {
-    let text = "Hello world wonderful world";
+    // Creating a slice string
+    let message = "You are stupid as hell and hell is not hotter than u , stupid as hell and hell is not stupid as man like u stupid man ";
+    // Creating a mutable empty HashMap
     let mut map = HashMap::new();
-    // Counting occurences of words using a hash map that stores words and counts
-    for word in text.split_whitespace() {
+
+    // Looping on the words of the message :
+    for word in message.split_whitespace() {
         let count = map.entry(word).or_insert(0);
         *count += 1;
     }
-    println!("{:?}", map);
-    // The code will print {"Hello": 1, "wonderful": 1, "world": 2} . The or_insert method actually
-    // returns a mutable reference (&mut v) to the value for this key .
-    // Here we store that mutable refenrece in the count variable , so in order to assign to that
-    // value , we must first dereference count using the asterisk *.
-    // The mutable reference goes out of scope at the end of the for loop , so all these changes are
-    // safe and allowed by the borrowing rules .
 }
