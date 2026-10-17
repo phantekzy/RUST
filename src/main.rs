@@ -15,4 +15,5 @@ fn main() {
         let count = map.entry(word).or_insert(0);
         *count += 1;
     }
+    println!("{:?}", map);
 }
