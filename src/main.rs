@@ -20,4 +20,6 @@ fn main() {
     // returns a mutable reference (&mut v) to the value for this key .
     // Here we store that mutable refenrece in the count variable , so in order to assign to that
     // value , we must first dereference count using the asterisk *.
+    // The mutable reference goes out of scope at the end of the for loop , so all these changes are
+    // safe and allowed by the borrowing rules .
 }
