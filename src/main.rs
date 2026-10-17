@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 // COMMON COLLECTIONS
 // Updating a Value Based on the Old Value :
 // Another common use case for hash maps is to look up key's value and then update it based on the
@@ -5,4 +7,12 @@
 // We use a hash map with the words as keys and increment the value to keep track of how many times
 // we've seen that word . If it's the first time we've seen a word , we'll insert the value 0.
 // Main function
-fn main() {}
+fn main() {
+    let text = "Hello world wonderful world";
+    let mut map = HashMap::new();
+
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
+    }
+}
