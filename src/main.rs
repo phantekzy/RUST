@@ -10,7 +10,7 @@ use std::collections::HashMap;
 fn main() {
     let text = "Hello world wonderful world";
     let mut map = HashMap::new();
-
+    // Counting occurences of words using a hash map that stores words and counts
     for word in text.split_whitespace() {
         let count = map.entry(word).or_insert(0);
         *count += 1;
