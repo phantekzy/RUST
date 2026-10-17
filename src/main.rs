@@ -5,6 +5,7 @@
 // THis is not the fastes hashing algorithm available , but the trade off for better security that
 // comes with the drop in performance is worth it .
 // If we profile our code and find that default hash function is too slow for our purposes , we can
-// switch to another function by specifying different hasher .
+// switch to another function by specifying different hasher . A hasher is a type that implements
+// the BuildHasher trait . we can find hasher in the crates.io .
 // Main function
 fn main() {}
