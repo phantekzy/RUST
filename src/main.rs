@@ -16,4 +16,6 @@ fn main() {
         *count += 1;
     }
     println!("{:?}", map);
+    // The code will print {"Hello": 1, "wonderful": 1, "world": 2} . The or_insert method actually
+    // returns a mutable reference (&mut v) to the value for this key .
 }
