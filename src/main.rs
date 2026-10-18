@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 // COMMON COLLECTIONS
 // Summary :
 // Vectors , strings , and hash maps will provide a large ammount of functionality necessary in
@@ -22,4 +24,11 @@ fn main() {
     let maximum = codes[codes.len() - 1];
     println!("Minimum code : {}", minimum);
     println!("Maximum code :{}", maximum);
+    // Task 2 : Build the Frequency map
+    let mut frequency_map = HashMap::new();
+    for code in &codes {
+        let count = frequency_map.entry(*code).or_insert(0);
+        *count += 1;
+    }
+    println!("Frequency map : {:?}", frequency_map);
 }
