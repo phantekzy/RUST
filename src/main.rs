@@ -19,4 +19,9 @@ use std::collections::HashMap;
 fn main() {
     let mut sales = HashMap::new();
     let flavors = vec!["Chocolate", "Vanilla", "Chocolate", "Strawberry", "Vanilla"];
+    for flavor in flavors {
+        let count = sales.entry(flavor).or_insert(0);
+        *count += 1;
+    }
+    println!("{:?}", sales);
 }
