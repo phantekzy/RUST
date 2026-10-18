@@ -14,4 +14,9 @@
 //
 //
 // Main function
-fn main() {}
+fn main() {
+    let mut codes = vec![200, 404, 200, 500, 404, 200, 403, 404, 200, 500, 500];
+    // Sorting the codes
+    codes.sort();
+    println!("{:?}", codes);
+}
