@@ -1,11 +1,6 @@
 // COMMON COLLECTIONS
-// Hashing Functions
-// By Default HashMap uses a cryptographicaly strong hashing function that an provide resistance to
-// Denial of Service (DoS) attacks .
-// THis is not the fastes hashing algorithm available , but the trade off for better security that
-// comes with the drop in performance is worth it .
-// If we profile our code and find that default hash function is too slow for our purposes , we can
-// switch to another function by specifying different hasher . A hasher is a type that implements
-// the BuildHasher trait . we can find hasher in the crates.io .
+// Summary :
+// Vectors , strings , and hash maps will provide a large ammount of functionality necessary in
+// programes when you need to stre , accesss , and modify data .
 // Main function
 fn main() {}
