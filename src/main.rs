@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 // COMMON COLLECTIONS
 // Summary :
 // Vectors , strings , and hash maps will provide a large ammount of functionality necessary in
@@ -17,11 +15,11 @@ use std::collections::HashMap;
 //
 // Main function
 fn main() {
-    let codes = vec![200, 404, 200, 500, 404, 200, 403, 404, 200, 500, 500];
-    let mut map = HashMap::new();
-    for code in codes {
-        let count = map.entry(code).or_insert(0);
-        *count += 1;
-    }
-    println!("{:?}", map);
+    let mut codes = vec![200, 404, 200, 500, 404, 200, 403, 404, 200, 500, 500];
+    // Task 1 : Find the Extremes
+    codes.sort();
+    let minimum = codes[0];
+    let maximum = codes[codes.len() - 1];
+    println!("Minimum code : {}", minimum);
+    println!("Maximum code :{}", maximum);
 }
