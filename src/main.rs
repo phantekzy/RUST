@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 // COMMON COLLECTIONS
 // Summary :
 // Vectors , strings , and hash maps will provide a large ammount of functionality necessary in
@@ -15,5 +17,11 @@
 //
 // Main function
 fn main() {
-    // Continue the 3rd part of the exercise
+    let codes = vec![200, 404, 200, 500, 404, 200, 403, 404, 200, 500, 500];
+    let mut map = HashMap::new();
+    for code in codes {
+        let count = map.entry(code).or_insert(0);
+        *count += 1;
+    }
+    println!("{:?}", map);
 }
