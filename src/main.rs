@@ -34,4 +34,16 @@ fn main() {
     // Task 3 : Find the mode
     let mut max_count = 0;
     let mut mode = 0;
+
+    for (&code, &count) in frequency_map {
+        if count > max_count {
+            max_count = count;
+            mode = code;
+        }
+    }
+    println!(
+        "Most frequent status code: {} (appeared {} times)",
+        mode, max_count
+    );
+    // Review all this exercise
 }
