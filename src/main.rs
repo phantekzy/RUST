@@ -31,4 +31,7 @@ fn main() {
         *count += 1;
     }
     println!("Frequency map : {:?}", frequency_map);
+    // Task 3 : Find the mode
+    let mut max_count = 0;
+    let mut mode = 0;
 }
