@@ -19,4 +19,10 @@ fn main() {
     // Sorting the codes
     codes.sort();
     println!("{:?}", codes);
+    // Getting the minimum value
+    let minimum = codes[0];
+    println!("{:?}", minimum);
+    // Getting the maximum value
+    let maximum = codes[codes.len() - 1];
+    println!("{:?}", maximum);
 }
