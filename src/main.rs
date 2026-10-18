@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 // COMMON COLLECTIONS
 // Summary :
 // Vectors , strings , and hash maps will provide a large ammount of functionality necessary in
@@ -17,11 +15,5 @@ use std::collections::HashMap;
 //
 // Main function
 fn main() {
-    let mut sales = HashMap::new();
-    let flavors = vec!["Chocolate", "Vanilla", "Chocolate", "Strawberry", "Vanilla"];
-    for flavor in flavors {
-        let count = sales.entry(flavor).or_insert(0);
-        *count += 1;
-    }
-    println!("{:?}", sales);
+    // Continue the 3rd part of the exercise
 }
