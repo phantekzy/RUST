@@ -18,34 +18,11 @@
 // Words that starts with vowel have "hay" added to the end instead ("apple" becomes "apple-hay") .
 // Keep in mind the detail about UTF-8 encoding .
 //
-fn to_pig_latin(word: &str) -> String {
-    let mut chars = word.chars();
-
-    // Safely extract the first character using the iterator
-    let first_char = match chars.next() {
-        Some(c) => c,
-        None => return String::new(), // Handle empty strings safely
-    };
-
-    // Define vowels for comparison
-    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-
-    if vowels.contains(&first_char) {
-        // Rule for vowels: append "-hay"
-        format!("{}-hay", word)
-    } else {
-        // Rule for consonants: collect the remaining characters,
-        // move the first character to the end, and append "-ay"
-        let remainder: String = chars.collect();
-        format!("{}-{}ay", remainder, first_char)
-    }
-}
+// Exercise 3 :
+// Using a hash map and Vectors , create a text interface to allow a user to add employee names to a
+// department in a company. For example , "Add sally to Engineering" or " Add lotfi to Sales" . Then
+// let the user retrive a list of all people in a department or all people in the company by
+// department,sorted alphabetically .
 
 // Main function
-fn main() {
-    let word1 = "apple";
-    let word2 = "first";
-
-    println!("{} -> {}", word1, to_pig_latin(word1));
-    println!("{} -> {}", word2, to_pig_latin(word2));
-}
+fn main() {}
