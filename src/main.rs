@@ -18,28 +18,34 @@
 // Words that starts with vowel have "hay" added to the end instead ("apple" becomes "apple-hay") .
 // Keep in mind the detail about UTF-8 encoding .
 //
+fn to_pig_latin(word: &str) -> String {
+    let mut chars = word.chars();
+
+    // Safely extract the first character using the iterator
+    let first_char = match chars.next() {
+        Some(c) => c,
+        None => return String::new(), // Handle empty strings safely
+    };
+
+    // Define vowels for comparison
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+
+    if vowels.contains(&first_char) {
+        // Rule for vowels: append "-hay"
+        format!("{}-hay", word)
+    } else {
+        // Rule for consonants: collect the remaining characters,
+        // move the first character to the end, and append "-ay"
+        let remainder: String = chars.collect();
+        format!("{}-{}ay", remainder, first_char)
+    }
+}
+
 // Main function
 fn main() {
     let word1 = "apple";
     let word2 = "first";
 
     println!("{} -> {}", word1, to_pig_latin(word1));
-    println!("{} -> {}", word2, to_pig_latin(word2))
-}
-
-fn to_pig_latin(word: &str) -> String {
-    let mut chars = word.chars();
-    // Extract the first letter :
-    let first_char = match chars.next() {
-        Some(c) => c,
-        None => return String::new(),
-    };
-    // Define vowels for comparison
-    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-    if vowels.contains(&first_char) {
-        format!("{}-hay", word)
-    } else {
-        let remainder: String = chars.collect();
-        format!("{}-{}ay", remainder, first_char)
-    }
+    println!("{} -> {}", word2, to_pig_latin(word2));
 }
