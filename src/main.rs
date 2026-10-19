@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 // COMMON COLLECTIONS
 // Summary :
 // Vectors , strings , and hash maps will provide a large ammount of functionality necessary in
@@ -21,34 +19,8 @@ use std::collections::HashMap;
 // Keep in mind the detail about UTF-8 encoding .
 //
 // Main function
-fn main() {
-    let mut codes = vec![200, 404, 200, 500, 404, 200, 403, 404, 200, 500, 500];
-    // Task 1 : Find the Extremes
-    codes.sort();
-    let minimum = codes[0];
-    let maximum = codes[codes.len() - 1];
-    println!("Minimum code : {}", minimum);
-    println!("Maximum code :{}", maximum);
-    // Task 2 : Build the Frequency map
-    let mut frequency_map = HashMap::new();
-    for code in &codes {
-        let count = frequency_map.entry(*code).or_insert(0);
-        *count += 1;
-    }
-    println!("Frequency map : {:?}", frequency_map);
-    // Task 3 : Find the mode
-    let mut max_count = 0;
-    let mut mode = 0;
+fn main() {}
 
-    for (&code, &count) in frequency_map.iter() {
-        if count > max_count {
-            max_count = count;
-            mode = code;
-        }
-    }
-    println!(
-        "Most frequent status code: {} (appeared {} times)",
-        mode, max_count
-    );
-    // Review all this exercise
+fn to_pig_latin(word : &str) -> String {
+    let must chars = word.chars();
 }
