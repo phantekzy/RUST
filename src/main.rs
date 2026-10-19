@@ -35,7 +35,7 @@ fn main() {
     let mut max_count = 0;
     let mut mode = 0;
 
-    for (&code, &count) in frequency_map {
+    for (&code, &count) in frequency_map.iter() {
         if count > max_count {
             max_count = count;
             mode = code;
