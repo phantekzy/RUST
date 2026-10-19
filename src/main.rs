@@ -21,6 +21,11 @@
 // Main function
 fn main() {}
 
-fn to_pig_latin(word : &str) -> String {
-    let must chars = word.chars();
+fn to_pig_latin(word: &str) -> String {
+    let mut chars = word.chars();
+    // Extract the first letter :
+    let first_char = match chars.next() {
+        Some(c) => c,
+        None => return String::new(),
+    };
 }
