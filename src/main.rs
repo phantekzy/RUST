@@ -19,7 +19,13 @@
 // Keep in mind the detail about UTF-8 encoding .
 //
 // Main function
-fn main() {}
+fn main() {
+    let word1 = "apple";
+    let word2 = "first";
+
+    println!("{} -> {}", word1, to_pig_latin(word1));
+    println!("{} -> {}", word2, to_pig_latin(word2))
+}
 
 fn to_pig_latin(word: &str) -> String {
     let mut chars = word.chars();
@@ -28,4 +34,12 @@ fn to_pig_latin(word: &str) -> String {
         Some(c) => c,
         None => return String::new(),
     };
+    // Define vowels for comparison
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    if vowels.contains(&first_char) {
+        format!("{}-hay", word)
+    } else {
+        let remainder: String = chars.collect();
+        format!("{}-{}ay", remainder, first_char)
+    }
 }
