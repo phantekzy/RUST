@@ -14,6 +14,11 @@ use std::collections::HashMap;
 //  Build a Frequency Map: Create a HashMap using the .entry() and .or_insert() API to count how many times each status code appears in the log.
 //  Find the Most Common Code: Iterate through your hash map to find which status code occurred most frequently (the mode).
 //
+// Exercise 2 :
+// Convert Strings to pig latin . The first consonant of each word is moved to the end of the word
+// and "ay" is added , so fist becomes "irst-fay".
+// Words that starts with vowel have "hay" added to the end instead ("apple" becomes "apple-hay") .
+// Keep in mind the detail about UTF-8 encoding .
 //
 // Main function
 fn main() {
