@@ -24,5 +24,9 @@
 // let the user retrive a list of all people in a department or all people in the company by
 // department,sorted alphabetically .
 
+use std::collections::HashMap;
+
 // Main function
-fn main() {}
+fn main() {
+    let mut company: HashMap<String, Vec<String>> = HashMap::new();
+}
