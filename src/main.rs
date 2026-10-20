@@ -28,5 +28,6 @@ use std::collections::HashMap;
 
 // Main function
 fn main() {
+    // HashMap storing department names as keys and a vector of employee names as values
     let mut company: HashMap<String, Vec<String>> = HashMap::new();
 }
