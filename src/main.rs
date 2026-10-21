@@ -35,7 +35,7 @@ fn main() {
     let mut _company: HashMap<String, Vec<String>> = HashMap::new();
     loop {
         println!(
-            "Enter command (Example : 'Add Lotfi to Engineering' , 'View Engineering' , or 'Quit')"
+            "Enter command (Example : 'Add Lotfi to Engineering' , 'View Engineering' , or 'Quit or exit ')"
         );
         // The input variable and it will be a String and we should make it mutable
         let mut input = String::new();
