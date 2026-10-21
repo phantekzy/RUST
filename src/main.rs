@@ -43,5 +43,6 @@ fn main() {
         io::stdin()
             .read_line(&mut input)
             .expect("Failed to read the line");
+        let input = input.trim(); // Shadowing the first input variable and trim it 
     }
 }
