@@ -61,6 +61,9 @@ fn main() {
         // Handling the View department command :
         else if words.len() == 2 && words[0].eq_ignore_ascii_case("view") {
             let department = words[1];
+            if let Some(employees) = company.get(department) {
+                println!("Employees in {}: {:?}", department, employees);
+            }
         }
     }
 }
