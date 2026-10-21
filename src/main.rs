@@ -66,6 +66,11 @@ fn main() {
             } else {
                 println!("No employees found in {}", department);
             }
+            // Handling the request to view all departements sorted
+        } else if input.eq_ignore_ascii_case("all") {
+            for (department, employees) in &company {
+                println!("{}: {:?}", department, employees);
+            }
         }
     }
 }
