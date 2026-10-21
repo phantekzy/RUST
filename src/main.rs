@@ -2,7 +2,9 @@
 // Summary :
 // Vectors , strings , and hash maps will provide a large ammount of functionality necessary in
 // programes when you need to stre , accesss , and modify data .
+//
 // Exercises :
+//
 // Exercise 1 :
 // Server Status Code Analyzer.
 // Imagine you are analyzing a list of HTTP status codes collected from a web server log over a brief period.
