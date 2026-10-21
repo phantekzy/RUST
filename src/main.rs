@@ -48,5 +48,7 @@ fn main() {
         if input.eq_ignore_ascii_case("quit") || input.eq_ignore_ascii_case("exit") {
             break;
         }
+        // Collecting the input into a slice of string
+        let Words: Vec<&str> = input.split_ascii_whitespace().collect();
     }
 }
