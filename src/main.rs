@@ -63,6 +63,8 @@ fn main() {
             let department = words[1];
             if let Some(employees) = company.get(department) {
                 println!("Employees in {}: {:?}", department, employees);
+            } else {
+                println!("No employees found in {}", department);
             }
         }
     }
