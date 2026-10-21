@@ -32,7 +32,7 @@ fn main() {
     let mut company: HashMap<String, Vec<String>> = HashMap::new();
     loop {
         println!(
-            "\nEnter command (e.g., 'Add Sally to Engineering', 'View Engineering', or 'quit'):"
+            "\nEnter command (e.g., 'Add Lotfi to Engineering', 'View Engineering', or 'quit'):"
         );
         let mut input = String::new();
         io::stdin()
