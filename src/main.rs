@@ -56,6 +56,7 @@ fn main() {
             let employees = company.entry(department.clone()).or_default();
             employees.push(name.clone());
             employees.sort();
+            println!("Added {} to {}.", name, department);
         }
     }
 }
