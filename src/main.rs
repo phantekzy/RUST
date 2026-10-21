@@ -43,5 +43,10 @@ fn main() {
         if input.eq_ignore_ascii_case("quit") {
             break;
         }
+
+        let words: Vec<&str> = input.split_whitespace().collect();
+        if words.is_empty() {
+            continue;
+        }
     }
 }
