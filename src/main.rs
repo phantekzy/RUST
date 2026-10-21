@@ -53,5 +53,10 @@ fn main() {
         if Words.is_empty() {
             continue; // continue is only used in loops and it goes back to the top of the loop 
         }
+        // The add case
+        if Words.len() >= 4 && Words[0].eq_ignore_ascii_case("add") {
+            let name = Words[1].to_string();
+            let department = Words[3].to_string();
+        }
     }
 }
