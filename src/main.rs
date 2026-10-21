@@ -32,5 +32,11 @@ use std::collections::HashMap;
 // Main function
 fn main() {
     // Creating a HashMap to store department names as keys and vector to store employees as values
-    let mut company: HashMap<String, Vec<String>> = HashMap::new();
+    let mut _company: HashMap<String, Vec<String>> = HashMap::new();
+    loop {
+        println!(
+            "Enter command (Example : 'Add Lotfi to Engineering' , 'View Engineering' , or 'Quit')"
+        );
+        break;
+    }
 }
