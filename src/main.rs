@@ -71,6 +71,8 @@ fn main() {
             for (department, employees) in &company {
                 println!("{}: {:?}", department, employees);
             }
+        } else {
+            println!("Invalid command format.");
         }
     }
 }
