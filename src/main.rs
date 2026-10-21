@@ -48,5 +48,12 @@ fn main() {
         if words.is_empty() {
             continue;
         }
+        // Handling the Add name to department command
+        if words.len() >= 4 && words[0].eq_ignore_ascii_case("add") {
+            let name = words[1].to_string();
+            let department = words[3].to_string();
+            // Get or insert the vector for this department , push the name , and sort it
+            let employees = company.entry(department.clone()).or_default();
+        }
     }
 }
