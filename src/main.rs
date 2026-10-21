@@ -50,5 +50,8 @@ fn main() {
         }
         // Collecting the input into a slice of string
         let Words: Vec<&str> = input.split_ascii_whitespace().collect();
+        if Words.is_empty() {
+            continue; // continue is only used in loops and it goes back to the top of the loop 
+        }
     }
 }
