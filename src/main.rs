@@ -27,7 +27,7 @@
 // let the user retrive a list of all people in a department or all people in the company by
 // department,sorted alphabetically .
 
-use std::collections::HashMap;
+use std::{collections::HashMap, io};
 
 // Main function
 fn main() {
@@ -37,6 +37,11 @@ fn main() {
         println!(
             "Enter command (Example : 'Add Lotfi to Engineering' , 'View Engineering' , or 'Quit')"
         );
-        break;
+        // The input variable and it will be a String and we should make it mutable
+        let mut input = String::new();
+        // We should read the line command and not to forget the case where we don't have any
+        io::stdin()
+            .read_line(&mut input)
+            .expect("Failed to read the line");
     }
 }
