@@ -58,5 +58,9 @@ fn main() {
             employees.sort(); // Keeps the employees list sorted alphabetically
             println!("Added {} to {}.", name, department);
         }
+        // Handling the View department command :
+        else if words.len() == 2 && words[0].eq_ignore_ascii_case("view") {
+            let department = words[1];
+        }
     }
 }
