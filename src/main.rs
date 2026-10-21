@@ -44,5 +44,9 @@ fn main() {
             .read_line(&mut input)
             .expect("Failed to read the line");
         let input = input.trim(); // Shadowing the first input variable and trim it 
+        // the first case : When the user decides to type Quit and exit the program
+        if input.eq_ignore_ascii_case("quit") || input.eq_ignore_ascii_case("exit") {
+            break;
+        }
     }
 }
