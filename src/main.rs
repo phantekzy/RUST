@@ -38,5 +38,10 @@ fn main() {
         io::stdin()
             .read_line(&mut input)
             .expect("Failed to read line");
+        let input = input.trim();
+
+        if input.eq_ignore_ascii_case("quit") {
+            break;
+        }
     }
 }
