@@ -1,6 +1,5 @@
 // COMMON COLLECTIONS
 // Exercises :
-//
 // Exercise 3 :
 // Using a hash map and Vectors , create a text interface to allow a user to add employee names to a
 // department in a company. For example , "Add sally to Engineering" or " Add lotfi to Sales" . Then
