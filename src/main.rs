@@ -37,6 +37,8 @@ fn main() {
             let name = Words[1].to_string();
             let department = Words[3].to_string();
             // Get or insert the vector for this department, push the name, and sort it
+            let employees = _company.entry(department.clone()).or_default();
+            employees.push(name.clone());
         }
     }
 }
