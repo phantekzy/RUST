@@ -44,6 +44,7 @@ fn main() {
             println!("Added {} to {}", name, department);
 
             // Handling the "View [department] command"
+        } else if Words.len() == 2 && Words[0].eq_ignore_ascii_case("view") {
         }
     }
 }
