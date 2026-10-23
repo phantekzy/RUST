@@ -8,43 +8,58 @@
 
 use std::{collections::HashMap, io};
 
-// Main function
 fn main() {
-    // Creating a HashMap to store department names as keys and vector to store employees as values
-    let mut _company: HashMap<String, Vec<String>> = HashMap::new();
+    //  HashMap storing department names as keys and a vector of employee names as values
+    let mut company: HashMap<String, Vec<String>> = HashMap::new();
+
     loop {
         println!(
-            "Enter command (Example : 'Add Lotfi to Engineering' , 'View Engineering' , or 'Quit or exit ')"
+            "\nEnter command (e.g., 'Add Sally to Engineering', 'View Engineering', or 'quit'):"
         );
-        // The input variable and it will be a String and we should make it mutable
         let mut input = String::new();
-        // We should read the line command and not to forget the case where we don't have any
         io::stdin()
             .read_line(&mut input)
-            .expect("Failed to read the line");
-        let input = input.trim(); // Shadowing the first input variable and trim it 
-        // the first case : When the user decides to type Quit and exit the program
-        if input.eq_ignore_ascii_case("quit") || input.eq_ignore_ascii_case("exit") {
+            .expect("Failed to read line");
+        let input = input.trim();
+
+        if input.eq_ignore_ascii_case("quit") {
             break;
         }
-        // Collecting the input into a slice of string
-        let Words: Vec<&str> = input.split_ascii_whitespace().collect();
-        if Words.is_empty() {
-            continue; // continue is only used in loops and it goes back to the top of the loop 
+
+        let words: Vec<&str> = input.split_whitespace().collect();
+
+        if words.is_empty() {
+            continue;
         }
-        // The add case
-        if Words.len() >= 4 && Words[0].eq_ignore_ascii_case("add") {
-            let name = Words[1].to_string();
-            let department = Words[3].to_string();
+
+        //  Handling the "Add [name] to [department]" command
+        if words.len() >= 4 && words[0].eq_ignore_ascii_case("add") {
+            let name = words[1].to_string();
+            let department = words[3].to_string();
+
             // Get or insert the vector for this department, push the name, and sort it
-            let employees = _company.entry(department.clone()).or_default();
+            let employees = company.entry(department.clone()).or_default();
             employees.push(name.clone());
-            employees.sort(); // Keeps the employee list sorted 
+            employees.sort(); // Keeps the employee list sorted alphabetically
 
-            println!("Added {} to {}", name, department);
+            println!("Added {} to {}.", name, department);
 
-            // Handling the "View [department] command"
-        } else if Words.len() == 2 && Words[0].eq_ignore_ascii_case("view") {
+        //  Handling the "View [department]" command
+        } else if words.len() == 2 && words[0].eq_ignore_ascii_case("view") {
+            let department = words[1];
+            if let Some(employees) = company.get(department) {
+                println!("Employees in {}: {:?}", department, employees);
+            } else {
+                println!("No employees found in {}.", department);
+            }
+
+        //  Handling the request to view all departments sorted
+        } else if input.eq_ignore_ascii_case("all") {
+            for (department, employees) in &company {
+                println!("{}: {:?}", department, employees);
+            }
+        } else {
+            println!("Invalid command format.");
         }
     }
 }
