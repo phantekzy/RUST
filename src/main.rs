@@ -42,6 +42,8 @@ fn main() {
             employees.sort(); // Keeps the employee list sorted 
 
             println!("Added {} to {}", name, department);
+
+            // Handling the "View [department] command"
         }
     }
 }
