@@ -26,4 +26,6 @@ fn main() {
     // , and the filename and line number reported by the error message will be someone else's code
     // where the panic! macro is called , not the like of our code that eventually led to the panic!
     // call.
+    // We can use the backtrace of the functions the panic! call came from to figure ot the part of
+    // our code that is causing the problem .
 }
