@@ -21,4 +21,8 @@ enum Result<T, E> {
 fn main() {
     // Let's try to open a file :
     let f = File::open("hello.txt"); // Opening a file 
+    // How do we know File::open returns a Result ?? We could look at the standard library API
+    // documentation , or we can ask the compiler! if we give f a type annotation that we know is
+    // not a return type of the function and then try to compile the code , the compiler will tell
+    // us that the types don't match .
 }
