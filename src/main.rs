@@ -19,4 +19,6 @@
 fn main() {
     // Let's try to call panic! in a simple program :
     panic!("crash and burn!");
+    // The call to panic! causes the error message contained in the last two lines . The first line
+    // shows our panic message and the place in our source code where the panic occurred .
 }
