@@ -40,5 +40,8 @@ fn main() {
     // A Backtrace in Rust work as they do in other languages : they key to reading the backtrace is
     // to start from the top and read until you see files you wrote . That's the spot where the
     // problem originated . The lines above the lines mentioning your files are code that your code
-    // called ; the lines below are code t hat called your code .
+    // called ; the lines below are code t hat called your code . These lines might include core
+    // Rust code , standard library code , or crates that we are using .
+    // Let's try getting a backtrace , by setting the RUST_BACKTRACE environement varibale to any
+    // value except 0.
 }
