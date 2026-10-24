@@ -34,10 +34,14 @@ fn main() {
     // of Err that contains more information about the kind of error that happned .
     // We need to add to the code to take diffrent actions depending on the value File::open returns
     let f = File::open("Hello.txt");
+    // Using a match expression to handle the Result variants that might be returned
     let f = match f {
-        Ok(file) => file,
+        OK(file) => file,
         Err(error) => {
             panic!("Issues in opening the damn file: {:?}", error);
         }
     };
+    // Note that , like Option enum , the Result enum and its variants have been brought into scope
+    // by the prelude , so we don't need t o specify Result:: before the OK and Err varuants in the
+    // match arms .
 }
