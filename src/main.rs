@@ -33,4 +33,11 @@ fn main() {
     // that contains a file handle . in the case where it fails , the value in f will be an instance
     // of Err that contains more information about the kind of error that happned .
     // We need to add to the code to take diffrent actions depending on the value File::open returns
+    let f = File::open("Hello.txt");
+    let f = match f {
+        Ok(file) => file,
+        Err(error) => {
+            panic!("Issues in opening the damn file: {:?}", error);
+        }
+    };
 }
