@@ -21,4 +21,9 @@ fn main() {
     panic!("crash and burn!");
     // The call to panic! causes the error message contained in the last two lines . The first line
     // shows our panic message and the place in our source code where the panic occurred .
+    // In this case , the line indicated is part of our code , and if we go to that line , we see
+    // the panic! macro call . In other cases , the panic! call might be in code that our code calls
+    // , and the filename and line number reported by the error message will be someone else's code
+    // where the panic! macro is called , not the like of our code that eventually led to the panic!
+    // call.
 }
