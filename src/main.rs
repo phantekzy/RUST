@@ -23,4 +23,8 @@ fn main() {
     let v = vec![1, 2, 3];
     v[99]; // Attempting to access an element beyond the end of a vector , which will cause a call to
     // panic !
+    // Here , we're Attempting to access the 100th element of our vector (which is index 00) , but
+    // it has only 3 elements . In  this situation , Rust will panic . Using[] is supposed to return
+    // an element , but if we pass an invalid index , there's no element that Rust could return here
+    // that would be correct .
 }
