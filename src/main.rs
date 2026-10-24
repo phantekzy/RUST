@@ -36,4 +36,8 @@ fn main() {
     // not exist , or we might not have permission to access the file .
     // The file::open function needs to have a way to tell us whether it succeeded or failed and at
     // the same time give us either the file handle or error information .
+    // This information is exactly what the Result enum conveys.
+    // In the case where File::open succeeds , the value in the variable f will be an instance of OK
+    // that contains a file handle . in the case where it fails , the value in f will be an instance
+    // of Err that contains more information about the kind of error that happned .
 }
