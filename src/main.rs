@@ -27,4 +27,8 @@ fn main() {
     // it has only 3 elements . In  this situation , Rust will panic . Using[] is supposed to return
     // an element , but if we pass an invalid index , there's no element that Rust could return here
     // that would be correct .
+    // Other languages like C , will attempt to give us exactly what we asked for in this situation
+    // , even though it isn't what we want : we'll get whatever is at the location in memory that
+    // would correspond to that element in the vector, even though the memory doesn't  belong to the
+    // vector .
 }
