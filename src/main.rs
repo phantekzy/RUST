@@ -27,4 +27,5 @@ fn main() {
     // let's try it ! we know that the return type of File::open isn't type u32 , so let's hange the
     // let f statement :
     let f: u32 = File::open("hello.txt"); // Opening a file 
+    // Attempting to compile gives us a mismatch type error
 }
