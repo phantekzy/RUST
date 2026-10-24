@@ -33,4 +33,6 @@ fn main() {
     // vector . This is called a buffer overread and can lead to security velnerabilities if an
     // attacker is able to manipulate the index in such a way as to read data they shouldn't be
     // allowed to that is stored after the array .
+    // To protect our program fron this sort of vulnerability , if we try to read an element at an
+    // index that doen't exist , Rust will stop the execution and refuse to continue .
 }
