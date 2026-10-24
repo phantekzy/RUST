@@ -19,14 +19,6 @@ enum Result<T, E> {
 // value and error value we want to return may differ .
 // Main function
 fn main() {
-    // Let's try to open a file :
-    // How do we know File::open returns a Result ?? We could look at the standard library API
-    // documentation , or we can ask the compiler! if we give f a type annotation that we know is
-    // not a return type of the function and then try to compile the code , the compiler will tell
-    // us that the types don't match . The error message will then tell us what the type of f is .
-    // let's try it ! we know that the return type of File::open isn't type u32 , so let's hange the
-    // let f statement :
-    let f = File::open("hello.txt"); // Opening a file 
     // Attempting to compile gives us a mismatch type error
     // This tells us the return type of the File::open function is a Result<T,E> .
     // The generic parameter T has been filled in here with the type of the success value use std::fs::File; Which is a file handle .
