@@ -47,4 +47,7 @@ fn main() {
     // Here we tell Rust that when the result is OK , return the inner file value out of the OK
     // variant , and we assign that file handle value to variable f . After the match , we can use
     // the file handle for reading or writing .
+    // The other arm of the match handles the case where we get an Err value from File::open . In
+    // this example , we've chosen to call the panic! macro . If there's no file named hello.txt in
+    // our current directory and we run this code , we'll see a panicc output .
 }
