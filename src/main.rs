@@ -35,4 +35,6 @@ fn main() {
     // allowed to that is stored after the array .
     // To protect our program fron this sort of vulnerability , if we try to read an element at an
     // index that doen't exist , Rust will stop the execution and refuse to continue .
+    // There is a note that tells us that we can set the RUST_BACKTRACE environement varibale to get
+    // a Backtrace of exactly what happend to cause the error.
 }
