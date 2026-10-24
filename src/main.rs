@@ -31,4 +31,9 @@ fn main() {
     // This tells us the return type of the File::open function is a Result<T,E> .
     // The generic parameter T has been filled in here with the type of the success value use std::fs::File; Which is a file handle .
     // the type of E used in the error value is std::io::Error.
+    // This return type means the call to File::open might succeed and return a file fandle that we
+    // can read from or  write to . The function call also might fail : for example the file might
+    // not exist , or we might not have permission to access the file .
+    // The file::open function needs to have a way to tell us whether it succeeded or failed and at
+    // the same time give us either the file handle or error information .
 }
