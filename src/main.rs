@@ -44,4 +44,7 @@ fn main() {
     // Note that , like Option enum , the Result enum and its variants have been brought into scope
     // by the prelude , so we don't need t o specify Result:: before the OK and Err varuants in the
     // match arms .
+    // Here we tell Rust that when the result is OK , return the inner file value out of the OK
+    // variant , and we assign that file handle value to variable f . After the match , we can use
+    // the file handle for reading or writing .
 }
