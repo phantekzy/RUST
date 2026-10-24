@@ -17,15 +17,7 @@
 //
 // Main function
 fn main() {
-    // Let's try to call panic! in a simple program :
-    panic!("crash and burn!");
-    // The call to panic! causes the error message contained in the last two lines . The first line
-    // shows our panic message and the place in our source code where the panic occurred .
-    // In this case , the line indicated is part of our code , and if we go to that line , we see
-    // the panic! macro call . In other cases , the panic! call might be in code that our code calls
-    // , and the filename and line number reported by the error message will be someone else's code
-    // where the panic! macro is called , not the like of our code that eventually led to the panic!
-    // call.
-    // We can use the backtrace of the functions the panic! call came from to figure ot the part of
-    // our code that is causing the problem .
+    // Using a Panic! Backtrace
+    // let's look at another example to see what it's like when a panic! call comes from a library
+    // because of a bug in our code instead of from our code calling the macro directly .
 }
