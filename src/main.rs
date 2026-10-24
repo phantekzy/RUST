@@ -40,4 +40,5 @@ fn main() {
     // In the case where File::open succeeds , the value in the variable f will be an instance of OK
     // that contains a file handle . in the case where it fails , the value in f will be an instance
     // of Err that contains more information about the kind of error that happned .
+    // We need to add to the code to take diffrent actions depending on the value File::open returns
 }
