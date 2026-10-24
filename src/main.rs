@@ -37,4 +37,8 @@ fn main() {
     // index that doen't exist , Rust will stop the execution and refuse to continue .
     // There is a note that tells us that we can set the RUST_BACKTRACE environement varibale to get
     // a Backtrace of exactly what happend to cause the error.
+    // A Backtrace in Rust work as they do in other languages : they key to reading the backtrace is
+    // to start from the top and read until you see files you wrote . That's the spot where the
+    // problem originated . The lines above the lines mentioning your files are code that your code
+    // called ; the lines below are code t hat called your code .
 }
