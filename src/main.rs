@@ -26,6 +26,9 @@ fn main() {
     // us that the types don't match . The error message will then tell us what the type of f is .
     // let's try it ! we know that the return type of File::open isn't type u32 , so let's hange the
     // let f statement :
-    let f: u32 = File::open("hello.txt"); // Opening a file 
+    let f = File::open("hello.txt"); // Opening a file 
     // Attempting to compile gives us a mismatch type error
+    // This tells us the return type of the File::open function is a Result<T,E> .
+    // The generic parameter T has been filled in here with the type of the success value use std::fs::File; Which is a file handle .
+    // the type of E used in the error value is std::io::Error.
 }
