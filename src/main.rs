@@ -12,5 +12,8 @@ enum Result<T, E> {
 // need to know right now is that T represents the type of the value that will be returned in a
 // success case within the OK variant , and E represents the type of error that will be returned in
 // a failure case within the Err variant .
+// Because Result has these generic type parameters , we can use the Result type and the functions
+// that the standard library has defined on it in many different situations where the successful
+// value and error value we want to return may differ .
 // Main function
 fn main() {}
