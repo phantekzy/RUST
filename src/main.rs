@@ -30,5 +30,7 @@ fn main() {
     // Other languages like C , will attempt to give us exactly what we asked for in this situation
     // , even though it isn't what we want : we'll get whatever is at the location in memory that
     // would correspond to that element in the vector, even though the memory doesn't  belong to the
-    // vector .
+    // vector . This is called a buffer overread and can lead to security velnerabilities if an
+    // attacker is able to manipulate the index in such a way as to read data they shouldn't be
+    // allowed to that is stored after the array .
 }
