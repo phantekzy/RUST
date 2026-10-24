@@ -16,4 +16,7 @@
 // a bug of some kind has been detected and it's not clear to the programmer how to handle the error
 //
 // Main function
-fn main() {}
+fn main() {
+    // Let's try to call panic! in a simple program :
+    panic!("crash and burn!");
+}
