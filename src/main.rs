@@ -21,6 +21,6 @@ fn main() {
     // let's look at another example to see what it's like when a panic! call comes from a library
     // because of a bug in our code instead of from our code calling the macro directly .
     let v = vec![1, 2, 3];
-    v[99] // Attempting to access an element beyond the end of a vector , which will cause a call to
+    v[99]; // Attempting to access an element beyond the end of a vector , which will cause a call to
     // panic !
 }
