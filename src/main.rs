@@ -1,3 +1,5 @@
+use std::fs::File;
+
 // Error handling
 // Recoverable Errors with Result :
 // Most errors aren't serious enough to require the program to stop entirely.
@@ -16,4 +18,7 @@ enum Result<T, E> {
 // that the standard library has defined on it in many different situations where the successful
 // value and error value we want to return may differ .
 // Main function
-fn main() {}
+fn main() {
+    // Let's try to open a file :
+    let f = File::open("hello.txt"); // Opening a file 
+}
