@@ -16,4 +16,7 @@ fn main() {
     // thread 'main' (496694) panicked at src/main.rs:13:37:
     // called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or direc
     // tory" }
+    //
+    // Another method , expect , which is similar to unwrap , lets us also choose the panic! error
+    // message .
 }
