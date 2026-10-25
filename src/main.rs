@@ -29,4 +29,13 @@ fn main() {
     // closure and are implemented using match expressions .
     // Using those methods will make our code more concise .
     // AS more seasoned Rustacean might write this code instead :
+    let f = File::open("hello.txt").unwrap_or_else(|error| {
+        if error.kind() == ErrorKind::NotFound {
+            File::create("hello.txt").unwrap_or_else(|error| {
+                panic!("Problem creating the file : {:?}", error);
+            })
+        } else {
+            panic!("Problem creating the file : {:?}", error);
+        }
+    });
 }
