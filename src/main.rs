@@ -21,4 +21,6 @@ fn main() {
             other_error => panic!("Problem opening the file {:?}", other_error),
         },
     };
+    // The type of the value that File::open returs inside the Err variant is io::Error , which is a
+    // struct provided by the standard library .
 }
