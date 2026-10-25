@@ -12,5 +12,8 @@ fn main() {
     // Here is an example of wunwrap in action :
     let f = File::open("hello.txt").unwrap();
     // If we run this code without a hello.txt fle , we'll see an error message from the panic! call
-    // that the unwrap method makes
+    // that the unwrap method makes :
+    // thread 'main' (496694) panicked at src/main.rs:13:37:
+    // called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or direc
+    // tory" }
 }
