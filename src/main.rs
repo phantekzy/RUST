@@ -10,15 +10,14 @@ use std::{fs::File, io::ErrorKind};
 // Main function
 fn main() {
     let f = File::open("hello.txt");
-    // Handling different kinds of errors in different ways
     let f = match f {
         Ok(file) => file,
         Err(error) => match error.kind() {
-            ErrorKind::NotFound => match File::create("Hello.txt") {
+            ErrorKind::NotFound => match File::create("hello.txt") {
                 Ok(fc) => fc,
                 Err(e) => panic!("Problem creating the file : {:?}", e),
             },
-            other_error => panic!("Problem opening the file : {:?}", other_error),
+            other_error => panic!("Problem opening the file {:?}", other_error),
         },
     };
 }
