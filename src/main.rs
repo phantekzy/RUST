@@ -9,15 +9,9 @@ use std::fs::File;
 // the value inside the OK. If the Result is the Err variant , unwrap will call the panic! macro for
 // us .
 fn main() {
-    // Here is an example of wunwrap in action :
-    let f = File::open("hello.txt").unwrap();
-    // If we run this code without a hello.txt fle , we'll see an error message from the panic! call
-    // that the unwrap method makes :
-    // thread 'main' (496694) panicked at src/main.rs:13:37:
-    // called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or direc
-    // tory" }
-    //
     // Another method , expect , which is similar to unwrap , lets us also choose the panic! error
     // message . Using expect instead of unwrap and providing food error messages can convey your
     // intent and make tracking down the source of a panic easier .
+    // The syntax of expect looks like this :
+    let f = File::open("hello.txt").expect("Failed to open hello.txt ");
 }
