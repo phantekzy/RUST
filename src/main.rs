@@ -6,4 +6,8 @@
 // This is known as "Propagating"the error and gives more control to the calling code , where there
 // mmight me more information or logic that dictates how the error should be handled than what you
 // have available in the context of your code .
-fn main() {}
+fn main() {
+    // For example this code shows a function that reads a username from a file . If the file doen't
+    // exist or can't be read , this function will return those errors to the code that called this
+    // function :
+}
