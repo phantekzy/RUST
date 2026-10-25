@@ -5,5 +5,7 @@
 // those methods , called unwrap , is a shortcut method that is implemented just like the match
 // expression we wrote in the last example . If the Result value is OK variant , unwrap will return
 // the value inside the OK. If the Result is the Err variant , unwrap will call the panic! macro for
-// us . Here is an example of wunwrap in action :
-fn main() {}
+// us .
+fn main() {
+    // Here is an example of wunwrap in action :
+}
