@@ -27,4 +27,8 @@ fn main() {
     // has variants representing the different kinds of errors that might reust from an io operation
     // The vairant we want to use is ErrorKind::NotFound , which indicates the file we're trying to
     // open doen't exist yet . Se we match on f, but we also have an inner match on error.kind().
+    //
+    // The condition we want to check in the inner match is whether the value returned by
+    // error.kind() is the NotFound variant of the ErrorKind enum . If it is , we try to create the
+    // file with File::create.
 }
