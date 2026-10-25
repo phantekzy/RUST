@@ -3,4 +3,7 @@
 // When we are writing a function whose implementation calls something that might fail , instead of
 // handling the error withing this function , we can return the error to the calling code so that it
 // can decide what to do .
+// This is known as "Propagating"the error and gives more control to the calling code , where there
+// mmight me more information or logic that dictates how the error should be handled than what you
+// have available in the context of your code .
 fn main() {}
