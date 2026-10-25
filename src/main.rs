@@ -10,6 +10,7 @@ use std::{fs::File, io::ErrorKind};
 // Main function
 fn main() {
     let f = File::open("hello.txt");
+    // Handling different kinds of errors in different ways
     let f = match f {
         Ok(file) => file,
         Err(error) => match error.kind() {
