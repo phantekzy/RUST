@@ -22,5 +22,9 @@ fn main() {
         },
     };
     // The type of the value that File::open returs inside the Err variant is io::Error , which is a
-    // struct provided by the standard library .
+    // struct provided by the standard library . This struct has a method kind that we can call to
+    // get an io::ErrorKind value . The enum io::ErrorKind is provided by the standard library and
+    // has variants representing the different kinds of errors that might reust from an io operation
+    // The vairant we want to use is ErrorKind::NotFound , which indicates the file we're trying to
+    // open doen't exist yet . Se we match on f, but we also have an inner match on error.kind().
 }
