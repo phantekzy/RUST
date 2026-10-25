@@ -39,4 +39,6 @@ fn main() {
     //
     // Next we will learn about closures , the Result<T,E> type has many methods that accept a
     // closure and are implemented using match expressions .
+    // Using those methods will make our code more concise .
+    // AS more seasoned Rustacean might write this code instead :
 }
