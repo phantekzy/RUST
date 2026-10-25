@@ -18,5 +18,6 @@ fn main() {
     // tory" }
     //
     // Another method , expect , which is similar to unwrap , lets us also choose the panic! error
-    // message .
+    // message . Using expect instead of unwrap and providing food error messages can convey your
+    // intent and make tracking down the source of a panic easier .
 }
