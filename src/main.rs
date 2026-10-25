@@ -1,3 +1,5 @@
+use std::fs::File;
+
 // Error Handling
 // Shortucts for Panic on Error : unwrap and expect
 // Using match works well enough , but it can be a bit verbose and doesn't always communicate intent
@@ -8,4 +10,5 @@
 // us .
 fn main() {
     // Here is an example of wunwrap in action :
+    let f = File::open("hello.txt").unwrap();
 }
