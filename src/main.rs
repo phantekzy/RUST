@@ -11,4 +11,6 @@ use std::fs::File;
 fn main() {
     // Here is an example of wunwrap in action :
     let f = File::open("hello.txt").unwrap();
+    // If we run this code without a hello.txt fle , we'll see an error message from the panic! call
+    // that the unwrap method makes
 }
