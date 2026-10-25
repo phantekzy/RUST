@@ -38,4 +38,9 @@ fn main() {
             panic!("Problem creating the file : {:?}", error);
         }
     });
+    // Although this code has the same behavior as the one before , it doen't contain any match
+    // expresssions and is cleaner to read .
+    // Come back to this example after we have read the last chapter , and look up the
+    // unwrap_or_else method in the standard library documentation . Many more of these methods can
+    // clean up a huged nested match expresssion when we're dealing with errors .
 }
