@@ -31,4 +31,7 @@ fn main() {
     // The condition we want to check in the inner match is whether the value returned by
     // error.kind() is the NotFound variant of the ErrorKind enum . If it is , we try to create the
     // file with File::create.
+    // However , because File::create could also fail , we need a second arm in the inner match
+    // expression.
+    // When the file can't be created , a different error message is printed .
 }
