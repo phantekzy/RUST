@@ -35,5 +35,5 @@ fn main() {
     // expression.
     // When the file can't be created , a different error message is printed . The second arm of the
     // outer match stays the same , so the program panics on any error beside the missing file error
-    //
+    // That's a lot of match! The match expression is very useful but also very much a primitive .
 }
