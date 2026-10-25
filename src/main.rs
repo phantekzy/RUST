@@ -14,4 +14,9 @@ fn main() {
     // intent and make tracking down the source of a panic easier .
     // The syntax of expect looks like this :
     let f = File::open("hello.txt").expect("Failed to open hello.txt ");
+    // We use expect in the same way as unwrap : to return the file handle or call the panic! macro
+    // . the error message used by expect in its call to panic! will be the parameter that we pass
+    // to expect , rahter than the default panic! message that unwrap uses  :
+    // thread 'main' (504954) panicked at src/main.rs:16:37:
+    // Failed to open hello.txt : Os { code: 2, kind: NotFound, message: "No such file or directory" }
 }
