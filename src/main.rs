@@ -9,18 +9,6 @@ use std::{fs::File, io::ErrorKind};
 // the file we still want the code to panic! in the same way as it did before .
 // Main function
 fn main() {
-    let f = File::open("hello.txt");
-    // Handling different kinds of errors in different ways
-    let f = match f {
-        Ok(file) => file,
-        Err(error) => match error.kind() {
-            ErrorKind::NotFound => match File::create("hello.txt") {
-                Ok(fc) => fc,
-                Err(e) => panic!("Problem creating the file : {:?}", e),
-            },
-            other_error => panic!("Problem opening the file {:?}", other_error),
-        },
-    };
     // The type of the value that File::open returs inside the Err variant is io::Error , which is a
     // struct provided by the standard library . This struct has a method kind that we can call to
     // get an io::ErrorKind value . The enum io::ErrorKind is provided by the standard library and
