@@ -29,4 +29,6 @@ fn read_username_from_file() -> Result<String, io::Error> {
         Err(e) => return Err(e), // Immediately exit the function using return Err(e) , handling the
                            // error back to the caller .
     };
+    // Creating the Buffer String
+    let mut s = String::new();
 }
