@@ -30,5 +30,6 @@ fn read_username_from_file() -> Result<String, io::Error> {
                            // error back to the caller .
     };
     // Creating the Buffer String
-    let mut s = String::new();
+    let mut s = String::new(); // Before we can pull text out of the file , we need a mutable string
+    // container in memory s to hold the incoming bytes .
 }
