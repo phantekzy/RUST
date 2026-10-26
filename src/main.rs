@@ -12,11 +12,11 @@ use std::{
 // mmight me more information or logic that dictates how the error should be handled than what you
 // have available in the context of your code .
 fn main() {}
+
 // For example this code shows a function that reads a username from a file . If the file doen't
 // exist or can't be read , this function will return those errors to the code that called this
 // function :
 // A function that returns errors to the calling code using match
-// REDO THIS FUNCTION !!
 fn read_username_from_file() -> Result<String, io::Error> {
     // Opening the file
     // This attempts to open the file name hello.txt
@@ -32,4 +32,9 @@ fn read_username_from_file() -> Result<String, io::Error> {
     // Creating the Buffer String
     let mut s = String::new(); // Before we can pull text out of the file , we need a mutable string
     // container in memory s to hold the incoming bytes .
+    // Reading into the String and Returning the Final Result
+    match f.read_to_string(&mut s) {
+        Ok(_) => Ok(s),
+        Err(e) => Err(e),
+    }
 }
