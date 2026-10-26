@@ -19,4 +19,5 @@ fn main() {}
 // REDO THIS FUNCTION !!
 fn read_username_from_file() -> Result<String, io::Error> {
     // Opening the file
+    let f = File::open("hello.txt");
 }
