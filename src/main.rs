@@ -16,6 +16,7 @@ fn main() {}
 // exist or can't be read , this function will return those errors to the code that called this
 // function :
 // A function that returns errors to the calling code using match
+// REDO THIS FUNCTION !!
 fn read_username_from_file() -> Result<String, io::Error> {
     let f = File::open("xxx.txt");
     let mut f = match f {
