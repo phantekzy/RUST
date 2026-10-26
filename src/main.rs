@@ -19,5 +19,12 @@ fn main() {}
 // REDO THIS FUNCTION !!
 fn read_username_from_file() -> Result<String, io::Error> {
     // Opening the file
+    // This attempts to open the file name hello.txt
     let f = File::open("hello.txt");
+    // Because File::open can fail , it returns its own Result
+    // Handling the file Open Result
+    let mut f = match f {
+        Ok(file) => file,
+        Err(e) => return Err(e),
+    };
 }
