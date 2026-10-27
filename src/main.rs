@@ -15,4 +15,8 @@ fn main() {
     let f = File::open("hello.txt")?;
     // error[E0277]: the `?` operator can only be used in a function that returns `Result` or `Option` (or anothe
     //r type that implements `FromResidual`)
+    //This error points out that we're only allowed to use the ? operator in a function that returns
+    //Result<T,E> . When we are wrting code in a function that doesn't return Result<T,E> ,and we
+    //want to use the ? try operator when we call other functions that return Result<T,E> , we have
+    //two choices to fix this problem
 }
