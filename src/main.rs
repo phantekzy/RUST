@@ -38,4 +38,6 @@ fn read_username_from_file() -> Result<String, io::Error> {
         Err(e) => Err(e),
     }
     // A function that returns errors to the calling code using match
+    // This function can be written in a much shorter way , but we're going to start by doing a lot
+    // of it manually in order to explore error handling ; at the end , we'll show the shorter way .
 }
