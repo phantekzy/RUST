@@ -17,7 +17,8 @@ fn read_username_from_file() -> Result<String, io::Error> {
 // There is a difference between what the match expresssion in the last example and the ? operator
 // do : error values that have the ? operator called on them go through the from function , defined
 // in the From train in the standard library , which is used to convert errors from one type into
-// another .
+// another . When the ? operator calls the from function , the error type received is converted into
+// the error type defined in the retyrn type of the current function .
 
 // Main function
 fn main() {
