@@ -15,4 +15,17 @@ fn read_username_from_file() -> Result<String, io::Error> {
     Ok(s)
 }
 // Main function
-fn main() {}
+fn main() {
+    match read_username_from_file() {
+        Ok(username) => {
+            println!("Success! Welcome, {}", username);
+        }
+        Err(e) => {
+            // The caller handles the error gracefully instead of crashing
+            println!(
+                "Ah, something went wrong: {}. Using a guest profile instead.",
+                e
+            );
+        }
+    }
+}
