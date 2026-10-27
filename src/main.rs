@@ -40,4 +40,9 @@ fn read_username_from_file() -> Result<String, io::Error> {
     // A function that returns errors to the calling code using match
     // This function can be written in a much shorter way , but we're going to start by doing a lot
     // of it manually in order to explore error handling ; at the end , we'll show the shorter way .
+    // Let's look at the return type of the function first : Result<String , io::Error>. This means
+    // the function is returning a value of the Type Result<T,E> where the generic parameter T has
+    // been filled in with the concrete type String and the generic type E has been filled in witth
+    // the concrete type io::Error.
+    //
 }
