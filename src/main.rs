@@ -31,6 +31,12 @@ fn read_username_from_file() -> Result<String, io::Error> {
     Ok(s)
 } // Chaining method calls after the ? Operator
 
+// We've moved the creation of the new String in s to the beginning of the function ; that part
+// hasn't changed . instead of creating a variable f , we've chained the call to read_to_string
+// directly onto the result of File::open("hello.txt")?. We still have a ? at the end of the
+// read_to_string call , and we still return an Ok value containing the username in s when both
+// File::open and read_to_string succeed rahter than returning erroors .
+
 // Main function
 fn main() {
     match read_username_from_file() {
