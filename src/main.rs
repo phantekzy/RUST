@@ -29,7 +29,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
     // Using the try operator
     File::open("hello.txt")?.read_to_string(&mut s)?;
     Ok(s)
-}
+} // Chaining method calls after the ? Operator
 
 // Main function
 fn main() {
