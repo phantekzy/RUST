@@ -7,7 +7,7 @@ use std::{
     io::{self, Read},
 };
 
-// This function doesn't handle the error . it propagates it upward .
+// A function that returns error to the calling code using the ? operator
 fn read_username_from_file() -> Result<String, io::Error> {
     let mut f = File::open("hello.txt")?;
     let mut s = String::new();
