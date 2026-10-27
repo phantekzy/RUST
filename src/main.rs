@@ -22,4 +22,5 @@ fn main() {
     //One technique is to change the return type of our function to be Result <T,E> if we have no
     //restrictions preventing that . The other technique is to use a match or one of the Result<T,E>
     //methods to handle the Result<T,E> in whatever way is appropriate .
+    //The main function is special and there are restrictions on what its retrun
 }
