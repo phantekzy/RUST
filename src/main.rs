@@ -18,5 +18,8 @@ fn main() {
     //This error points out that we're only allowed to use the ? operator in a function that returns
     //Result<T,E> . When we are wrting code in a function that doesn't return Result<T,E> ,and we
     //want to use the ? try operator when we call other functions that return Result<T,E> , we have
-    //two choices to fix this problem
+    //two choices to fix this problem.
+    //One technique is to change the return type of our function to be Result <T,E> if we have no
+    //restrictions preventing that . The other technique is to use a match or one of the Result<T,E>
+    //methods to handle the Result<T,E> in whatever way is appropriate .
 }
