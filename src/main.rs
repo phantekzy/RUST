@@ -13,4 +13,6 @@ fn main() {
     // Let's look at what happens if we use the ? operator in the main fnction , which we'll recall
     // has a return type of () :
     let f = File::open("hello.txt")?;
+    // error[E0277]: the `?` operator can only be used in a function that returns `Result` or `Option` (or anothe
+    //r type that implements `FromResidual`)
 }
