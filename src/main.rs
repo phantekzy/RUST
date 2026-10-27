@@ -35,6 +35,8 @@ fn read_username_from_file() -> Result<String, io::Error> {
     // Reading a file into a String is a fairly common operation , so Rust provides the convenient
     // fs::read_to_string function that opens the file,create a new String , reads the contents of
     // the file , puts the contents into that String , and returns it .
+    // Of course , using fs::read_to_string doens't give us the opportunity to explain all the error
+    // handling , so we did it the longer way first .
 }
 
 // Main function
