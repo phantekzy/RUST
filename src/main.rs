@@ -28,6 +28,9 @@ fn read_username_from_file() -> Result<String, io::Error> {
 // inside an Ok t the variable f . if an error occurs ,the ? operator will return early out the
 // whole function and give any Err value to the calling code . The same thing applies to the ? at
 // the end of the read_to_string call .
+//
+// The ? eliminates a lot of boilerplate and makes this function's implementation simpler . We could
+// even shorten this code further by chaining method calls immediatlely after the ?
 
 // Main function
 fn main() {
