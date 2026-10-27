@@ -19,6 +19,10 @@ fn read_username_from_file() -> Result<String, io::Error> {
 // in the From train in the standard library , which is used to convert errors from one type into
 // another . When the ? operator calls the from function , the error type received is converted into
 // the error type defined in the retyrn type of the current function .
+// This is useful when a function returns one error type to represent all the ways a function might
+// fail , even if parts might fail for many different reasons . As long as each error type
+// implements the from function to define how to convert itself to the returned error type , the ?
+// operator takes care of the conversion automatically .
 
 // Main function
 fn main() {
