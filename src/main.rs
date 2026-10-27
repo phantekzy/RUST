@@ -44,5 +44,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
     // the function is returning a value of the Type Result<T,E> where the generic parameter T has
     // been filled in with the concrete type String and the generic type E has been filled in witth
     // the concrete type io::Error.
+    // If this function suceeds without any problems , the code that calls t his function will
+    // receive an Ok value that holds a String , the username that this function read from the file
     //
 }
