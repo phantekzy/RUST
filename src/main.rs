@@ -6,5 +6,11 @@
 // The part of the match  that requires a return type of Result is return Err(e) , so the return
 // type of the function must be a Result to be compatible with this return .
 
+use std::fs::File;
+
 // Main function
-fn main() {}
+fn main() {
+    // Let's look at what happens if we use the ? operator in the main fnction , which we'll recall
+    // has a return type of () :
+    let f = File::open("hello.txt")?;
+}
