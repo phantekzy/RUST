@@ -46,5 +46,7 @@ fn read_username_from_file() -> Result<String, io::Error> {
     // the concrete type io::Error.
     // If this function suceeds without any problems , the code that calls t his function will
     // receive an Ok value that holds a String , the username that this function read from the file
-    //
+    // If the function encounters any problems , the code that calls this function will receive an
+    // Err value that holds an instance of io::Error that contains more information about what the
+    // problems were .
 }
