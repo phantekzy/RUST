@@ -32,6 +32,9 @@ use std::{fs, io};
 // Using fs::read_to_string instead of opening and then reading the file
 fn read_username_from_file() -> Result<String, io::Error> {
     fs::read_to_string("hello.txt")
+    // Reading a file into a String is a fairly common operation , so Rust provides the convenient
+    // fs::read_to_string function that opens the file,create a new String , reads the contents of
+    // the file , puts the contents into that String , and returns it .
 }
 
 // Main function
