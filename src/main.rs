@@ -23,6 +23,11 @@ fn read_username_from_file() -> Result<String, io::Error> {
 // fail , even if parts might fail for many different reasons . As long as each error type
 // implements the from function to define how to convert itself to the returned error type , the ?
 // operator takes care of the conversion automatically .
+//
+// In the context of the last example , the ? at the end of File::open call will return the value
+// inside an Ok t the variable f . if an error occurs ,the ? operator will return early out the
+// whole function and give any Err value to the calling code . The same thing applies to the ? at
+// the end of the read_to_string call .
 
 // Main function
 fn main() {
