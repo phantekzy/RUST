@@ -37,4 +37,5 @@ fn read_username_from_file() -> Result<String, io::Error> {
         Ok(_) => Ok(s),
         Err(e) => Err(e),
     }
+    // A function that returns errors to the calling code using match
 }
