@@ -10,5 +10,7 @@
 // an unrecoverable one .
 // Therfore , returning Result is a good default choice when we're defining a function that might
 // fail . In rare situations , it's more appropriate to write code that panics instead of returning
-// a Result.
+// a Result. Let's explore why its appropriate to panic in exaples , prototypes code and tests .
+// Then we'll discuss situations in which the compiler can't tell that failure is impossible , but
+// you as a human can .
 fn main() {}
