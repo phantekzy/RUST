@@ -25,4 +25,7 @@ use std::{error::Error, fs::File};
 fn main() -> Result<(), Box<dyn Error>> {
     let f = File::open("hello.txt")?;
     Ok(())
+    // The Box<dyn Error> type is called a trait object , which we'll talk about it later .
+    // i dont have big idea about it but dyn means dynamic so we don't know the size of the
+    // error so we can't stock it on the heap nor on the stack , so Box creates a smart pointer.
 }
