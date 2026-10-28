@@ -11,4 +11,6 @@
 // If a method call fails in a test , we'd want the whole test to fail , even if that method isn't
 // the functionality under test . Because panic! is how a test is marked as a failure , calling
 // unwrap or expect is exactly what should happen .
+//
+// Cases in Which we have more information than the compiler :
 fn main() {}
