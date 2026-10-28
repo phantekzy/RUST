@@ -8,4 +8,7 @@
 // The calling code could choose the attempt to recover in a way that's appropriate for it's situation,or it could decide
 // that an Err value in this case is unrecoverable , so it can call panic! and turn our recoverale error into
 // an unrecoverable one .
+// Therfore , returning Result is a good default choice when we're defining a function that might
+// fail . In rare situations , it's more appropriate to write code that panics instead of returning
+// a Result.
 fn main() {}
