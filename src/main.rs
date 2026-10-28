@@ -24,5 +24,5 @@ use std::{error::Error, fs::File};
 //valid return type for main is () . and conveniently , another return type is Result<T,E> :.
 fn main() -> Result<(), Box<dyn Error>> {
     let f = File::open("hello.txt")?;
-    Ok(());
+    Ok(())
 }
