@@ -8,4 +8,7 @@
 // Similarly , the unwrap and expect methods are very handy when prototyping , before we're ready to
 // decide how to handle errors . They leave clear markers in our code for when we're ready to make
 // our program more robust.
+// If a method call fails in a test , we'd want the whole test to fail , even if that method isn't
+// the functionality under test . Because panic! is how a test is marked as a failure , calling
+// unwrap or expect is exactly what should happen .
 fn main() {}
