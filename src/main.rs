@@ -6,7 +6,7 @@
 // The part of the match  that requires a return type of Result is return Err(e) , so the return
 // type of the function must be a Result to be compatible with this return .
 
-use std::fs::File;
+use std::{error::Error, fs::File};
 
 // Main function
 // Let's look at what happens if we use the ? operator in the main fnction , which we'll recall
@@ -22,4 +22,7 @@ use std::fs::File;
 //methods to handle the Result<T,E> in whatever way is appropriate .
 //The main function is special and there are restrictions on what its retrun type must be  . One
 //valid return type for main is () . and conveniently , another return type is Result<T,E> :.
-fn main() {}
+fn main() -> Result<(), Box<dyn Error>> {
+    let f = File::open("hello.txt")?;
+    Ok(());
+}
