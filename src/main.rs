@@ -31,5 +31,7 @@ fn main() {
     // valid string doesn't cvhange the return type of the parse methode: We still get a Result
     // value , and the compiler will still make us handle the Result as if the Err variant is a
     // possibility because the compiler isn't smart enough to see that this string is always a valid
-    // IP address
+    // IP address. If the IP address string came from a user rather than being hardcoded into the
+    // program and therefore did have a possibility of failure , we'd definitely want to handle the
+    // Result in a more robust way instead .
 }
