@@ -26,4 +26,5 @@ fn main() {
     // If we can ensure by manually inspecting the code that we'll never have an Err variant , it's
     // perfectly acceptable to call unwrap
     let home: IpAddr = "127.0.0.1".parse().unwrap();
+    // We're creating an IpAddr instance by parsing hardcoded string .
 }
