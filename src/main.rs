@@ -13,6 +13,7 @@
 // unwrap or expect is exactly what should happen .
 //
 // Cases in Which we have more information than the compiler :
-//
+// It would also be appropriate to call unwrap when we have some other logic that ensures the Result
+// will have an Ok value , but the logic isn't something the compuler understands .
 // Main function
 fn main() {}
