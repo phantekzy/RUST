@@ -19,8 +19,11 @@
 // possibility of failing in general , even though it's logically impossible in our particular
 // situation .
 
+use std::net::IpAddr;
+
 // Main function
 fn main() {
     // If we can ensure by manually inspecting the code that we'll never have an Err variant , it's
     // perfectly acceptable to call unwrap
+    let home: IpAddr = "127.0.0.1".parse().unwrap();
 }
