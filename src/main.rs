@@ -26,5 +26,10 @@ fn main() {
     // If we can ensure by manually inspecting the code that we'll never have an Err variant , it's
     // perfectly acceptable to call unwrap
     let home: IpAddr = "127.0.0.1".parse().unwrap();
-    // We're creating an IpAddr instance by parsing hardcoded string .
+    // We're creating an IpAddr instance by parsing hardcoded string . We can see that 127.0.0.1 is
+    // a valid IP address , so it's acceptable to use unwrap here. However , having a hardcoded ,
+    // valid string doesn't cvhange the return type of the parse methode: We still get a Result
+    // value , and the compiler will still make us handle the Result as if the Err variant is a
+    // possibility because the compiler isn't smart enough to see that this string is always a valid
+    // IP address
 }
