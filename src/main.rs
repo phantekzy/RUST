@@ -18,5 +18,9 @@
 // We'll still have a Result value that we need to hanlde : whatever operation we're calling has the
 // possibility of failing in general , even though it's logically impossible in our particular
 // situation .
+
 // Main function
-fn main() {}
+fn main() {
+    // If we can ensure by manually inspecting the code that we'll never have an Err variant , it's
+    // perfectly acceptable to call unwrap
+}
