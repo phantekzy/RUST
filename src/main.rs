@@ -13,4 +13,12 @@
 // potentially negative numbers, and then add a check for the number being in range :
 
 // Main function
-fn main() {}
+fn main() {
+    // -- snip--
+    loop {
+        let guess: i32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
+    }
+}
