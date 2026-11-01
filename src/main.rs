@@ -12,7 +12,8 @@
 // during development . Similarly, panic! is ofter appropriate if we're calling external code that
 // However, when failure is expected , it's more appropriate to treturn a Result than to make a
 // panic! call . Example inclue a parser being given mal formed data or an HTTP request returning a
-// status that indicates you have hit a rate limit .
+// status that indicates you have hit a rate limit . In these cases, returning a Result indicates
+// that failure is an expected possibility that the calling code must decide how to handle .
 // is out of our control and it returns an invalid state that we have no way of fixing .
 
 // Main function
