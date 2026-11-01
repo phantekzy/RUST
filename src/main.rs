@@ -9,6 +9,8 @@
 // But it would be useful enhancement to guide the user toward valid guesses and have different
 // behavior when a user guesses a number that's out of the range  versus when a user types , for
 // example, letters instead .
+// One way to do this would be to parse the guess as an i32 instead of only a u32 to allow
+// potentially negative numbers, and then add a check for the number being in range :
 
 // Main function
 fn main() {}
