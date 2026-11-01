@@ -24,6 +24,8 @@
 // requirements. Panicking when the contratct is violated makes sense because a contract violation
 // always indicates a caller-side bug and it's not a kinf of error we want the calling code to have
 // to explicitly handle.
+// In fact, there's no reasonable way for calling code to recover; the calling programmers need to
+// fix the code . Contracts for a function, especially when a violation will cause a panic.
 
 // Main function
 fn main() {}
