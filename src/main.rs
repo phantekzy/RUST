@@ -28,4 +28,7 @@ fn main() {
     match guess.cmp(&secret_number) {
         // --snip--
     }
+    // The if expression checkes whether our value is out of range , tells the user about the
+    // problem , and calls continue to start the next iteration of the loop and ask for another
+    // guess .
 }
