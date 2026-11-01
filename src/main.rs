@@ -7,6 +7,9 @@
 // - The bad state is not somthing that's expected to happen occasionally .
 // - Our code after this point needs to rely on not being in this bad state .
 // - There is not a good way to encode this information in the types we use .
+// If someone calls our code and passes in values that don't make sense , the best choice might be
+// to call panic! and alert the person using our library to the bug in their code so they can fix in
+// during development .
 
 // Main function
 fn main() {}
