@@ -17,7 +17,9 @@
 //
 // When our code performs operations on values , our code should verify the values are valid first
 // and panic if the values aren't valid . This is mostly for safety reasons: attempting to operate
-// on invalid data can expose our code to vulnerabilities.
+// on invalid data can expose our code to vulnerabilities. This is the main reason the standard
+// library will call panic! if we attemtps an out-of-bounds memory access : trying to access memory
+// that doesn't belong to the current data structure is a common security problem .
 
 // Main function
 fn main() {}
