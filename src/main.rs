@@ -10,6 +10,9 @@
 // If someone calls our code and passes in values that don't make sense , the best choice might be
 // to call panic! and alert the person using our library to the bug in their code so they can fix in
 // during development . Similarly, panic! is ofter appropriate if we're calling external code that
+// However, when failure is expected , it's more appropriate to treturn a Result than to make a
+// panic! call . Example inclue a parser being given mal formed data or an HTTP request returning a
+// status that indicates you have hit a rate limit .
 // is out of our control and it returns an invalid state that we have no way of fixing .
 
 // Main function
