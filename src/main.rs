@@ -25,4 +25,7 @@ fn main() {
         println!("The secret number will be between 1 and 100.");
         continue;
     }
+    match guess.cmp(&secret_number) {
+        // --snip--
+    }
 }
