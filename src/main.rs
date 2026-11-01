@@ -20,6 +20,10 @@
 // on invalid data can expose our code to vulnerabilities. This is the main reason the standard
 // library will call panic! if we attemtps an out-of-bounds memory access : trying to access memory
 // that doesn't belong to the current data structure is a common security problem .
+// Functions often have "contratcs": their behavior is only guaranteed if the inputs meet particular
+// requirements. Panicking when the contratct is violated makes sense because a contract violation
+// always indicates a caller-side bug and it's not a kinf of error we want the calling code to have
+// to explicitly handle.
 
 // Main function
 fn main() {}
