@@ -30,5 +30,6 @@ fn main() {
     }
     // The if expression checkes whether our value is out of range , tells the user about the
     // problem , and calls continue to start the next iteration of the loop and ask for another
-    // guess .
+    // guess . After the if expression , we can proceed with the comparision between guess and the
+    // secret_number knowhing that guess is between 1 and 100 .
 }
