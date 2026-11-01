@@ -14,7 +14,10 @@
 // panic! call . Example inclue a parser being given mal formed data or an HTTP request returning a
 // status that indicates you have hit a rate limit . In these cases, returning a Result indicates
 // that failure is an expected possibility that the calling code must decide how to handle .
-// is out of our control and it returns an invalid state that we have no way of fixing .
+//
+// When our code performs operations on values , our code should verify the values are valid first
+// and panic if the values aren't valid . This is mostly for safety reasons: attempting to operate
+// on invalid data can expose our code to vulnerabilities.
 
 // Main function
 fn main() {}
