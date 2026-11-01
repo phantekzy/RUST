@@ -32,4 +32,6 @@ fn main() {
     // problem , and calls continue to start the next iteration of the loop and ask for another
     // guess . After the if expression , we can proceed with the comparision between guess and the
     // secret_number knowhing that guess is between 1 and 100 .
+    // However, this is not an ideal solution: if it were absolutely critical that the program only
+    // operated on values between 1 and 100.
 }
