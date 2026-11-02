@@ -12,6 +12,8 @@
 // One way to do this would be to parse the guess as an i32 instead of only a u32 to allow
 // potentially negative numbers, and then add a check for the number being in range :
 
+use std::io;
+
 use rand::Rng;
 
 // Defining the custom type to protect the logic
@@ -40,5 +42,10 @@ fn main() {
     loop {
         println!("Please input your guess (1-100)");
         let mut input = String::new();
+
+        // Read String input from the terminal
+        io::stdin()
+            .read_line(&mut input)
+            .expect("Failed to read line");
     }
 }
