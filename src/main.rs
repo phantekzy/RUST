@@ -12,6 +12,8 @@
 // One way to do this would be to parse the guess as an i32 instead of only a u32 to allow
 // potentially negative numbers, and then add a check for the number being in range :
 
+use rand::Rng;
+
 // Defining the custom type to protect the logic
 pub struct Guess {
     value: i32,
@@ -31,4 +33,8 @@ impl Guess {
 }
 
 // Main function
-fn main() {}
+fn main() {
+    println!("Welcom to the guessing game");
+    // Generate a random secret number between 1 and 100
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+}
