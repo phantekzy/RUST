@@ -35,4 +35,7 @@ fn main() {
     // However, this is not an ideal solution: if it were absolutely critical that the program only
     // operated on values between 1 and 100, and it had many functions with this  requirement,
     // having a check like this in every function would be tedious (and might impact performance).
+    // instead,we can make a new type and put the validation in a function to create an instance of
+    // the type rather than repeating the validations everywhere. That way it's safe for functions
+    // to use the new type in their signatures
 }
