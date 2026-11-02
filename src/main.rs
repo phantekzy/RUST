@@ -24,6 +24,10 @@ impl Guess {
         }
         Guess { value }
     }
+    // Getter : allows safe , read only access to the secret number
+    pub fn value(&self) -> i32 {
+        self.value
+    }
 }
 
 // Main function
