@@ -33,5 +33,6 @@ fn main() {
     // guess . After the if expression , we can proceed with the comparision between guess and the
     // secret_number knowhing that guess is between 1 and 100 .
     // However, this is not an ideal solution: if it were absolutely critical that the program only
-    // operated on values between 1 and 100.
+    // operated on values between 1 and 100, and it had many functions with this  requirement,
+    // having a check like this in every function would be tedious (and might impact performance).
 }
