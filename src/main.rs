@@ -12,7 +12,19 @@
 // One way to do this would be to parse the guess as an i32 instead of only a u32 to allow
 // potentially negative numbers, and then add a check for the number being in range :
 
+// Defining the custom type to protect the logic
+pub struct Guess {
+    value: i32,
+}
+impl Guess {
+    // Constructor : only build a Guess if it's valid
+    pub fn new(value: i32) -> Guess {
+        if value < 1 || value > 100 {
+            panic!("Guess value must be between 1 and 100, got {}.", value)
+        }
+        Guess { value }
+    }
+}
+
 // Main function
-// This example shows one way to define Guess type that will only create an instance of Guess if
-// the new function recieves a value between 1 to 100 :
 fn main() {}
