@@ -96,3 +96,6 @@ fn main() {
 // documentation;
 // If value does pass he test we ceate a new Guess with its value field set to the val;ue parameter
 // and return the Guess .
+//
+// Next we implement a method named value that borrows self, doesn't have any other parameters , and
+// returns an i32 .this kind of method is sometimes called a getter,
