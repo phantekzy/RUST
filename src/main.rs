@@ -91,4 +91,8 @@ fn main() {
 // Guess . The code in the body of the new function tests value to make sure it's between 1 and 100
 // If value doesn't pass this test , we make a panic! call,which will alert the programmer who is
 // writing the calling code that they have a bug they need to fix , because creating a Guess with a
-// value outside this range would violate the contract that Guess::new is relying on .
+// value outside this range would violate the contract that Guess::new is relying on . The
+// conditions in which Guess::new might panic should be discussed in its public-facing API
+// documentation;
+// If value does pass he test we ceate a new Guess with its value field set to the val;ue parameter
+// and return the Guess .
