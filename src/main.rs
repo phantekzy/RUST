@@ -98,4 +98,6 @@ fn main() {
 // and return the Guess .
 //
 // Next we implement a method named value that borrows self, doesn't have any other parameters , and
-// returns an i32 .this kind of method is sometimes called a getter,
+// returns an i32 .this kind of method is sometimes called a getter, because its purpose is to get
+// some data from its fields and return it. This public method is necessary because the value field
+// of the guess struct is private.
