@@ -100,4 +100,6 @@ fn main() {
 // Next we implement a method named value that borrows self, doesn't have any other parameters , and
 // returns an i32 .this kind of method is sometimes called a getter, because its purpose is to get
 // some data from its fields and return it. This public method is necessary because the value field
-// of the guess struct is private.
+// of the guess struct is private. It's important that the valye ffield be private so code using the
+// Guess struct is not allowd to set value directly : code outside the ,module must use the
+// Guess::new function to create an isntance of Guess ,
