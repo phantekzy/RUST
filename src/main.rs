@@ -14,5 +14,8 @@
 //  Next, we'll use the same technique to make a generic function from two functions that differ
 //  onlu in the types of their parameters. We'll also explain how to use generic types in struct and
 //  enum definitions.
+//  Then we'll learn how to use traits to define behavior in a generic way.we can combine traits
+//  with with generic types to constrain a generic type to only those types that have a particular
+//  behavior , as opposed to just any type.
 // Main function
 fn main() {}
