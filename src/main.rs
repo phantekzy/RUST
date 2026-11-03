@@ -89,4 +89,6 @@ fn main() {
 // Then we implement an associated function named new on Guess that creates instances of Guess
 // values. The new function is defined to have one parameter named value of type i32 and to return a
 // Guess . The code in the body of the new function tests value to make sure it's between 1 and 100
-//
+// If value doesn't pass this test , we make a panic! call,which will alert the programmer who is
+// writing the calling code that they have a bug they need to fix , because creating a Guess with a
+// value outside this range would violate the contract that Guess::new is relying on .
