@@ -18,6 +18,7 @@
 //  with with generic types to constrain a generic type to only those types that have a particular
 //  behavior , as opposed to just any type.
 //  Finally, we'll discuss lifetimes , a variety of generics that give the compiler information
-//  about how references relate to each other.
+//  about how references relate to each other. lifetimesallow us to borrow values in many situations
+//  while still enabiling the compiler to check that the references are valid .
 // Main function
 fn main() {}
