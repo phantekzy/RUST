@@ -87,4 +87,5 @@ fn main() {
 // First we define a struct named Guess that has a filed named value that holds an i32 . this is
 // where the number will be stored .
 // Then we implement an associated function named new on Guess that creates instances of Guess
-// values.
+// values. The new function is defined to have one parameter named value of type i32 and to return a
+// Guess .
