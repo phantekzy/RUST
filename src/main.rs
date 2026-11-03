@@ -84,3 +84,5 @@ fn main() {
         }
     }
 }
+// First we define a struct named Guess that has a filed named value that holds an i32 . this is
+// where the number will be stored .
