@@ -17,6 +17,7 @@ use std::cmp::Ordering;
 use std::io;
 
 // Defining the custom type to protect the logic
+// A Guess type that only continue with values between 1 to 100
 pub struct Guess {
     value: i32,
 }
