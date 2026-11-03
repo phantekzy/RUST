@@ -8,5 +8,6 @@
 //      multiple concrete values, functions can take parameters of some generic typpes instead of a
 //      concrete type, like i32 or String. In fact, we've already used before generics with
 //      Option<T> and with Vec<T> and also with HashMap<K,V>, and finaly with Result<T,E>.
+//      We will explore how to define our own types,functionss and methods with generics!
 // Main function
 fn main() {}
