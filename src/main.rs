@@ -88,4 +88,5 @@ fn main() {
 // where the number will be stored .
 // Then we implement an associated function named new on Guess that creates instances of Guess
 // values. The new function is defined to have one parameter named value of type i32 and to return a
-// Guess .
+// Guess . The code in the body of the new function tests value to make sure it's between 1 and 100
+//
