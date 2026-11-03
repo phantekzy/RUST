@@ -9,5 +9,10 @@
 //      concrete type, like i32 or String. In fact, we've already used before generics with
 //      Option<T> and with Vec<T> and also with HashMap<K,V>, and finaly with Result<T,E>.
 //      We will explore how to define our own types,functionss and methods with generics!
+//
+//  First, we'll review how to extract a function to reducve code duplication.
+//  Next, we'll use the same technique to make a generic function from two functions that differ
+//  onlu in the types of their parameters. We'll also explain how to use generic types in struct and
+//  enum definitions.
 // Main function
 fn main() {}
