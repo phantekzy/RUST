@@ -6,6 +6,7 @@
 // will be in their place when compiling and running the code .
 //      Similar to the way a function takes parameters with unknown values to run the same code on
 //      multiple concrete values, functions can take parameters of some generic typpes instead of a
-//      concrete type, like i32 or String.
+//      concrete type, like i32 or String. In fact, we've already used before generics with
+//      Option<T> and with Vec<T> and also with HashMap<K,V>, and finaly with Result<T,E>.
 // Main function
 fn main() {}
