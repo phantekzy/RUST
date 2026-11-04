@@ -25,3 +25,5 @@ fn main() {
     // doesn't change , and the code moves on to the next number in the list. After considering all
     // the numbers in the  list, largest should hold the largest number, which in this case is 100.
 }
+// To find the largest number in two different lists of numbers, w3e can duplicate the code in
+// the last example and use the same logic at two different places in the program :
