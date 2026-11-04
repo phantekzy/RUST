@@ -8,6 +8,8 @@
 // Main function
 fn main() {
     let number_list = vec![34, 50, 25, 100, 65];
+    let results = largest(&number_list);
+    println!("The largest number is {}", results);
 }
 //
 // In this example , we extracted the code that finds the largest number into a function named
