@@ -32,4 +32,5 @@ fn largest(list: &[i32]) -> i32 {
 //    1.Identify duplicate code.
 //    2. Extract the duplicate code into the body of the function and specify the inputs and return
 //       values of that code in the fucntion signature.
+//    3. Update the two instances of duplicated code to call the function instead.
 //
