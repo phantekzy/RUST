@@ -43,7 +43,16 @@ fn main() {
     // operates on any list of integers given to it in a parameter.
     // This sollution makes our code clearer and let us express the concept of finding the largest
     // number in a list abstractly.
-    // In this example , we extracted the code that finds the largest number into a function named
-    // largest. Unlike the code in the first example , which can find the largest number in only one
-    // particular list , this program can find the largest number in two different lists.
+}
+// In this example , we extracted the code that finds the largest number into a function named
+// largest. Unlike the code in the first example , which can find the largest number in only one
+// particular list , this program can find the largest number in two different lists.
+fn largest(list: &[i32]) -> i32 {
+    let mut largest = list[0];
+    for &item in list.iter() {
+        if item > largest {
+            largest = item;
+        }
+    }
+    largest
 }
