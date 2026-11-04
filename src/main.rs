@@ -15,7 +15,7 @@ fn main() {
             largest = number;
         }
     }
-    println!("the largest number is {}", largest)
+    println!("the largest number is {}", largest);
     // This code stores a list of integers in the variable number_list and places the first
     // number in the list in a variable named largest . Then it iterates through all numbers in the
     // list , and if the current number is greater than the number stored in largest , then it
@@ -27,4 +27,13 @@ fn main() {
     //
     // To find the largest number in two different lists of numbers, w3e can duplicate the code in
     // the last example and use the same logic at two different places in the program :
+
+    let number_list = vec![102, 34, 6000, 89, 53, 2, 43, 8];
+    let mut largest = number_list[0];
+    for number in number_list {
+        if number > largest {
+            largest = number;
+        }
+    }
+    println!("the largest number is {}", largest)
 }
