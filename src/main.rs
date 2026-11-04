@@ -41,4 +41,6 @@ fn main() {
     // the code in multiple places when we want to change it.
     // to eliminate this duplication , we can create an abstraction by defining a function that
     // operates on any list of integers given to it in a parameter.
+    // This sollution makes our code clearer and let us express the concept of finding the largest
+    // number in a list abstractly.
 }
