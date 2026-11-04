@@ -34,3 +34,6 @@ fn largest(list: &[i32]) -> i32 {
 //       values of that code in the fucntion signature.
 //    3. Update the two instances of duplicated code to call the function instead.
 //
+// Next will use these same steps with generics to reduce code duplication in different ways. In the
+// same way that the function body can operatte on an abstract list instead of specific
+// values,generics allow code to operate on abstract types.
