@@ -28,3 +28,8 @@ fn largest(list: &[i32]) -> i32 {
 // The largest fucntion has a parameter called list, which represents any concrete slice of i32
 // values that we might pass into the function . As a result , when we call the function, the code
 // runs on the specific values that we pass in .
+// In sum , here are the steps we took to change the code :
+//    1.Identify duplicate code.
+//    2. Extract the duplicate code into the body of the function and specify the inputs and return
+//       values of that code in the fucntion signature.
+//
