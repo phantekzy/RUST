@@ -37,3 +37,6 @@ fn largest(list: &[i32]) -> i32 {
 // Next will use these same steps with generics to reduce code duplication in different ways. In the
 // same way that the function body can operatte on an abstract list instead of specific
 // values,generics allow code to operate on abstract types.
+//      For example, say we had two functions: one that finds the largest item in a slice of i32
+//      values and one that finds the largest item in a slice of char values.
+//      How would we elimintate that duplication ????
