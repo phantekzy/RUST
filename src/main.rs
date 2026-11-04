@@ -1,6 +1,8 @@
 // Chapter 10 : Generic types ,trauts , and lifetimes
 // Removing Dublication by Extracting a function
 // Befpre diving into generics syntax, let's first look at how to remove duplication that doesn't
-// involve generic types by extracting a function.
+// involve generic types by extracting a function. Then we'll apply this techniaue to extract a
+// generic function in the same way that we recognize dublicated code to extract into a function,
+// we'll start to recognize duplicated code that can use generics.
 // Main function
 fn main() {}
