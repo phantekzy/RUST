@@ -27,7 +27,8 @@ fn main() {
     //
     // To find the largest number in two different lists of numbers, w3e can duplicate the code in
     // the last example and use the same logic at two different places in the program :
-
+    //
+    // Code to find the largest number in a list of numbers
     let number_list = vec![102, 34, 6000, 89, 53, 2, 43, 8];
     let mut largest = number_list[0];
     for number in number_list {
@@ -36,4 +37,5 @@ fn main() {
         }
     }
     println!("the largest number is {}", largest)
+    // Although this code works, duplicating code is tedious and error prone
 }
