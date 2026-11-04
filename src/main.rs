@@ -37,5 +37,8 @@ fn main() {
         }
     }
     println!("the largest number is {}", largest)
-    // Although this code works, duplicating code is tedious and error prone
+    // Although this code works, duplicating code is tedious and error prone. We also have to update
+    // the code in multiple places when we want to change it.
+    // to eliminate this duplication , we can create an abstraction by defining a function that
+    // operates on any list of integers given to it in a parameter.
 }
