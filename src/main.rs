@@ -22,4 +22,7 @@ fn main() {
     // list , and if the current number is greater than the number stored in largest , then it
     // iterates through all the numbers in the list , and if the current number is greater than the
     // number stored in largest , it replaces the number in that variable.
+    // However, if the current number is less than the largest number seen so far , the variable
+    // doesn't change , and the code moves on to the next number in the list. After considering all
+    // the numbers in the  list, largest should hold the largest number, which in this case is 100.
 }
