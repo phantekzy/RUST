@@ -18,5 +18,8 @@ fn main() {
     }
     println!("the largest number is {}", largest)
     // This code stores a list of integers in the variable number_list and places the first
-    // number in the list in a variable named largest .
+    // number in the list in a variable named largest . Then it iterates through all numbers in the
+    // list , and if the current number is greater than the number stored in largest , then it
+    // iterates through all the numbers in the list , and if the current number is greater than the
+    // number stored in largest , it replaces the number in that variable.
 }
