@@ -7,6 +7,7 @@
 //
 // Main function
 fn main() {
+    // Abstracted code to find the largest number in two lists
     let number_list = vec![34, 50, 25, 100, 65];
     let results = largest(&number_list);
     println!("The largest number is {}", results);
