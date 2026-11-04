@@ -17,4 +17,6 @@ fn main() {
         }
     }
     println!("the largest number is {}", largest)
+    // This code stores a list of integers in the variable number_list and places the first
+    // number in the list in a variable named largest .
 }
