@@ -26,6 +26,9 @@ fn largest_i32(list: &[i32]) -> i32 {
 // slice. The largest_char function finds the largest char in a slice too.
 // The function bodies have the same code , so let's eleminate the duplication by interducing a
 // Generic type parameter in a single function.
+//
+// To parameterize the types in the new function wi'll define, we need to name the type parameter,
+// just as we do for the value parameters to a function.
 
 fn largest_char(list: &[char]) -> char {
     let mut largest = list[0];
