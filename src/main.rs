@@ -22,6 +22,10 @@ fn largest_i32(list: &[i32]) -> i32 {
     }
     largest
 }
+// The largest_i32 function is the one we extracted in the past that finds the largest i32 in a
+// slice. The largest_char function finds the largest char in a slice too.
+// The function bodies have the same code , so let's eleminate the duplication by interducing a
+// Generic type parameter in a single function.
 
 fn largest_char(list: &[char]) -> char {
     let mut largest = list[0];
