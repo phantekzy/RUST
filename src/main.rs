@@ -9,6 +9,8 @@
 // function where we would usually specify the data types of the parameters and return value .
 // Doing so makes our code more flexible and provides more functionality to callers of our function
 // while preventing code duplication.
+// Continuing with our largest function this example shows two functions that both find the largest
+// value in a slice.
 //
 // Main function
 fn main() {}
