@@ -38,6 +38,9 @@ fn largest_i32(list: &[i32]) -> i32 {
 // define the generic largest function ,we place type name declarations inside angle brackeets, <>,
 // between the name of the function and the parameter list :
 fn largest<T>(list: &[T]) -> T {}
+// We read this definition as: the function largest is generic over some type T. This function has
+// one parameter named list, which is a slice of values of type T. The largest function will return
+// a value of the same type T.
 
 fn largest_char(list: &[char]) -> char {
     let mut largest = list[0];
