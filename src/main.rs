@@ -2,6 +2,7 @@
 // Generic Data Types
 // We can use generics to create definitions for items like functions signatures or structs, which
 // we can then use with many different concrete data types.
+// let's look at how to define functions, structs, enums, and methods using generics.
 //
 // Main function
 fn main() {}
