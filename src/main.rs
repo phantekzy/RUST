@@ -28,7 +28,9 @@ fn largest_i32(list: &[i32]) -> i32 {
 // Generic type parameter in a single function.
 //
 // To parameterize the types in the new function wi'll define, we need to name the type parameter,
-// just as we do for the value parameters to a function.
+// just as we do for the value parameters to a function. We can use any identifier as a type
+// parameter name. But we'll use T because, by convention, parameters names in Rust are short,
+// oftern just a letter, and Rust's type naming convention is CamelCase.
 
 fn largest_char(list: &[char]) -> char {
     let mut largest = list[0];
