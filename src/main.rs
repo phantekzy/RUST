@@ -41,6 +41,9 @@ fn largest<T>(list: &[T]) -> T {}
 // We read this definition as: the function largest is generic over some type T. This function has
 // one parameter named list, which is a slice of values of type T. The largest function will return
 // a value of the same type T.
+// This example shows t he combined largest function definition using the generic data type in its
+// signature. The example also shows how we can call the function with either a slice of i32 value
+// or char values. Note that this code won't compile yet , we will fix it later
 
 fn largest_char(list: &[char]) -> char {
     let mut largest = list[0];
