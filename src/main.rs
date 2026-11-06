@@ -11,6 +11,16 @@
 // while preventing code duplication.
 // Continuing with our largest function this example shows two functions that both find the largest
 // value in a slice.
-//
+
+fn largest_i32(list: &[i32]) -> i32 {
+    let mut largest = list[0];
+    for &item in list.iter() {
+        if item > largest {
+            largest = item;
+        }
+    }
+    largest
+}
+
 // Main function
 fn main() {}
