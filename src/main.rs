@@ -33,7 +33,10 @@ fn largest_i32(list: &[i32]) -> i32 {
 // oftern just a letter, and Rust's type naming convention is CamelCase. Short for "type", T is the
 // default choice of most Rust proggrammers.
 // When we use a parameter in the body of the function, we have to declare the parameter name in the
-// signature so the compiler kknows what that name means.
+// signature so the compiler kknows what that name means. Similarly, when we use a type parameter
+// name in a function signature , we have to declare the type parameter name before we use it. To
+// define the generic largest function ,we place type name declarations inside angle brackeets, <>,
+// between the name of the function and the parameter list :
 
 fn largest_char(list: &[char]) -> char {
     let mut largest = list[0];
