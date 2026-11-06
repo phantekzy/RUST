@@ -32,6 +32,8 @@ fn largest_i32(list: &[i32]) -> i32 {
 // parameter name. But we'll use T because, by convention, parameters names in Rust are short,
 // oftern just a letter, and Rust's type naming convention is CamelCase. Short for "type", T is the
 // default choice of most Rust proggrammers.
+// When we use a parameter in the body of the function, we have to declare the parameter name in the
+// signature so the compiler kknows what that name means.
 
 fn largest_char(list: &[char]) -> char {
     let mut largest = list[0];
