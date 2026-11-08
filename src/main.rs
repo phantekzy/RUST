@@ -9,6 +9,9 @@
 // the Point<T> struct is generic over some type T, and the fields x and y are both that same type,
 // whatever that type may be . If we create an instance of a Point<T> that has values of different
 // types, as in this example our code won't compile .
+//
+//
+// In this example, we can change the definition of Point to be generic over types T and U where x is of type T and y is of type U :
 struct Point<T> {
     x: T,
     y: T,
@@ -22,5 +25,4 @@ fn main() {
     // for y, which we've defined to have the same type as x , we'll get a type mistmatch error.
     // ^^^ expected integer, found floating-point number
     // To defint a Point struct where x and y are both generics but could have different types, we
-    // can use multiple generic type parameters.
 }
