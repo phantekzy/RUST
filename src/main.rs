@@ -18,6 +18,10 @@ struct Point<T, U> {
     x: T,
     y: U,
 }
+// Now all the instances of Point shown are alloed! You can use as many generic type parameters in a
+// definition as you want,but using more than a few makes your code hard to read. When we need lots
+// of generic types in our code, it could indicate that our code need restructuring into smaller
+// pieces.
 // Main function
 fn main() {
     let wont_work = Point { x: 4, y: 6.9 };
