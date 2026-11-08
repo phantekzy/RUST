@@ -58,4 +58,6 @@ fn largest<T>(list: &[T]) -> T {
 // Main function
 fn main() {
     let number_list = vec![34, 50, 25, 100, 65];
+    let result = largest(&number_list);
+    println!("The largest number in the list is {}", result);
 }
