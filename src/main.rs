@@ -17,4 +17,5 @@ fn main() {
 }
 // The syntax for using generics in struct definitions is similar to that used in function
 // definitions. First, we declare the name of the type parameter inside angle brackets just  after
-// the name of the struct.
+// the name of the struct. then we can use the generic type in the struct definition where we would
+// otherwise specify concrete data types.
