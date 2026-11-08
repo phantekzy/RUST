@@ -21,4 +21,6 @@ fn main() {
     // generic type T  will be an integer for this instance of Point<T>. Then when we specify 4.0
     // for y, which we've defined to have the same type as x , we'll get a type mistmatch error.
     // ^^^ expected integer, found floating-point number
+    // To defint a Point struct where x and y are both generics but could have different types, we
+    // can use multiple generic type parameters.
 }
