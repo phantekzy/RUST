@@ -4,6 +4,8 @@
 // We can also define structs to use a generic type parameter in one or more fields using the <>
 // syntax. This example shows how to define a Point<T> Struct to hold x and y coordinate values of
 // any type.
+//
+// A Point<T> struct that holds x and y values of type T
 struct Point<T> {
     x: T,
     y: T,
