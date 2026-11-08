@@ -10,5 +10,6 @@ struct Point<T> {
 }
 // Main function
 fn main() {
-    let integer = Point { x: 5, y: b };
+    let integer = Point { x: 5, y: 6 };
+    let float = Point { x: 1.2, y: 2.2 };
 }
