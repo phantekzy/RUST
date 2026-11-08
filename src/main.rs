@@ -20,4 +20,5 @@ fn main() {
     // In this example, when we assign the integer value 5 to x, we let the compiler know that the
     // generic type T  will be an integer for this instance of Point<T>. Then when we specify 4.0
     // for y, which we've defined to have the same type as x , we'll get a type mistmatch error.
+    // ^^^ expected integer, found floating-point number
 }
