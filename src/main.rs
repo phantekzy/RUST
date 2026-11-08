@@ -76,4 +76,7 @@ fn main() {
 
     //For more information about this error, try `rustc --explain E0369`.
     //error: could not compile `rusting` (bin "rusting") due to 1 previous error
+
+    // The note is a trait , we'll talk about traits later , For now, this error states that the
+    // body of largest won't work for all possible types thatt T could be.
 }
