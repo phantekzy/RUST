@@ -64,4 +64,16 @@ fn main() {
     let result = largest(&char_list);
     println!("The largest char in the list is{}", result);
     // A definition of the largest function that uses generic type parameters but doesn't compile !
+    // If we compile this code right now we'll get this error :
+    //    Compiling rusting v0.1.0 (/home/phantekzy/RUST)
+    //error[E0369]: binary operation `>` cannot be applied to type `T`
+    // --> src/main.rs:51:17
+    // if item > largest {
+    //            ---- ^ ------- T
+    //help: consider restricting type parameter `T` with trait `PartialOrd`
+    // 47 | fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> T {
+    //             ++++++++++++++++++++++
+
+    //For more information about this error, try `rustc --explain E0369`.
+    //error: could not compile `rusting` (bin "rusting") due to 1 previous error
 }
