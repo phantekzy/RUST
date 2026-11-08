@@ -80,4 +80,7 @@ fn main() {
     // The note is a trait , we'll talk about traits later , For now, this error states that the
     // body of largest won't work for all possible types thatt T could be. because we want to
     // compare values of type T in the body , we can only use types whose values can be ordered.
+    // To enable comparisons, the standard library has the std::cmp::ParialOrd trait that we can
+    // implement on types  . We'll learn how to specify that a generic type has a particular trait
+    // in "Traits as Parameters"  , but lets explore first other ways of using generic type parameters
 }
