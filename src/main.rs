@@ -12,9 +12,11 @@
 //
 //
 // In this example, we can change the definition of Point to be generic over types T and U where x is of type T and y is of type U :
-struct Point<T> {
+struct Point<T, U> {
+    // A Point<T,U> generic over two types so that x and y can be values of
+    // different types.
     x: T,
-    y: T,
+    y: U,
 }
 // Main function
 fn main() {
