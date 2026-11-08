@@ -44,8 +44,9 @@ fn largest_i32(list: &[i32]) -> i32 {
 // signature. The example also shows how we can call the function with either a slice of i32 value
 // or char values. Note that this code won't compile yet , we will fix it later
 
-fn largest_char(list: &[char]) -> char {
+fn largest<T>(list: &[T]) -> T {
     let mut largest = list[0];
+
     for &item in list.iter() {
         if item > largest {
             largest = item;
