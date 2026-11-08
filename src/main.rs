@@ -9,4 +9,6 @@ struct Point<T> {
     y: T,
 }
 // Main function
-fn main() {}
+fn main() {
+    let integer = Point { x: 5, y: b };
+}
