@@ -21,3 +21,5 @@ fn main() {
 // otherwise specify concrete data types.
 // Note that because we've use only one generic type to define Point<T>, this definition says that
 // the Point<T> struct is generic over some type T, and the fields x and y are both that same type,
+// whatever that type may be . If we create an instance of a Point<T> that has values of different
+// types, as in this example our code won't compile .
