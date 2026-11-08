@@ -14,4 +14,6 @@ struct Point<T> {
     y: T,
 }
 // Main function
-fn main() {}
+fn main() {
+    let wont_work = Point { x: 4, y: 6.9 };
+}
