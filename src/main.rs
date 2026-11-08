@@ -60,4 +60,8 @@ fn main() {
     let number_list = vec![34, 50, 25, 100, 65];
     let result = largest(&number_list);
     println!("The largest number in the list is {}", result);
+    let char_list = vec!["y", "m", "a", "i"];
+    let result = largest(&char_list);
+    println!("The largest char in the list is{}", result);
+    // A definition of the largest function that uses generic type parameters but doesn't compile !
 }
