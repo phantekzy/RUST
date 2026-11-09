@@ -17,5 +17,7 @@ enum Result<T, E> {
     Ok(T),
     Err(E),
 }
+// The result enum is generic over two types , T and E , and has two variants: Ok, which holds a
+// value of type T, and Err, which holds a value of type E.
 // Main function
 fn main() {}
