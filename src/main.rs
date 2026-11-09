@@ -21,6 +21,9 @@ impl<T> Point<T> {
 // Implementing methods on the type Point<T>. By declaring T as a generic type after impl, Rust can
 // identify that the type in the angle brackets in Point is a generic type rather than a concrete
 // type.
+// We could,for example,implement methods only on Point<f32> instances rahter than Point<T>
+// instances with any generic type. In this example, we use the concrete type f32, meaning we don't
+// declare any types after impl.
 // Main function
 fn main() {
     let p = Point { x: 5, y: 10 };
