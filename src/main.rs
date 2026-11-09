@@ -13,5 +13,9 @@ enum Option<T> {
 // abstraction no matter what the type of the optional value is.
 // Enums can use multipls generic types as well. The definition of the Result enum that we used in
 // the chapter 9 is one example :
+enum Result<T, E> {
+    Ok(T),
+    Err(E),
+}
 // Main function
 fn main() {}
