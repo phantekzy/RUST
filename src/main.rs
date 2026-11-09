@@ -11,5 +11,7 @@ enum Option<T> {
 // variant that doesn't hold any value. By using the Option<T> enum, we can express the abstract
 // concept of having an optional value, and because Option<T> is generic, we can use this
 // abstraction no matter what the type of the optional value is.
+// Enums can use multipls generic types as well. The definition of the Result enum that we used in
+// the chapter 9 is one example :
 // Main function
 fn main() {}
