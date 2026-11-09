@@ -24,5 +24,8 @@ enum Result<T, E> {
 // past example , where T was filled in with the type std::fs::File when the file was opened
 // successfuly and E was filled in with the type std::io::Error when there were problems opening the
 // file.
+// When we recognize situations in our code with multiple struct of enum definitions that differ
+// only in the types of the values they hold, we can avoid duplication by using generic types
+// instead.
 // Main function
 fn main() {}
