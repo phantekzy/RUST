@@ -20,6 +20,9 @@ enum Result<T, E> {
 // The result enum is generic over two types , T and E , and has two variants: Ok, which holds a
 // value of type T, and Err, which holds a value of type E. This definition makes it convenient to
 // use the Result enum anywhere we have an operation that might succeed(Return a value of some type
-// T) or fail (Return an error of some type E).
+// T) or fail (Return an error of some type E). In fact, this is what we used to open file in our
+// past example , where T was filled in with the type std::fs::File when the file was opened
+// successfuly and E was filled in with the type std::io::Error when there were problems opening the
+// file.
 // Main function
 fn main() {}
