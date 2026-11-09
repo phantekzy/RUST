@@ -18,6 +18,8 @@ enum Result<T, E> {
     Err(E),
 }
 // The result enum is generic over two types , T and E , and has two variants: Ok, which holds a
-// value of type T, and Err, which holds a value of type E.
+// value of type T, and Err, which holds a value of type E. This definition makes it convenient to
+// use the Result enum anywhere we have an operation that might succeed(Return a value of some type
+// T) or fail (Return an error of some type E).
 // Main function
 fn main() {}
