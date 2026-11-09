@@ -6,6 +6,8 @@
 enum Option<T> {
     Some(T),
     None,
-}
+} // The definition should now make more sese to us. A we can see Option<T> is an enum that is
+// generic over type T and has two variants: Some, which holds one value of type T, and a None
+// variant that doesn't hold any value.
 // Main function
 fn main() {}
