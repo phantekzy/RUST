@@ -18,7 +18,9 @@ impl<T> Point<T> {
 // Here, we've defined a method named x on Point<T> that returns a reference to the data in the
 // field x.
 // Note that we have to declare T just after impl so we can use it to specify that we're
-// Implementing methods on the type Point<T>.
+// Implementing methods on the type Point<T>. By declaring T as a generic type after impl, Rust can
+// identify that the type in the angle brackets in Point is a generic type rather than a concrete
+// type.
 // Main function
 fn main() {
     let p = Point { x: 5, y: 10 };
