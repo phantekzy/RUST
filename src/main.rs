@@ -6,7 +6,6 @@
 // named x implemented on it
 //
 //
-// IM TO SLEEPY TO CODE I WILL WAKE UP INCHALAH AT 5AM
 struct Point<T> {
     x: T,
     y: T,
