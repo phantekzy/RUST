@@ -43,7 +43,7 @@ impl<T, U> Point<T, U> {
 // In main, we've defined aa Point that has i32 for x with value 5 and an f64 for y with value 10.4
 // The p2 variable is a Point struct that has a string slice for x with value "helle" and a char for
 // y with value 'c'. Calling mixup on p1 with the argument p2 gives us p3, which will have an i32
-// for x ,
+// for x , because x came from p1 . The p3 variable will have a char for y, because y came from p2.
 
 // Main function
 fn main() {
