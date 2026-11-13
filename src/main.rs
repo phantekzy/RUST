@@ -31,6 +31,7 @@ struct Point<T, U> {
     y: U,
 }
 impl<T, U> Point<T, U> {
+    // A method :
     fn mixup<V, W>(self, other: Point<V, W>) -> Point<V, W> {}
 }
 
