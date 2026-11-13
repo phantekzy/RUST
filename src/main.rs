@@ -15,8 +15,6 @@ impl<T> Point<T> {
         &self.x
     }
 }
-// An impl block that only applies to a struct with a particular concrete type for the generic
-// type parameter T
 // Here, we've defined a method named x on Point<T> that returns a  reference to the data in the
 // field x.
 // Note that we have to declare T just aftwe impl so we can use it to specify that we're
@@ -29,7 +27,8 @@ impl<T> Point<T> {
 impl Point<f32> {
     fn distance_from_origin(&self) -> f32 {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
-    }
+    } // An impl block that only applies to a struct with a particular concrete type for the generic
+    // type parameter T.
 }
 
 // Main function
