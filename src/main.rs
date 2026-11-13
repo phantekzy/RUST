@@ -30,7 +30,9 @@ struct Point<T, U> {
     x: T,
     y: U,
 }
-impl<T, U> Point<T, U> {}
+impl<T, U> Point<T, U> {
+    fn mixup<V, W>(self, other: Point<V, W>) -> Point<V, W> {}
+}
 
 // Main function
 fn main() {
