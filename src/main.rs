@@ -47,7 +47,8 @@ impl<T, U> Point<T, U> {
 // The purpose of this example is to demonstrate a situation in which some generic parameters are
 // declared with impl and some are declared with the methood definition.
 // Here, the generic parameters T and U are declared after impl, because they go with the struct
-// defintion.
+// defintion. The generic parameters V and W are declared after fn mixup, because the're only
+// revelant to the method.
 
 // Main function
 fn main() {
