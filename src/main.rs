@@ -25,7 +25,9 @@ impl Point<f32> {
     // An impl block that only applies to a struct with a particular concrete type for the generic
     // type parameter T
     // Here, we've defined a method named x on Point<T> that returns a  reference to the data in the
-    // field x
+    // field x.
+    // Note that we have to declare T just aftwe impl so we can use it to specify that we're
+    // implementing methods on the type Point<T>.
 }
 
 // Main function
