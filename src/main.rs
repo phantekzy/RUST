@@ -36,7 +36,9 @@ impl Point<f32> {
     // Generic type parameter in a struct definition aren't always the same as those you use in that
     // struct's method signatures. For example the next example defines the method mixup on the
     // Point<T,U> struct from our past examples. The method  takes another Point as a parameter,
-    // which might have different types thant the self Point we're calling mixup on.
+    // which might have different types thant the self Point we're calling mixup on. The method
+    // creates a new Point instance with the x value fron the self Point(of type T) and the y value
+    // from the passed-in Point (of type W).
 }
 
 // Main function
