@@ -35,7 +35,8 @@ impl Point<f32> {
     // mathematical operations that are available only for floating point types.
     // Generic type parameter in a struct definition aren't always the same as those you use in that
     // struct's method signatures. For example the next example defines the method mixup on the
-    // Point<T,U> struct from our past examples.
+    // Point<T,U> struct from our past examples. The method  takes another Point as a parameter,
+    // which might have different types thant the self Point we're calling mixup on.
 }
 
 // Main function
