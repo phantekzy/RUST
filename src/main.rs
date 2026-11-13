@@ -33,6 +33,9 @@ impl Point<f32> {
     // instaances of Point<T> where T is not of type f32 will not have this method defined.
     // The method measures how far our point is from the point at coordinates (0.0 , 0.0) amd uses
     // mathematical operations that are available only for floating point types.
+    // Generic type parameter in a struct definition aren't always the same as those you use in that
+    // struct's method signatures. For example the next example defines the method mixup on the
+    // Point<T,U> struct from our past examples.
 }
 
 // Main function
