@@ -4,6 +4,7 @@
 // We might be wondering whether there is a runtime cost when we're using generic type parameters.
 // The good news is that Rust implements generics in such a way that our code doesn't run any slower
 // using generic types than it would with concrete types.
+// Rust acomplishes this by performing monomorphization of the code.
 
 // Main function
 fn main() {}
