@@ -40,6 +40,8 @@ impl<T, U> Point<T, U> {
         }
     }
 }
+// In main, we've defined aa Point that has i32 for x with value 5 and an f64 for y with value 10.4
+//
 
 // Main function
 fn main() {
