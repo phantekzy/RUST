@@ -15,6 +15,14 @@ impl<T> Point<T> {
         &self.x
     }
 }
+// An impl block that only applies to a struct with a particular concrete type for the generic
+// type parameter T
+// Here, we've defined a method named x on Point<T> that returns a  reference to the data in the
+// field x.
+// Note that we have to declare T just aftwe impl so we can use it to specify that we're
+// implementing methods on the type Point<T>. By declaring T as a generic type after impl, Rust
+// can identify that the type in the angle brackets in Point is a generic type rather than a
+// concrete type.
 // We could,for example,implement methods only on Point<f32> instances rahter than Point<T>
 // instances with any generic type. In this example, we use the concrete type f32, meaning we don't
 // declare any types after impl.
@@ -22,14 +30,6 @@ impl Point<f32> {
     fn distance_from_origin(&self) -> f32 {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
     }
-    // An impl block that only applies to a struct with a particular concrete type for the generic
-    // type parameter T
-    // Here, we've defined a method named x on Point<T> that returns a  reference to the data in the
-    // field x.
-    // Note that we have to declare T just aftwe impl so we can use it to specify that we're
-    // implementing methods on the type Point<T>. By declaring T as a generic type after impl, Rust
-    // can identify that the type in the angle brackets in Point is a generic type rather than a
-    // concrete type.
 }
 
 // Main function
