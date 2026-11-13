@@ -26,17 +26,25 @@
 // creates a new Point instance with the x value fron the self Point(of type T) and the y value
 // from the passed-in Point (of type W).
 
+#[derive(Debug)]
 struct Point<T, U> {
     x: T,
     y: U,
 }
 impl<T, U> Point<T, U> {
-    // A method :
-    fn mixup<V, W>(self, other: Point<V, W>) -> Point<V, W> {}
+    // A method
+    fn mixup<V, W>(self, other: Point<V, W>) -> Point<T, W> {
+        Point {
+            x: self.x,
+            y: other.y,
+        }
+    }
 }
 
 // Main function
 fn main() {
-    let p = Point { x: 5, y: 10 };
-    println!("p.x = {}", p.x());
+    let p1 = Point { x: 5, y: 10.4 };
+    let p2 = Point { x: "Hello", y: 'c' };
+    let p3 = p1.mixup(p2);
+    println!("{:?}", p3);
 }
