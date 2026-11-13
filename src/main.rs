@@ -32,7 +32,7 @@ struct Point<T, U> {
     y: U,
 }
 impl<T, U> Point<T, U> {
-    // A method
+    // A method that uses different generic types than its struct's definition
     fn mixup<V, W>(self, other: Point<V, W>) -> Point<T, W> {
         Point {
             x: self.x,
