@@ -29,6 +29,10 @@ impl Point<f32> {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
     } // An impl block that only applies to a struct with a particular concrete type for the generic
     // type parameter T.
+    // This code means the type Point<f32> will have a method named distance_from_origin and other
+    // instaances of Point<T> where T is not of type f32 will not have this method defined.
+    // The method measures how far our point is from the point at coordinates (0.0 , 0.0) amd uses
+    // mathematical operations that are available only for floating point types.
 }
 
 // Main function
