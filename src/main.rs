@@ -46,6 +46,8 @@ impl<T, U> Point<T, U> {
 // for x , because x came from p1 . The p3 variable will have a char for y, because y came from p2.
 // The purpose of this example is to demonstrate a situation in which some generic parameters are
 // declared with impl and some are declared with the methood definition.
+// Here, the generic parameters T and U are declared after impl, because they go with the struct
+// defintion.
 
 // Main function
 fn main() {
