@@ -30,6 +30,7 @@ struct Point<T, U> {
     x: T,
     y: U,
 }
+impl<T, U> Point<T, U> {}
 
 // Main function
 fn main() {
