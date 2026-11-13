@@ -44,6 +44,8 @@ impl<T, U> Point<T, U> {
 // The p2 variable is a Point struct that has a string slice for x with value "helle" and a char for
 // y with value 'c'. Calling mixup on p1 with the argument p2 gives us p3, which will have an i32
 // for x , because x came from p1 . The p3 variable will have a char for y, because y came from p2.
+// The purpose of this example is to demonstrate a situation in which some generic parameters are
+// declared with impl and some are declared with the methood definition.
 
 // Main function
 fn main() {
