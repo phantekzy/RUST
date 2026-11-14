@@ -10,6 +10,7 @@
 // In this process, the compiler does the opposit of the steps we used to create generic functions :
 // the compiler looks at all the places where generic code is called and generates code for the
 // concrete types the generic code is called with.
+// Let's look how this works with an example that uses the standard library's Option<T> enum :
 
 // Main function
 fn main() {}
