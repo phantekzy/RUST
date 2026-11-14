@@ -12,16 +12,6 @@
 // concrete types the generic code is called with.
 // Let's look how this works with an example that uses the standard library's Option<T> enum :
 
-// Main function
-fn main() {
-    let integer = Some(5);
-    let float = Some(5.0);
-    // When Rust compiles this code, it performs monomorphization. During this process, the compiler
-    // reads the values that have been used in Option<T> instances and identifies two kinds of
-    // Option<T>: one is i32 and the other is f64.
-    // As such, it expands the generic definition of Option<T> into Option_i32 and Option_f64,
-    // thereby replacing the generic definition with the specific ones.
-}
 // The monomorphized version of ther code looks like the following. The generic Option<T> is
 // replaced with the specific definition created by the compiler :
 enum Option_i32 {
@@ -31,4 +21,14 @@ enum Option_i32 {
 enum Option_f64 {
     Some(f64),
     None,
+}
+// Main function
+fn main() {
+    let integer = Some(5);
+    let float = Some(5.0);
+    // When Rust compiles this code, it performs monomorphization. During this process, the compiler
+    // reads the values that have been used in Option<T> instances and identifies two kinds of
+    // Option<T>: one is i32 and the other is f64.
+    // As such, it expands the generic definition of Option<T> into Option_i32 and Option_f64,
+    // thereby replacing the generic definition with the specific ones.
 }
