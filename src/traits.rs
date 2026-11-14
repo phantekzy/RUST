@@ -22,3 +22,10 @@ impl Speak for Dog {
         format!("Woof! My name is {}", self.name)
     }
 }
+
+// 3. Implement the Trait for Robot
+impl Speak for Robot {
+    fn say_hello(&self) -> String {
+        format!("Beep Beep. Unit #{}", self.model_id)
+    }
+}
