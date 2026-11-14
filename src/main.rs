@@ -18,5 +18,6 @@
 // We want to make a media aggregator library that can display summaries of data that might be
 // stored in a NewArticle or Tweet instances. To do this, we need a summary from each typem and we
 // need to request that summary by calling a summarize method on an instance.
+// This example shows the definition of Summary trait that expresses this behavior.
 // Main function
 fn main() {}
