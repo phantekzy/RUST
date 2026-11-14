@@ -33,4 +33,6 @@ fn main() {
     // thereby replacing the generic definition with the specific ones.
 }
 // Because Rust compiles generic code into code that specifies the type in each instance, we pay no
-// runtime cost for using generics.
+// runtime cost for using generics. When the code runs, it performs just as it would if we had
+// duplicated each definition by hand. The process of monomorphization makes Rust's generics
+// extermely efficient at runtime .
