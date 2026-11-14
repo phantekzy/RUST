@@ -16,4 +16,7 @@
 fn main() {
     let integer = Some(5);
     let float = Some(5.0);
+    // When Rust compiles this code, it performs monomorphization. During this process, the compiler
+    // reads the values that have been used in Option<T> instances and identifies two kinds of
+    // Option<T>: one is i32 and the other is f64.
 }
