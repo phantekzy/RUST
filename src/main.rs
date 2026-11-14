@@ -13,4 +13,7 @@
 // Let's look how this works with an example that uses the standard library's Option<T> enum :
 
 // Main function
-fn main() {}
+fn main() {
+    let integer = Some(5);
+    let float = Some(5.0);
+}
