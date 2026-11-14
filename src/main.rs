@@ -11,5 +11,9 @@
 // same behavior if we can call the same methods on all of those types. TGrait definitions are a way
 // to group method signatures together to define a set of behaviors necessary to accompl;ish some
 // purpose.
+// For example, let's say we have multiple structs that hold various kinds and amounts of text: a
+// NewArticle struct that holds a news stroy filed in a particular location and a Tweet that can
+// have at most 280 characters along with metadata that indicates whether it was a new tweet,
+// retweet, or a reply to another tweet.
 // Main function
 fn main() {}
