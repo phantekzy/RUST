@@ -19,5 +19,8 @@
 // stored in a NewArticle or Tweet instances. To do this, we need a summary from each typem and we
 // need to request that summary by calling a summarize method on an instance.
 // This example shows the definition of Summary trait that expresses this behavior.
+pub trait Summary {
+    fn summarize(&self) -> String;
+}
 // Main function
 fn main() {}
