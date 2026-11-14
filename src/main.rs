@@ -5,5 +5,11 @@
 // bounds to specify that a generic can be any type that has certain behavior.
 // // NOTE : Traits are similar to a feature often called interfaces in other languages, although
 // with some differences.
+//
+// Defining a Trait :
+// A type's behavior consists of the methods we can call on that type. Different types share the
+// same behavior if we can call the same methods on all of those types. TGrait definitions are a way
+// to group method signatures together to define a set of behaviors necessary to accompl;ish some
+// purpose.
 // Main function
 fn main() {}
