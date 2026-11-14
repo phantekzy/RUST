@@ -24,5 +24,7 @@
 pub trait Summary {
     fn summarize(&self) -> String;
 }
+// Here we declare a trait using the trait keyword and then the trait's name, which is Summary in
+// this case.
 // Main function
 fn main() {}
