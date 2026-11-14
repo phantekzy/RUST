@@ -32,3 +32,5 @@ fn main() {
     // As such, it expands the generic definition of Option<T> into Option_i32 and Option_f64,
     // thereby replacing the generic definition with the specific ones.
 }
+// Because Rust compiles generic code into code that specifies the type in each instance, we pay no
+// runtime cost for using generics.
