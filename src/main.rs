@@ -22,3 +22,9 @@ fn main() {
     // As such, it expands the generic definition of Option<T> into Option_i32 and Option_f64,
     // thereby replacing the generic definition with the specific ones.
 }
+// The monomorphized version of ther code looks like the following. The generic Option<T> is
+// replaced with the specific definition created by the compiler :
+enum Option_i32 {
+    Some(i32),
+    None,
+}
