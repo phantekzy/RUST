@@ -15,5 +15,8 @@
 // NewArticle struct that holds a news stroy filed in a particular location and a Tweet that can
 // have at most 280 characters along with metadata that indicates whether it was a new tweet,
 // retweet, or a reply to another tweet.
+// We want to make a media aggregator library that can display summaries of data that might be
+// stored in a NewArticle or Tweet instances. To do this, we need a summary from each typem and we
+// need to request that summary by calling a summarize method on an instance.
 // Main function
 fn main() {}
