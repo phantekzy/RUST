@@ -29,6 +29,7 @@ pub trait Summary {
 // behaviors of the types that implement this trait, which in this case is fn summarize(&self).
 // After the method signature, instead of providing an implementation within curly brackets, use use
 // a semicolon. Each type implementing this trait must provide its own custom behavior for the body
-// of the method.
+// of the method. The compiler will enforce that any type that has the Summary trait will have the
+// method summarize defined with this signature exactly.
 // Main function
 fn main() {}
