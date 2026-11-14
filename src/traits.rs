@@ -15,3 +15,10 @@ struct Dog {
 struct Robot {
     model_id: u32,
 }
+
+// 2. Implement the trait for Dog
+impl Speak for Dog {
+    fn say_hello(&self) -> String {
+        format!("Woof! My name is {}", self.name)
+    }
+}
