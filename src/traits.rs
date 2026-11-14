@@ -8,3 +8,10 @@
 trait Speak {
     fn say_hello(&self) -> String;
 }
+struct Dog {
+    name: String,
+}
+
+struct Robot {
+    model_id: u32,
+}
