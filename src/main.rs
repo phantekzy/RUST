@@ -25,6 +25,7 @@ pub trait Summary {
     fn summarize(&self) -> String;
 }
 // Here we declare a trait using the trait keyword and then the trait's name, which is Summary in
-// this case.
+// this case. Inside the curly brackets, we declare the method signatures that describes the
+// behaviors of the types that implement this trait, which in this case is fn summarize(&self)
 // Main function
 fn main() {}
