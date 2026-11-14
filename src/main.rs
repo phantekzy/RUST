@@ -28,3 +28,7 @@ enum Option_i32 {
     Some(i32),
     None,
 }
+enum Option_f64 {
+    Some(f64),
+    None,
+}
