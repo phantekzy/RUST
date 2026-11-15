@@ -35,6 +35,9 @@ pub trait Summary {
 // each line ends in a semicolon.
 //
 //
+// Implementing a Trait on a Type :
+// Now that we've defined the desired behavior using the Summary trait , we can implement it on the
+// types in our media aggregator
 //
 // Main function
 fn main() {}
