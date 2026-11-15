@@ -34,3 +34,8 @@ impl Speak for Robot {
 // Traits solve three major problems in Rust :
 // - Writing Flexible Functions (Trait Bounds) : We can write a single function that accepts any
 // type, as long as that type Implements a specific trait.
+
+// This function accepts a Dog, A Robot, or anything else that Implements Speak
+fn greet(speaker: &impl Speak) {
+    println!("{}", speaker.say_hello())
+}
