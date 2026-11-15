@@ -69,6 +69,8 @@ impl Summary for Tweet {
         format!("{}: {}", self.username, self.content)
     }
 }
+// Implementing a Trait on a type is similar to implementing regular methods. The difference is that
+// after impl, we put the trait name that we want to implement
 
 // Main function
 fn main() {}
