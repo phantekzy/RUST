@@ -72,7 +72,9 @@ impl Summary for Tweet {
 // Implementing a Trait on a type is similar to implementing regular methods. The difference is that
 // after impl, we put the trait name that we want to implement, then we use the for keyword, and
 // then specify the name of the the type we want to implement the trait for. Within the impl block,
-// we put the method signatures that the trait definition has defined .
+// we put the method signatures that the trait definition has defined . Instead of adding a
+// semicolon after each signature, we use curly brackets and fill in the method body with the
+// specific behavior that we want the methods of trait to have for the particular type.
 
 // Main function
 fn main() {}
