@@ -40,6 +40,8 @@ pub trait Summary {
 // types in our media aggregator. The next example shows an implementation of the Summary trait on
 // the NewsArticle struct that uses the headline, the author, and the location to create the return
 // value of summarize.
+// For the Tweet struct, we define summarize as the username followed by the entire text of the
+// tweet, assuming that tweet content is already limited to 280 characters.
 //
 // Main function
 fn main() {}
