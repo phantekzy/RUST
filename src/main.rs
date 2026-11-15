@@ -86,4 +86,5 @@ fn main() {
         reply: true,
         retweet: true,
     };
+    println!("1 new tweet :{}", tweet.summarize())
 }
