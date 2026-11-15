@@ -80,4 +80,10 @@ impl Summary for Tweet {
 fn main() {
     // After implementing the trait, we can call the methods on instances of NewsArticle and Tweet in
     // the same way we call regular methods, like this :
+    let tweet = Tweet {
+        username: String::from("Rust_book"),
+        content: String::from("Learn how to be a Rustacean !"),
+        reply: true,
+        retweet: true,
+    };
 }
