@@ -43,5 +43,11 @@ pub trait Summary {
 // For the Tweet struct, we define summarize as the username followed by the entire text of the
 // tweet, assuming that tweet content is already limited to 280 characters.
 //
+pub struct NewsArticle {
+    pub headline: String,
+    pub location: String,
+    pub author: String,
+    pub content: String,
+}
 // Main function
 fn main() {}
