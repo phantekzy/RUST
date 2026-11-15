@@ -32,4 +32,5 @@ impl Speak for Robot {
 
 // Where and do we use Traits ?
 // Traits solve three major problems in Rust :
-// - Writing Flexible Functions (Trait Bounds) :
+// - Writing Flexible Functions (Trait Bounds) : We can write a single function that accepts any
+// type, as long as that type Implements a specific trait.
