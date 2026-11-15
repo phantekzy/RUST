@@ -29,3 +29,7 @@ impl Speak for Robot {
         format!("Beep Beep. Unit #{}", self.model_id)
     }
 }
+
+// Where and do we use Traits ?
+// Traits solve three major problems in Rust :
+// - Writing Flexible Functions (Trait Bounds) :
