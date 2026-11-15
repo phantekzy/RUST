@@ -37,7 +37,9 @@ pub trait Summary {
 //
 // Implementing a Trait on a Type :
 // Now that we've defined the desired behavior using the Summary trait , we can implement it on the
-// types in our media aggregator
+// types in our media aggregator. The next example shows an implementation of the Summary trait on
+// the NewsArticle struct that uses the headline, the author, and the location to create the return
+// value of summarize.
 //
 // Main function
 fn main() {}
