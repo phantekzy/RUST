@@ -54,5 +54,12 @@ impl Summary for NewsArticle {
         format!("{}, by {} ({})", self.headline, self.author, self.location)
     }
 }
+
+pub struct Tweet {
+    pub username: String,
+    pub content: String,
+    pub reply: bool,
+    pub retweet: bool,
+}
 // Main function
 fn main() {}
