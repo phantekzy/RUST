@@ -70,7 +70,8 @@ impl Summary for Tweet {
     }
 }
 // Implementing a Trait on a type is similar to implementing regular methods. The difference is that
-// after impl, we put the trait name that we want to implement
+// after impl, we put the trait name that we want to implement, then we use the for keyword, and
+// then specify the name of the the type we want to implement the trait for.
 
 // Main function
 fn main() {}
