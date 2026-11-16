@@ -36,5 +36,7 @@ fn main() {
     // But we can't implement external traits on external types. for example, we can't implement the
     // Display trait on Vec<T> within our rusting crate, because Display and Vec<T> are defined in
     // the standard library and aren't local to our rusting crate. This restriction is part of a
-    // property of programs called 'coherence', and more specifically the orphan rule,
+    // property of programs called 'coherence', and more specifically the orphan rule, so named
+    // because the parent type is not present. This rule ensures that other people's code can't
+    // break our code and vice versa.
 }
