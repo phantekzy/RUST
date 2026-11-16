@@ -28,5 +28,8 @@ fn main() {
     // would enable them to implement Summary for their type. The Summary trait would also need to
     // be a public trait for another crate to implement it, which it is because we put the pub
     // keyword before trait.
-    //
+    // One restriction to note with trait implementations is that we can implement a trait on a type
+    // only if either the trait or the type is local to our crate. For example, we can implement
+    // standard library traits like Display on a custom type like Tweet as part of our rusting crate
+    // functionality, because the type Tweet is local to our rusting crate.
 }
