@@ -12,10 +12,7 @@
 // need to request that summary by calling a summarize method on an instance.
 // This example shows the definition of Summary trait that expresses this behavior.
 //
-// A Summary trait that consists of the behavior provided by summarize method :
-pub trait Summary {
-    fn summarize(&self) -> String;
-}
+
 // Here we declare a trait using the trait keyword and then the trait's name, which is Summary in
 // this case. Inside the curly brackets, we declare the method signatures that describes the
 // behaviors of the types that implement this trait, which in this case is fn summarize(&self).
@@ -35,6 +32,10 @@ pub trait Summary {
 // For the Tweet struct, we define summarize as the username followed by the entire text of the
 // tweet, assuming that tweet content is already limited to 280 characters.
 //
+// A Summary trait that consists of the behavior provided by summarize method :
+pub trait Summary {
+    fn summarize(&self) -> String;
+}
 pub struct NewsArticle {
     pub headline: String,
     pub location: String,
