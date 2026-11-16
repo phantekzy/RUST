@@ -87,4 +87,5 @@ fn main() {
         retweet: true,
     };
     println!("1 new tweet :{}", tweet.summarize())
+    // This code prints 1 new tweet: Rust_book: Learn how to be a Rustacean.
 }
