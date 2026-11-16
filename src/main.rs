@@ -33,4 +33,6 @@ fn main() {
     // standard library traits like Display on a custom type like Tweet as part of our rusting crate
     // functionality, because the type Tweet is local to our rusting crate. We can also implement
     // Summary on Vec<T> in our rusting crate because the trait Summary is local to our crate.
+    // But we can't implement external traits on external types. for example, we can't implement the
+    // Display trait on Vec<T> within our rusting crate,
 }
