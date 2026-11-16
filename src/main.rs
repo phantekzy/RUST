@@ -24,6 +24,8 @@ fn main() {
     // same lib.rs, they're all in the same scope. let's say this lib.rs is for a crate we've called
     // aggregator and someone  else wants to use our crate's functionality to implement the Summary
     // trait on a struct defined within their library's scope. They would need to bring the trait
-    // into their scope first.
+    // into their scope first. They would do so by specifying use rusting::Summary;, which then
+    // would enable them to implement Summary for their type. The Summary trait would also need to
+    // be a public trait for another crate to implement it
     //
 }
