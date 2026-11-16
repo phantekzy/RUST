@@ -38,5 +38,6 @@ fn main() {
     // the standard library and aren't local to our rusting crate. This restriction is part of a
     // property of programs called 'coherence', and more specifically the orphan rule, so named
     // because the parent type is not present. This rule ensures that other people's code can't
-    // break our code and vice versa.
+    // break our code and vice versa. Without the rule, two crates could implement the same trait
+    // for the same type, and Rust wouldn't know which implementation to use.
 }
