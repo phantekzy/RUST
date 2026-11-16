@@ -21,5 +21,6 @@ fn main() {
     println!("1 new tweet :{}", tweet.summarize())
     // This code prints 1 new tweet: Rust_book: Learn how to be a Rustacean.
     // Note that because we defined the Summary trait and the NewsArticle and Tweet types in the
-    // same lib.rs
+    // same lib.rs, they're all in the same scope. let's say this lib.rs is for a crate we've called
+    // aggregator and somee scope.
 }
