@@ -7,6 +7,7 @@
 // For Example, in a last example we implemented the Summary trait on the NewsArticle and Tweet
 // types. We can define a notify function that calls the summarize method on its item parameter,
 // which is of some type that implements the Summary trait.
+// To do this, we can use the impl Trait syntax, like this :
 //
 //
 //
