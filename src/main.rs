@@ -12,7 +12,7 @@ use rusting::{NewsArticle, Summary, Tweet};
 
 // Main function
 fn main() {
-    let article = NewsArticle {
+    let _article = NewsArticle {
         headline: String::from("Maini Lotfi The cybersecurity master"),
         location: String::from("Algiers,Algeria"),
         author: String::from("John Doe"),

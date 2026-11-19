@@ -8,6 +8,9 @@
 // types. We can define a notify function that calls the summarize method on its item parameter,
 // which is of some type that implements the Summary trait.
 // To do this, we can use the impl Trait syntax, like this :
+pub fn notify(item: impl Summary) {
+    println!("Breaking news! {}", item.summarize())
+}
 //
 //
 //
