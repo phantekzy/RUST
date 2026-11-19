@@ -21,7 +21,8 @@ pub trait Summary {
     // Definition of a Summary trait with a default implementation of the summarize method
     fn summarize(&self) -> String {
         format!("(Read more from{}...)", self.summarize_author())
-    }
+    } // To use this version of Summary, we only need to define summarize_author when we implement
+    // the trait on a type :
 }
 // To use a default implementation to summarize instances of NewsArticle instead of defining a
 // custom implementation, we specify an empty impl block with impl Summary for NewsArticle{}.
