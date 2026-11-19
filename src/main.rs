@@ -20,4 +20,7 @@ fn main() {
     // implementation of Summary on Tweet in the past example.
     // The reason is that the syntax for overriding a default implementation is the same as the
     // syntax for implementing a trait method that doesn't have a default implementation.
+    // Default implementation can call other methods in the same trait, even if those other methods
+    // don't have a default implementation. In this way, a trait can provide a lot of useful
+    // functionality and only require implementors to specify a small part of it.
 }
