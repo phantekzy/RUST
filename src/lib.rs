@@ -8,6 +8,7 @@
 // instead of only defining the method signature
 
 pub trait Summary {
+    // Definition of a Summary trait with a default implementation of the summarize method
     fn summarize(&self) -> String {
         String::from("(Read more...)")
     }
