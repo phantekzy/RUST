@@ -4,6 +4,8 @@
 //
 //
 use rusting::NewsArticle;
+use rusting::Summary;
+
 // Main function
 fn main() {
     let article = NewsArticle {
@@ -12,4 +14,5 @@ fn main() {
         author: String::from("John Doe"),
         content: String::from("Self made man "),
     };
+    println!("New article available ! {}", article.summarize())
 }
