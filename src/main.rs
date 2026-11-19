@@ -14,7 +14,6 @@ fn main() {
         author: String::from("John Doe"),
         content: String::from("Self made man "),
     };
-    println!("New article available ! {}", article.summarize())
     // This code prints New article available! (Read more...)
     // Creating a default implementation for summarize doesn't require to change anything about the
     // implementation of Summary on Tweet in the past example.
