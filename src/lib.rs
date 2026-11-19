@@ -11,7 +11,8 @@
 pub fn notify(item: impl Summary) {
     println!("Breaking news! {}", item.summarize()) // Instead of concrete type for the item parameter, we specify the impl keyword and the trait name.
     // This parameter accetps any type that implements the specified trait. In the body of notify,
-    // we can call any methods on item that come from the Summary trait, such as summarize.
+    // we can call any methods on item that come from the Summary trait, such as summarize. We can
+    // call notify and pass any instance of NewsArticle or Tweet.
 }
 
 //
