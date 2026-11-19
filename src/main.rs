@@ -28,4 +28,6 @@ fn main() {
         retweet: false,
     };
     println!("1 new tweet: {}", tweet.summarize());
+    // Note that it isn't possible to call the default implementation from an overriding
+    // implementation of that same method.
 }
