@@ -20,7 +20,7 @@ pub trait Summary {
     fn summarize_author(&self) -> String;
     // Definition of a Summary trait with a default implementation of the summarize method
     fn summarize(&self) -> String {
-        format!()
+        format!("(Read more from{}...)", self.summarize_author())
     }
 }
 // To use a default implementation to summarize instances of NewsArticle instead of defining a
