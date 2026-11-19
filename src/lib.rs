@@ -1,6 +1,18 @@
 // Defining a Trait :
 // Traits : Defining Shared Behavior :
-// - Default implementations :
+//
+// Traits as Parameters :
+// Now that we know how to define and implement traits, we can explore how to use traits to define
+// functions that accept many different types.
+// For Example, in a last example we implemented the Summary trait on the NewsArticle and Tweet
+// types. We can define a notify function that calls the summarize method on its item parameter,
+// which is of some type that implements the Summary trait.
+//
+//
+//
+//
+//
+//
 // Sometimes it's useful to have default Behavior for some or all of the methods in a trait instead
 // of requiring implementations for all methods on every type. Then, as we implement the trait on a
 // particular type, we can keep or overrride each method's default behavior.
