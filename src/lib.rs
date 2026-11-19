@@ -13,3 +13,16 @@ pub trait Summary {
         String::from("(Read more...)")
     }
 }
+// To use a default implementation to summarize instances of NewsArticle instead of defining a
+// custom implementation, we specify an empty impl block with impl Summary for NewsArticle{}.
+// Even though we're no longer defining the summarize
+//  method on NewsArticle directly, we've provided a default implementation and specified that
+//  NewsArticle implements the Summary trait . As a result, we can still call the summarize method
+//  on an instance of NewsArticle,
+
+pub struct NewsArticle {
+    pub headline: String,
+    pub location: String,
+    pub author: String,
+    pub content: String,
+}
