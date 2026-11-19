@@ -9,9 +9,11 @@
 // which is of some type that implements the Summary trait.
 // To do this, we can use the impl Trait syntax, like this :
 pub fn notify(item: impl Summary) {
-    println!("Breaking news! {}", item.summarize())
+    println!("Breaking news! {}", item.summarize()) // Instead of concrete type for the item parameter, we specify the impl keyword and the trait name.
+    // This parameter accetps any type that implements the specified trait. In the body of notify,
+    // we can call any methods on item that come from the Summary trait, such as summarize.
 }
-//
+
 //
 //
 //
