@@ -24,5 +24,6 @@ fn main() {
     // don't have a default implementation. In this way, a trait can provide a lot of useful
     // functionality and only require implementors to specify a small part of it. For example, we
     // could define the Summary trait to have a summarize_author method whose implementation is
-    // required
+    // required and then define a summarize method that has a default implementation that calls the
+    // summarize_author method :
 }
