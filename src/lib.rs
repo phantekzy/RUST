@@ -19,10 +19,6 @@ pub fn notify(item: impl Summary) {
 // call any methods on item that come from the Summary trait, such as summarize. We can call notify
 // and pass in any instnace of NewsArticle or Tweet. Code that calls the function with any other
 // type such as a String or an i32, won't compile because those types don't implement Summary.
-
-//
-//
-//
 //
 //
 // Sometimes it's useful to have default Behavior for some or all of the methods in a trait instead
