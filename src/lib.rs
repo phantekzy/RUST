@@ -19,7 +19,7 @@
 // For example, we can have to parameters that implement Summary.
 //
 // Using the impl trait syntax looks like this :
-pub fn notify(item1:impl Summary , item2: impl Summary){} // If we want ed this function to allow
+//pub fn notify(item1:impl Summary , item2: impl Summary){} // If we want ed this function to allow
                                                           // item1 and item2 to have different
                                                           // types, using impl Trait would be
                                                           // appropriate (as long as both types
@@ -28,7 +28,7 @@ pub fn notify(item1:impl Summary , item2: impl Summary){} // If we want ed this 
                                                           // type. 
 // that's only possible to express a
 // trarit bound like this 
-
+pub fn notify<T:Summary>(item1:impl Summary, item2:impl Summary){}
 
 
 
