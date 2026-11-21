@@ -17,8 +17,13 @@
 } // The imple Trait syntax is convenient and makes for more concise code in simple cases. The trait
 // bound syntax can expess more complexity ub itger cases.
 // For example, we can have to parameters that implement Summary.
+//
 // Using the impl trait syntax looks like this :
 pub fn notify(item1:impl Summary , item2: impl Summary){}
+
+
+
+
 // Instead of a concrete type for the item parameter, we specify the impl keyword and the trait name
 // This parameter accepts any type that implements the specified trait. In the body of notify we can
 // call any methods on item that come from the Summary trait, such as summarize. We can call notify
