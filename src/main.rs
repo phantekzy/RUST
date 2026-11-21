@@ -1,7 +1,8 @@
 // Chapter 10 : Generic types ,traits , and lifetimes
 // Traits : Defining Shared Behavior :
 // Trait Bound Syntax :
-//
+// The impl Trait syntax works for straightforward cases but is actually syntax sugar for a longer
+// form, which is called a trait bound;
 //
 //
 //
