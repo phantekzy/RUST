@@ -8,14 +8,16 @@
 // println!("Breaking news{}",item.summarize());
 // }
 //
-pub fn notify<T: Summary>(item: T) {
-    println!("Breaking news!{}", item.summarize()) // This longer form is equivalent to the example
+// pub fn notify<T: Summary>(item: T) {
+//println!("Breaking news!{}", item.summarize()) // This longer form is equivalent to the example
     // in the previous section but is more verbose .
     // We place trait bounds with the declaration of
     // the generic type parameter after a colon and
     // inside angle brakcets .
 } // The imple Trait syntax is convenient and makes for more concise code in simple cases. The trait
 // bound syntax can expess more complexity ub itger cases.
+// For example, we can have to parameters that implement Summary.
+// Using the impl trait syntax looks like this :
 
 // Instead of a concrete type for the item parameter, we specify the impl keyword and the trait name
 // This parameter accepts any type that implements the specified trait. In the body of notify we can
