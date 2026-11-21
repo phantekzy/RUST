@@ -1,10 +1,5 @@
 // Chapter 10 : Generic types ,traits , and lifetimes
 // Traits : Defining Shared Behavior :
-// Trait Bound Syntax :
-// The impl Trait syntax works for straightforward cases but is actually syntax sugar for a longer
-// form, which is called a trait bound; it looks like this :
-//
-//
 //
 //
 // Now that we know how to define and implement traits, we can explore how to use traits to define
@@ -12,11 +7,6 @@
 // For Example, in a last example we implemented the Summary trait on the NewsArticle and Tweet
 // types. We can define a notify function that calls the summarize method on its item parameter,
 // which is of some type that implements the Summary trait.
-//
-//
-//
-//
-//
 //
 //
 use rusting::{NewsArticle, Summary, Tweet};
