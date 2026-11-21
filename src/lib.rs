@@ -23,7 +23,11 @@ pub fn notify(item1:impl Summary , item2: impl Summary){} // If we want ed this 
                                                           // item1 and item2 to have different
                                                           // types, using impl Trait would be
                                                           // appropriate (as long as both types
-                                                          // implement Summary).
+                                                          // implement Summary). If we wanted to
+                                                          // force both parameters to have the same
+                                                          // type. 
+// that's only possible to express a
+// trarit bound like this 
 
 
 
