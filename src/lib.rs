@@ -1,19 +1,12 @@
 // Defining a Trait :
 // Traits : Defining Shared Behavior :
-//
-// Traits as Parameters :
-// Now that we know how to define and implement traits, we can explore how to use traits to define
-// functions that accept many different types.
-// For Example, in a last example we implemented the Summary trait on the NewsArticle and Tweet
-// types. We can define a notify function that calls the summarize method on its item parameter,
-// which is of some type that implements the Summary trait.
-// To do this, we can use the impl Trait syntax, like this :
-pub fn notify(item: impl Summary) {
-    println!("Breaking news! {}", item.summarize()) // Instead of concrete type for the item parameter, we specify the impl keyword and the trait name.
-    // This parameter accetps any type that implements the specified trait. In the body of notify,
-    // we can call any methods on item that come from the Summary trait, such as summarize. We can
-    // call notify and pass any instance of NewsArticle or Tweet.
+// Trait Bound Syntax :
+// The impl Trait syntax works for straightforward cases but is actually syntax sugar for a longer
+// form, which is called a trait bound; it looks like this :
+pub fn notify<T: Summary>(item: T) {
+    println!("Breaking news!{}", item.summarize())
 }
+
 // Instead of a concrete type for the item parameter, we specify the impl keyword and the trait name
 // This parameter accepts any type that implements the specified trait. In the body of notify we can
 // call any methods on item that come from the Summary trait, such as summarize. We can call notify
