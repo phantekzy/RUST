@@ -3,6 +3,9 @@
 // Trait Bound Syntax :
 // The impl Trait syntax works for straightforward cases but is actually syntax sugar for a longer
 // form, which is called a trait bound; it looks like this :
+// pub fn notify (item: impl Summary){
+// println!("Breaking news{}",item.summarize());
+// }
 pub fn notify<T: Summary>(item: T) {
     println!("Breaking news!{}", item.summarize()) // This longer form is equivalent to the example
     // in the previous section but is more verbose .
