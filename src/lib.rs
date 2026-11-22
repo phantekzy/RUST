@@ -29,6 +29,7 @@
 // that's only possible to express a
 // trarit bound like this 
 pub fn notify<T:Summary>(item1:impl Summary, item2:impl Summary){}
+// if we wanted this function to allow item1 and item2 to have different types,
 
 
 
