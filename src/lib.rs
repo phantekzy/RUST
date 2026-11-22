@@ -29,7 +29,9 @@
 // that's only possible to express a
 // trarit bound like this 
 pub fn notify<T:Summary>(item1:impl Summary, item2:impl Summary){}
-// if we wanted this function to allow item1 and item2 to have different types,
+// if we wanted this function to allow item1 and item2 to have different types, using impl Trait
+// would be appropriate (as long as both types implement Summary). If we wanted to force both
+// parameters to have the same type, that's only possible to express using a trait boumd like this :
 
 
 
