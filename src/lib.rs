@@ -33,7 +33,9 @@
 // would be appropriate (as long as both types implement Summary). If we wanted to force both
 // parameters to have the same type, that's only possible to express using a trait boumd like this :
 pub fn notify<T:Summary>(item1 : T , item2:T){}
-
+// The generic type T specified as the type of the item1 and the item2 parameters constrains the
+// funcctions such that the concrete type of the value passed as an argument for item1 and item2 mut
+// be the same .
 
 
 // Instead of a concrete type for the item parameter, we specify the impl keyword and the trait name
