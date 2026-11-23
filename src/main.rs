@@ -1,5 +1,6 @@
 // Chapter 10 : Generic types ,traits , and lifetimes
 // Traits : Defining Shared Behavior :
+// Specifying Multiple Trait Bounds with the + Syntax :
 //
 //
 // Now that we know how to define and implement traits, we can explore how to use traits to define
