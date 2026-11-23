@@ -6,7 +6,10 @@
 // item as well as the summarize method: we specify in the notify definition that item must
 // implement both Display and Summary. We can do so using the + Syntax :
 //
-pub fn notify<T: Summary>(item1: T, item2: T) {}
+
+use std::fmt::Display;
+
+pub fn notify(item: impl Summary + Display) {}
 
 pub trait Summary {
     fn summarize_author(&self) -> String;
