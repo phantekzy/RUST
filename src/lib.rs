@@ -2,7 +2,9 @@
 // Traits : Defining Shared Behavior :
 // Trait Bound Syntax :
 // Specifying Multiple Trait Bounds with the + Syntax :
-//
+// We can also specify more than one trait bound. say we wanted notify to use display formatting on
+// item as well as the summarize method: we specify in the notify definition that item must
+// implement both Display and Summary. We can do so using the + Syntax :
 //
 pub fn notify<T: Summary>(item1: T, item2: T) {}
 
