@@ -22,7 +22,7 @@ trait Summary {
 // must be the same concrete type. This is stricter than impl Trait in arguments.
 fn notify<T: Summary>(item1: &T, item2: &T) {
     println!("{}", item1.summarize());
-    println!("{}", item2.summarize());
+    println!("{}", item2.summarize())
 }
 // Main function
 fn main() {}
