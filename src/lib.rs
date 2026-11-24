@@ -7,12 +7,6 @@
 // implement both Display and Summary. We can do so using the + Syntax :
 //
 
-use std::fmt::Display;
-
-// pub fn notify(item: impl Summary + Display) {} // The + Syntax is also valid with trait bounds on
-// generic types :
-pub fn notify<T: Summary + Display>(item: T) {}
-
 pub trait Summary {
     fn summarize_author(&self) -> String;
     fn summarize(&self) -> String {
