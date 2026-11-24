@@ -7,6 +7,10 @@
 // implement both Display and Summary. We can do so using the + Syntax :
 //
 
+use std::fmt::Display;
+
+pub fn notify(item: impl Summary + Display) {}
+
 pub trait Summary {
     fn summarize_author(&self) -> String;
     fn summarize(&self) -> String {
