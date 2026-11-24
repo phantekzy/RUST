@@ -17,5 +17,7 @@ fn notify(item1: &impl Summary, item2: &impl Summary) {
     println!("{}", item1.summarize());
     println!("{}", item2.summarize());
 }
+// 2. Trait Bounds with Generics(T: Trait) :
+// When you use a Generic type parameter T  with a trait bound
 // Main function
 fn main() {}
