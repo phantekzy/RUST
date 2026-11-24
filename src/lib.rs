@@ -12,6 +12,8 @@ use std::fmt::Display;
 // pub fn notify(item: impl Summary + Display) {}
 // The + Syntax is also valid with trait bounds on generic types :
 pub fn notify<T: Summary + Display>(item: T) {}
+// With the two trait bounds specified , the body of notify can call summarize and use {} to format
+// item
 
 pub trait Summary {
     fn summarize_author(&self) -> String;
