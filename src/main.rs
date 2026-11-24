@@ -20,8 +20,9 @@ trait Summary {
 // 2. Trait Bounds with Generics(T: Trait) :
 // When you use a Generic type parameter T  with a trait bound, all occurrences of T in that scope
 // must be the same concrete type. This is stricter than impl Trait in arguments.
-fn notify(item: &impl Summary) {
-    println!("{}", item.summarize());
+fn notify<T: Summary>(item1: &T, item2: &T) {
+    println!("{}", item1.summarize());
+    println!("{}", item2.summarize());
 }
 // Main function
 fn main() {}
