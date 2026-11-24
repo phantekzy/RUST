@@ -12,5 +12,10 @@
 trait Summary {
     fn summarize(&self) -> String;
 }
+// Each argument can be a DIFFERENT type that implements Summary
+fn notify(item1: &impl Summary, item2: &impl Summary) {
+    println!("{}", item1.summarize());
+    println!("{}", item2.summarize());
+}
 // Main function
 fn main() {}
