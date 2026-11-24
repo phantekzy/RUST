@@ -2,5 +2,7 @@
 // Traits : Defining Shared Behavior :
 // Specifying Multiple Trait Bounds with the + Syntax :
 
+// The Difference between "Normal trait parameters and Trait bounds" :
+
 // Main function
 fn main() {}
