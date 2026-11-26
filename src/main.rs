@@ -18,6 +18,8 @@ where
     U: Clone + Debug,
 {
 }
+// This function signature is less cluttered: the function name, parameter list, and return type are
+// close together, similar to a fucntion without lots of trait bounds.
 
 // Main function
 fn main() {}
