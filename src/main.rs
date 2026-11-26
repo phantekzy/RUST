@@ -11,6 +11,7 @@ use std::fmt::{Debug, Display};
 // after the function signature.
 // So instead of writing this :
 fn some_function<T: Display + Clone, U: Clone + Debug>(t: T, u: U) -> u32 {}
+// we can use a where clause, like this :
 
 // Main function
 fn main() {}
