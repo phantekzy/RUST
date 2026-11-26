@@ -10,8 +10,14 @@ use std::fmt::{Debug, Display};
 // For this reason, Rust has alternate Syntax for Specifying trait bounds inside a where clause
 // after the function signature.
 // So instead of writing this :
-fn some_function<T: Display + Clone, U: Clone + Debug>(t: T, u: U) -> u32 {}
+// fn some_function<T: Display + Clone, U: Clone + Debug>(t: T, u: U) -> u32 {}
 // we can use a where clause, like this :
+fn some_function<T, U>(t: T, u: U) -> u32
+where
+    T: Display + Clone,
+    U: Clone + Debug,
+{
+}
 
 // Main function
 fn main() {}
