@@ -1,3 +1,5 @@
+use std::fmt::{Debug, Display};
+
 // Chapter 10 : Generic types ,traits , and lifetimes
 // Traits : Defining Shared Behavior
 // Specifying Multiple Trait Bounds with the + Syntax
@@ -7,6 +9,8 @@
 // between the function's name and its parameter list, making the function signature hard to read.
 // For this reason, Rust has alternate Syntax for Specifying trait bounds inside a where clause
 // after the function signature.
+// So instead of writing this :
+fn some_function<T: Display + Clone, U: Clone + Debug>(t: T, u: U) -> u32 {}
 
 // Main function
 fn main() {}
