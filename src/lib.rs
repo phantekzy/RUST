@@ -41,6 +41,7 @@ impl Summary for NewsArticle {
         format!("{}, by{} ({})", self.headline, self.author, self.location)
     }
 }
+// Implementing the Summary trait on the Tweet type
 //
 // Tweet Struct
 pub struct Tweet {
@@ -55,4 +56,4 @@ impl Summary for Tweet {
         format!("{}: {}", self.username, self.content)
     }
 }
-// Implementing the Summary trait on the NewsArticle
+// Implementing the Summary trait on the NewsArticle type
