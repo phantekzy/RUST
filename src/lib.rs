@@ -16,7 +16,10 @@ pub trait Summary {
     fn summarize(&self) -> String {
         format!("Read more {}...", self.summarize_author())
     }
-    // After we define summarize_author, we can call summarize on instances of the Tweet struct
+    // After we define summarize_author, we can call summarize on instances of the Tweet struct, and
+    // the default implementation of summarize will call the definition of summarize_author that
+    // we've provided . because we've implemented summarize_author, the Summary trait has given us
+    // the behavior of the summarize method without requiring us to write any more code.
 }
 
 // Tweet Struct
