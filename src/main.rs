@@ -7,7 +7,7 @@
 // some differences .
 // - Defining a Trait :
 
-use rusting::{Summary, Tweet};
+use rusting::{NewsArticle, Summary, Tweet};
 
 // Main function
 fn main() {
@@ -20,6 +20,13 @@ fn main() {
         retweet: false,
     };
     println!("1 new tweet: {}", tweet.summarize());
+
+    let article = NewsArticle {
+        headline: String::from("Maini Lotfi"),
+        location: String::from("Seoul"),
+        author: String::from("Miazaki"),
+        content: String::from("GTA VI"),
+    };
 }
 // This code prints 1 new tweet: horse_ebooks : .....
 // Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
