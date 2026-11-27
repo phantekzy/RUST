@@ -8,7 +8,7 @@
 pub trait Summary {
     fn summarize(&self) -> String {
         String::from("Read more...")
-    }
+    } // Definition of a Summary trait with a default implementation of the summarize method
 }
 //
 // Now that we've defined the desired behavior using the Summary trait, we can implement it on the
