@@ -10,15 +10,13 @@ pub trait Summary {
         format!("Read more {}...", self.summarize_author())
     }
 }
-pub fn notify<T: Summary>(item: T) {
-    println!("Breaking news! {}", item.summarize());
-} // Generic Type -> Trait Bound 
 // This longer form is equivalent to the example in the previous section but is more verbose. We
 // place trait bounds with the declaration of the generic type parameter after a colon and inside
 // angle brackets.
 // The impl Trait syntax is convenient and makes for more concise code in simple cases. The trait
 // bound syntax can express more complexity in other cases. For example, we can have two Parameters
 // that implement Summary.
+// using the impl Trait syntax looks like this :
 
 // Tweet Struct
 pub struct Tweet {
