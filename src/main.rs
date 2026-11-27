@@ -5,6 +5,8 @@ use std::fmt::{Debug, Display};
 // Specifying Multiple Trait Bounds with the + Syntax
 // Clearer Trait Bounds with where Clauses :
 // Returning Types that implement Traits
+// We can also use the impl Trait Syntax in the return position to return a value of some type that
+// implements a trait
 
 // Main function
 fn main() {}
