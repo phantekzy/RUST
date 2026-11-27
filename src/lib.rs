@@ -61,3 +61,5 @@ impl Summary for Tweet {
 // put the method signatures that the trait definition has defined. Instead of adding a semucolon
 // after each signature, we use curly brackets  and fill in the method body with the specific
 // behavior that we want the methoods of the trait to have for the particular type.
+// After implementing the trait, we can call the methods on instances of NewsArticle and Tweet in
+// the same way we call regular methods, like this :
