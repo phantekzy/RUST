@@ -23,6 +23,4 @@ fn main() {
 }
 // This code prints 1 new tweet: horse_ebooks : .....
 // Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
-// lib.rs , they're all in the same scope. Let's say this lib.rs is for a crate we've called
-// aggregator and someone else  wants to use our crate's functionality to implement the Summary
-// trait on a strict defined within their library's scope.
+// lib.rs , they're all in the same scope.
