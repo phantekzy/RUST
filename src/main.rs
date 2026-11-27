@@ -27,6 +27,8 @@ fn main() {
         author: String::from("Miazaki"),
         content: String::from("GTA VI"),
     };
+    // Used a default implementation
+    println!("New article availble ! : {}", article.summarize());
 }
 // This code prints 1 new tweet: horse_ebooks : .....
 // Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
