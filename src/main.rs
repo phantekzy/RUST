@@ -7,7 +7,7 @@
 // some differences .
 // - Defining a Trait :
 
-use rusting::{ID, Presnetation, Summary, Tweet};
+use rusting::{Summary, Tweet};
 
 // Main function
 fn main() {
