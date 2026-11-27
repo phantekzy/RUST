@@ -3,3 +3,7 @@
 // behavior if we can call the same methods on all of those types. Trait definitions are a way to
 // group method signatures together to define a set of behavior necessary to accomplish some
 // purpose.
+// For example, let's say we have multiple structs that hold various kinds and amounts of text: a
+// NewsArticle struct that holds a news story filed in a particular location and a Tweet that can
+// have at most 280 characters along with metadata (data about data) that indicates whether it was a
+// new tweet , a retweet  , or a reply to another tweet.
