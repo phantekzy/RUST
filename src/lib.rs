@@ -20,4 +20,5 @@ pub trait Summary {
 // String
 // After the method signature, instead of providing an implementation within curly brackets, we use
 // a semicolon. Each type implementing this trait must provide its own custom behvaior for the body
-// of the method.
+// of the method. The compiler will enforce that any type that has the Summary trait will have the
+// method summarize defined with this signature exactly.
