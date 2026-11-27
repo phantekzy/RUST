@@ -63,3 +63,17 @@ impl Summary for Tweet {
 // behavior that we want the methoods of the trait to have for the particular type.
 //
 // An example to see if i understood :
+pub trait Presnetation {
+    fn pres(&self) -> String;
+}
+pub struct ID {
+    name: String,
+    age: u32,
+    married: bool,
+}
+
+impl Presnetation for ID {
+    fn pres(&self) -> String {
+        format!("Mister {}  is {} years old", self.name, self.age)
+    }
+}
