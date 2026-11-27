@@ -22,6 +22,9 @@ fn returns_summarizable() -> impl Summary {
 // iterators create types that only the compilers knows or types that are very long to specify.
 // The impl Trait Syntax lets you concisely specify that a function returns some type that
 // implements the iterator trait without needing to write out a very long type
+// However, we can only use impl Trait if we're returning a single type.
+// For example : this code that returns either a NewsArticle or a Tweet with the return type
+// specified as impl Summary wouldn't work
 //
 //
 //
