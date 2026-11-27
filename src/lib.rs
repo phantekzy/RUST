@@ -9,4 +9,4 @@
 // new tweet , a retweet  , or a reply to another tweet.
 // We want to make a media aggregator library that can display summaries of data that might be
 // stored in a NewsArticle or Tweet instance. To do this, we need a summary from each type, and we
-// need to request that summary by calling a summarize method on an instnace.
+// need to request that summary by calling a summarize method on an instance.
