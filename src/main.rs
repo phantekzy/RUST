@@ -24,3 +24,6 @@ fn main() {
 // This code prints 1 new tweet: horse_ebooks : .....
 // Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
 // lib.rs , they're all in the same scope.
+// NOTE
+// one resrtiction to note with trait implementations is that we can implement a trait on a type
+// only if either the trait or the type is local to our crate .
