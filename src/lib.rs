@@ -10,7 +10,7 @@ pub trait Summary {
         format!("Read more {}...", self.summarize_author())
     }
 }
-pub fn notify(item: impl Summary) {
+pub fn notify<T: Summary>(item: T) {
     println!("Breaking news! {}", item.summarize());
 }
 
