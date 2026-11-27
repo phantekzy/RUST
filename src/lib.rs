@@ -35,8 +35,8 @@ pub struct Tweet {
 }
 
 impl Summary for Tweet {
-    fn summarize(&self) -> String {
-        format!("{}: {}", self.username, self.content)
+    fn summarize_author(&self) -> String {
+        format!("@{}", self.username)
     }
 } // Implementing the Summary trait on the NewsArticle type
 // Implementing a trait on a type is similar to implementing regular methods. The difference is that
