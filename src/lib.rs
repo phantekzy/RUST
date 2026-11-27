@@ -19,7 +19,9 @@ pub trait Summary {
 // using the impl Trait syntax looks like this :
 // pub fn notify(item1: impl Summary, item2: impl Summary) {}
 // If we wanted this function to allow item1 and item2 to have different types, using impl Trait
-// would be appropriate (as long as both types implement Summary)
+// would be appropriate (as long as both types implement Summary). If we wanted to force both
+// parameters to have the same type, that's only possible to express using trait bound like this :
+pub fn notify<T: Summary>(item1: T, item2: T) {}
 
 // Tweet Struct
 pub struct Tweet {
