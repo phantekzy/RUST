@@ -11,5 +11,6 @@
 // stored in a NewsArticle or Tweet instance. To do this, we need a summary from each type, and we
 // need to request that summary by calling a summarize method on an instance.
 pub trait Summary {
-    fn summarize(&self) -> String;
+    fn summarize(&self) -> String; // A Summary trait that consists of the behavior provided by a
+    // summarize method
 }
