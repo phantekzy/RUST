@@ -34,3 +34,4 @@ pub struct NewsArticle {
     pub author: String,
     pub content: String,
 }
+impl String for NewsArticle {}
