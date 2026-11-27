@@ -18,3 +18,6 @@ pub trait Summary {
 // this case. Inside the curly brackets, we declare the method signatures that describe the
 // behaviors of the types that implement this trait, which in this case is fn summarize(&self) ->
 // String
+// After the method signature, instead of providing an implementation within curly brackets, we use
+// a semicolon. Each type implementing this trait must provide its own custom behvaior for the body
+// of the method.
