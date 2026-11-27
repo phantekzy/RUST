@@ -10,9 +10,11 @@ pub trait Summary {
         String::from("Read more...")
     } // Definition of a Summary trait with a default implementation of the summarize method
 }
+// To use a default implementation to summarize instances of NewsArticle instead of defining a
+// custom implementation , we specify an empty impl block with impl Summary for NewsArticle{}
+impl Summary for NewsArticle {}
 //
-// Now that we've defined the desired behavior using the Summary trait, we can implement it on the
-// types in our media aggregator.
+//
 // NewsArticle Struct :
 pub struct NewsArticle {
     pub headline: String,
@@ -20,11 +22,6 @@ pub struct NewsArticle {
     pub author: String,
     pub content: String,
 }
-impl Summary for NewsArticle {
-    fn summarize(&self) -> String {
-        format!("{}, by{} ({})", self.headline, self.author, self.location)
-    }
-} // Implementing the Summary trait on the Tweet type
 
 // Tweet Struct
 pub struct Tweet {
