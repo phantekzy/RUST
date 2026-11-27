@@ -55,3 +55,6 @@ impl Summary for Tweet {
         format!("{}: {}", self.username, self.content)
     }
 } // Implementing the Summary trait on the NewsArticle type
+// Implementing a trait on a type is similar to implementing regular methods. The difference is that
+// after impl, we put the trait name that we want to implement, then use the the for keyword, and
+// them specify the name of the type we want to implement the trait for.
