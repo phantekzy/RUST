@@ -1,25 +1,17 @@
-// Default implementation :
-// Sometimes it's usefull to have default behavior for some or all of the methods in a trait instead
-// of requiring implementations for all methods on every type. Then, as we implement the trait on a
-// particular type, we can keep or override each method's default behavior.
-// This example shows how to specify a default string for the summarize method of the Summary trait
-// instead of only defining the method signature
+// Traits as Parameters :
+// Now that we know how to define and implement traits, we can explore how to use traits to define
+// functions that accepts many different types.
+// For example, in the past example, we implemented the Summary trait on the NewsArticle and Tweet
+// types . We can define a notify function that calls the summarize method on its item parameter,
+// which is of some type that implements the Summary trait.
 //
-// Default implementations can call other methods in the same trait, even if those other methods
-// don't have a default implementation. In this way, a trait can provide a lot of useful
-// functionality and only require implementors to specify a small part of it. For example, we
-// could define the Summary trait to have a summarize_author method whose implementation is
-// required, and then define a summarize method that has a default implementation that calls the
-// summarize_author method :
+//
+//
 pub trait Summary {
     fn summarize_author(&self) -> String;
     fn summarize(&self) -> String {
         format!("Read more {}...", self.summarize_author())
     }
-    // After we define summarize_author, we can call summarize on instances of the Tweet struct, and
-    // the default implementation of summarize will call the definition of summarize_author that
-    // we've provided . because we've implemented summarize_author, the Summary trait has given us
-    // the behavior of the summarize method without requiring us to write any more code.
 }
 
 // Tweet Struct
