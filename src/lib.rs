@@ -22,6 +22,9 @@ pub trait Summary {
 // would be appropriate (as long as both types implement Summary). If we wanted to force both
 // parameters to have the same type, that's only possible to express using trait bound like this :
 pub fn notify<T: Summary>(item1: T, item2: T) {}
+// The generic type T specified as the type of the  item1 and item2 parameters constrains the
+// function such that the concrete type of the value passed as an argument for item1 and item2 must
+// be the same .
 
 // Tweet Struct
 pub struct Tweet {
