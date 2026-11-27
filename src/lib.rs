@@ -55,3 +55,4 @@ impl Summary for Tweet {
         format!("{}: {}", self.username, self.content)
     }
 }
+// Implementing the Summary trait on the NewsArticle
