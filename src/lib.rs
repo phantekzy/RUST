@@ -62,18 +62,3 @@ impl Summary for Tweet {
 // after each signature, we use curly brackets  and fill in the method body with the specific
 // behavior that we want the methoods of the trait to have for the particular type.
 //
-// An example to see if i understood :
-pub trait Presnetation {
-    fn pres(&self) -> String;
-}
-pub struct ID {
-    pub name: String,
-    pub age: u32,
-    pub _married: bool,
-}
-
-impl Presnetation for ID {
-    fn pres(&self) -> String {
-        format!("Mister {}  is {} years old", self.name, self.age)
-    }
-}

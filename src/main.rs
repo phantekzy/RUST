@@ -20,11 +20,4 @@ fn main() {
         retweet: false,
     };
     println!("1 new tweet: {}", tweet.summarize());
-
-    let id = ID {
-        name: String::from("Maini Lotfi"),
-        age: 30,
-        _married: false,
-    };
-    println!("PRESENTATION : {}", id.pres());
 }
