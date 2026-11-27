@@ -24,3 +24,6 @@ pub trait Summary {
 // method summarize defined with this signature exactly.
 // A trait can have multiple methods in its body: the method signatures are listed one per line and
 // each line ends with a semicolon.
+//
+// implementing a Trait on a Type :
+//
