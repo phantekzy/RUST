@@ -6,14 +6,6 @@ use rusting::{Summary, Tweet};
 // Returning Types that implement Traits
 // We can also use the impl Trait Syntax in the return position to return a value of some type that
 // implements a trait
-fn returns_summarizable() -> impl Summary {
-    Tweet {
-        username: String::from("Rust Books"),
-        content: String::from("Programming language official book"),
-        reply: false,
-        retweet: true,
-    }
-}
 // By using impl Summary for the return type, we specify that the returns_summarizable function
 // returns some type that implements the Summary trait without naming the concrete type. In this
 // case, returns_summarizable returns a Tweet, but the code calling this function doesn't know that.
@@ -25,8 +17,7 @@ fn returns_summarizable() -> impl Summary {
 // However, we can only use impl Trait if we're returning a single type.
 // For example : this code that returns either a NewsArticle or a Tweet with the return type
 // specified as impl Summary wouldn't work
-//
-//
+fn returns_summarizable(switch: bool) -> impl Summary {}
 //
 // Main function
 fn main() {}
