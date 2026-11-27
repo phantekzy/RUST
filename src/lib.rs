@@ -28,6 +28,8 @@ pub trait Summary {
 // Implementing a Trait on a Type :
 // Now that we've defined the desired behavior using the Summary trait, we can implement it on the
 // types in our media aggregator.
+//
+// NewsArticle Struct :
 pub struct NewsArticle {
     pub headline: String,
     pub location: String,
