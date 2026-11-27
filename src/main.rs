@@ -20,5 +20,8 @@ fn returns_summarizable() -> impl Summary {
 // The ability to return a type that is only specified by the trait it implements is especially
 // usefull in the context of closures and iterators, which we will cover soon. Closures and
 // iterators create types that only the compilers knows or types that are very long to specify.
+//
+//
+//
 // Main function
 fn main() {}
