@@ -14,5 +14,7 @@ fn returns_summarizable() -> impl Summary {
         retweet: true,
     }
 }
+// By using impl Summary for the return type, we specify that the returns_summarizable function
+// returns some type that implements the Summary trait without naming the concrete type.
 // Main function
 fn main() {}
