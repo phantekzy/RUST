@@ -18,7 +18,6 @@ pub trait Summary {
     }
     // After we define summarize_author, we can call summarize on instances of the Tweet struct
 }
-//
 
 // Tweet Struct
 pub struct Tweet {
@@ -32,14 +31,7 @@ impl Summary for Tweet {
     fn summarize_author(&self) -> String {
         format!("@{}", self.username)
     }
-} // Implementing the Summary trait on the NewsArticle type
-// Implementing a trait on a type is similar to implementing regular methods. The difference is that
-// after impl, we put the trait name that we want to implement, then use the the for keyword, and
-// them specify the name of the type we want to implement the trait for. Within the impl block, we
-// put the method signatures that the trait definition has defined. Instead of adding a semucolon
-// after each signature, we use curly brackets  and fill in the method body with the specific
-// behavior that we want the methoods of the trait to have for the particular type.
-//
+}
 // NewsArticle Struct :
 pub struct NewsArticle {
     pub headline: String,
