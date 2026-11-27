@@ -13,6 +13,9 @@ pub trait Summary {
         format!("Read more {}...", self.summarize_author())
     }
 }
+pub fn notify(item: impl Summary) {
+    println!("Breaking news! {}", item.summarize());
+}
 
 // Tweet Struct
 pub struct Tweet {
