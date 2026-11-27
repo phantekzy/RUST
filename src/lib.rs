@@ -41,6 +41,8 @@ impl Summary for NewsArticle {
         format!("{}, by{} ({})", self.headline, self.author, self.location)
     }
 }
+//
+// Tweet Struct
 pub struct Tweet {
     pub username: String,
     pub content: String,
