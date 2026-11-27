@@ -12,8 +12,9 @@
 // required, and then define a summarize method that has a default implementation that calls the
 // summarize_author method :
 pub trait Summary {
+    fn summarize_author(&self) -> String;
     fn summarize(&self) -> String {
-        String::from("Read more...")
+        format!("Read more {}...", self.summarize_author())
     } // Definition of a Summary trait with a default implementation of the summarize method
 }
 // To use a default implementation to summarize instances of NewsArticle instead of defining a
