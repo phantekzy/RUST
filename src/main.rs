@@ -21,3 +21,6 @@ fn main() {
     };
     println!("1 new tweet: {}", tweet.summarize());
 }
+// This code prints 1 new tweet: horse_ebooks : .....
+// Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
+// lib.rs , they're all in the same scope.
