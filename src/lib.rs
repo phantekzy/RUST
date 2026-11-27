@@ -67,9 +67,9 @@ pub trait Presnetation {
     fn pres(&self) -> String;
 }
 pub struct ID {
-    name: String,
-    age: u32,
-    married: bool,
+    pub name: String,
+    pub age: u32,
+    pub _married: bool,
 }
 
 impl Presnetation for ID {

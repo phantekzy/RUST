@@ -7,7 +7,7 @@
 // some differences .
 // - Defining a Trait :
 
-use rusting::{Summary, Tweet};
+use rusting::{ID, Summary, Tweet};
 
 // Main function
 fn main() {
@@ -20,4 +20,11 @@ fn main() {
         retweet: false,
     };
     println!("1 new tweet: {}", tweet.summarize())
+
+    let id = ID{
+        name : String::from("Maini Lotfi"),
+        age : 30,
+        married : false,
+
+    };
 }
