@@ -7,7 +7,13 @@
 // some differences .
 // - Defining a Trait :
 
-//
-//
+use rusting::Tweet;
+
 // Main function
-fn main() {}
+fn main() {
+    // After implementing the trait, we can call the methods on instances of NewsArticle and Tweet in
+    // the same way we call regular methods, like this :
+    let tweet = Tweet{
+
+    }
+}
