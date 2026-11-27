@@ -38,4 +38,6 @@ fn main() {
     // This code prints New article availble ! (Read more...)
     // creating a default implementation for summarize doen't require us to change anything about
     // the implementation of Summary on Tweet.
+    // The reason is that the syntax for overriding a default implementation is the same as the
+    // syntax for implementing a trait method that doesn't have a default implementation.
 }
