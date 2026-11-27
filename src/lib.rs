@@ -40,9 +40,8 @@ impl Summary for NewsArticle {
     fn summarize(&self) -> String {
         format!("{}, by{} ({})", self.headline, self.author, self.location)
     }
-}
-// Implementing the Summary trait on the Tweet type
-//
+} // Implementing the Summary trait on the Tweet type
+
 // Tweet Struct
 pub struct Tweet {
     pub username: String,
@@ -55,5 +54,4 @@ impl Summary for Tweet {
     fn summarize(&self) -> String {
         format!("{}: {}", self.username, self.content)
     }
-}
-// Implementing the Summary trait on the NewsArticle type
+} // Implementing the Summary trait on the NewsArticle type
