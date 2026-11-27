@@ -26,6 +26,9 @@ pub trait Summary {
 // each line ends with a semicolon.
 //
 // Implementing a Trait on a Type :
+//
+// Default implementation :
+//
 // Now that we've defined the desired behavior using the Summary trait, we can implement it on the
 // types in our media aggregator.
 //
