@@ -25,5 +25,12 @@ pub trait Summary {
 // A trait can have multiple methods in its body: the method signatures are listed one per line and
 // each line ends with a semicolon.
 //
-// implementing a Trait on a Type :
-//
+// Implementing a Trait on a Type :
+// Now that we've defined the desired behavior using the Summary trait, we can implement it on the
+// types in our media aggregator.
+pub struct NewsArticle {
+    pub headline: String,
+    pub location: String,
+    pub author: String,
+    pub content: String,
+}
