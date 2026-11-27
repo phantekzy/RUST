@@ -1,6 +1,7 @@
 // Traits as Parameters :
 // Trait Bound Syntax :
-//
+// The impl trait Syntax works for straightforward cases but is actually syntax sugar for a longer
+// form, which is called a trait bound; it looks like this :
 //
 //
 pub trait Summary {
