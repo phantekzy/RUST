@@ -28,10 +28,14 @@ pub trait Summary {
 // Implementing a Trait on a Type :
 //
 // Default implementation :
+// Sometimes it's usefull to have default behavior for some or all of the methods in a trait instead
+// of requiring implementations for all methods on every type. Then, as we implement the trait on a
+// particular type, we can keep or override each method's default behavior.
+//
+//
 //
 // Now that we've defined the desired behavior using the Summary trait, we can implement it on the
 // types in our media aggregator.
-//
 // NewsArticle Struct :
 pub struct NewsArticle {
     pub headline: String,
