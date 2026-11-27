@@ -17,6 +17,7 @@ pub trait Summary {
 // bound syntax can express more complexity in other cases. For example, we can have two Parameters
 // that implement Summary.
 // using the impl Trait syntax looks like this :
+pub fn notify(item1: impl Summary, item2: impl Summary) {}
 
 // Tweet Struct
 pub struct Tweet {
