@@ -20,6 +20,12 @@ fn main() {
         retweet: false,
     };
     println!("1 new tweet: {}", tweet.summarize());
+    // This code prints 1 new tweet: horse_ebooks : .....
+    // Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
+    // lib.rs , they're all in the same scope.
+    // NOTE
+    // one resrtiction to note with trait implementations is that we can implement a trait on a type
+    // only if either the trait or the type is local to our crate .
 
     let article = NewsArticle {
         headline: String::from("Maini Lotfi"),
@@ -30,9 +36,3 @@ fn main() {
     // Used a default implementation
     println!("New article availble ! : {}", article.summarize());
 }
-// This code prints 1 new tweet: horse_ebooks : .....
-// Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
-// lib.rs , they're all in the same scope.
-// NOTE
-// one resrtiction to note with trait implementations is that we can implement a trait on a type
-// only if either the trait or the type is local to our crate .
