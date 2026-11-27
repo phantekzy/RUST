@@ -35,4 +35,7 @@ fn main() {
     };
     // Used a default implementation
     println!("New article availble ! : {}", article.summarize());
+    // This code prints New article availble ! (Read more...)
+    // creating a default implementation for summarize doen't require us to change anything about
+    // the implementation of Summary on Tweet.
 }
