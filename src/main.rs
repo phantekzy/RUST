@@ -7,7 +7,7 @@
 // some differences .
 // - Defining a Trait :
 
-use rusting::Tweet;
+use rusting::{Summary, Tweet};
 
 // Main function
 fn main() {
@@ -19,4 +19,5 @@ fn main() {
         reply: false,
         retweet: false,
     };
+    println!("1 new tweet: {}", tweet.summarize())
 }
