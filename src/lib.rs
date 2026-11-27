@@ -12,7 +12,7 @@ pub trait Summary {
 }
 pub fn notify<T: Summary>(item: T) {
     println!("Breaking news! {}", item.summarize());
-}
+} // Generic Type -> Trait Bound 
 
 // Tweet Struct
 pub struct Tweet {
