@@ -16,15 +16,9 @@ pub trait Summary {
     fn summarize(&self) -> String {
         format!("Read more {}...", self.summarize_author())
     }
+    // After we define summarize_author, we can call summarize on instances of the Tweet struct
 }
 //
-// NewsArticle Struct :
-pub struct NewsArticle {
-    pub headline: String,
-    pub location: String,
-    pub author: String,
-    pub content: String,
-}
 
 // Tweet Struct
 pub struct Tweet {
@@ -46,3 +40,10 @@ impl Summary for Tweet {
 // after each signature, we use curly brackets  and fill in the method body with the specific
 // behavior that we want the methoods of the trait to have for the particular type.
 //
+// NewsArticle Struct :
+pub struct NewsArticle {
+    pub headline: String,
+    pub location: String,
+    pub author: String,
+    pub content: String,
+}
