@@ -13,6 +13,9 @@ pub trait Summary {
 pub fn notify<T: Summary>(item: T) {
     println!("Breaking news! {}", item.summarize());
 } // Generic Type -> Trait Bound 
+// This longer form is equivalent to the example in the previous section but is more verbose. We
+// place trait bounds with the declaration of the generic type parameter after a colon and inside
+// angle brackets.
 
 // Tweet Struct
 pub struct Tweet {
