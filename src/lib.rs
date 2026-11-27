@@ -15,6 +15,8 @@ pub trait Summary {
 }
 pub fn notify(item: impl Summary) {
     println!("Breaking news! {}", item.summarize());
+    // Instead of a concrete type for the item parameter, we specify the impl keyword and the trait
+    // name.
 }
 
 // Tweet Struct
