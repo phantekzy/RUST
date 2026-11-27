@@ -11,8 +11,10 @@ use rusting::{Summary, Tweet};
 
 // Main function
 fn main() {
-    // After implementing the trait, we can call the methods on instances of NewsArticle and Tweet in
-    // the same way we call regular methods, like this :
+    // After we define summarize_author, we can call summarize on instances of the Tweet struct, and
+    // the default implementation of summarize will call the definition of summarize_author that
+    // we've provided . because we've implemented summarize_author, the Summary trait has given us
+    // the behavior of the summarize method without requiring us to write any more code.
     let tweet = Tweet {
         username: String::from("horse_ebooks"),
         content: String::from("Of course, as you probably already know,people"),
@@ -20,10 +22,4 @@ fn main() {
         retweet: false,
     };
     println!("1 new tweet: {}", tweet.summarize());
-    // This code prints 1 new tweet: horse_ebooks : .....
-    // Note that because we deinied the Summary trait and the NewsArticle and Tweet types in the same
-    // lib.rs , they're all in the same scope.
-    // NOTE
-    // one resrtiction to note with trait implementations is that we can implement a trait on a type
-    // only if either the trait or the type is local to our crate .
 }
