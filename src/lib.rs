@@ -16,6 +16,7 @@ pub fn notify<T: Summary>(item: T) {
 // This longer form is equivalent to the example in the previous section but is more verbose. We
 // place trait bounds with the declaration of the generic type parameter after a colon and inside
 // angle brackets.
+// The impl Trait syntax is convenient and makes for more concise code in simple cases.
 
 // Tweet Struct
 pub struct Tweet {
