@@ -17,10 +17,6 @@ pub trait Summary {
         format!("Read more {}...", self.summarize_author())
     } // Definition of a Summary trait with a default implementation of the summarize method
 }
-// To use a default implementation to summarize instances of NewsArticle instead of defining a
-// custom implementation , we specify an empty impl block with impl Summary for NewsArticle{}
-impl Summary for NewsArticle {}
-//
 //
 // NewsArticle Struct :
 pub struct NewsArticle {
