@@ -1,10 +1,6 @@
 use std::fmt::Display;
 
-// Specifying Multiple Trait Bounds with the + Syntax
-// We can also specify more than one trait bound. Say we wanted notify to use display formatting on
-// item as well as the summarize method : we specify in the notify definition that item must
-// implement both Display and Summary. We can do so using the + Syntax:
-//
+// Clearer Trait Bounds with where Clauses
 //
 //
 pub trait Summary {
@@ -13,11 +9,7 @@ pub trait Summary {
         format!("Read more {}...", self.summarize_author())
     }
 }
-// pub fn notify(item: impl Summary + Display) { }
-// The + Syntax is also valid with trait bounds on generic types :
-pub fn notify<T: Summary + Display>(item: T) {} // With the two trait bounds specified, the body of
-// notify can call summarize and use {} to format item.
-// Tweet Struct
+pub fn notify<T: Summary + Display>(item: T) {}
 pub struct Tweet {
     pub username: String,
     pub content: String,
