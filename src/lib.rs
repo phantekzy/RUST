@@ -8,6 +8,7 @@ use std::fmt::{Debug, Display};
 // after the function signature.
 // So instead of writing this :
 fn some_function<T: Display + Clone, U: Display + Debug>(t: T, u: U) -> i32 {}
+
 pub trait Summary {
     fn summarize_author(&self) -> String;
     fn summarize(&self) -> String {
