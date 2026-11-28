@@ -2,8 +2,14 @@ use std::fmt::{Debug, Display};
 // Returning Types that implement Traits
 // We can also use the impl Trait syntax in the return position to return a value of some type that
 // implements a trait, as shown here :
-//
-
+fn returns_summarizable() -> impl Summary {
+    Tweet {
+        username: String::from("Phantekzy"),
+        content: String::from("How to code in Rust"),
+        reply: false,
+        retweet: true,
+    }
+}
 pub trait Summary {
     fn summarize_author(&self) -> String;
     fn summarize(&self) -> String {
