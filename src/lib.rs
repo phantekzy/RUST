@@ -13,8 +13,9 @@ pub trait Summary {
         format!("Read more {}...", self.summarize_author())
     }
 }
-pub fn notify(item: impl Summary + Display) {}
-
+// pub fn notify(item: impl Summary + Display) {}
+// The + Syntax is also valid with trait bounds on generic types :
+pub fn notify<T: Summary + Display>(item: T) {}
 // Tweet Struct
 pub struct Tweet {
     pub username: String,
