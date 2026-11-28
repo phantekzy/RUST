@@ -5,6 +5,7 @@ use std::fmt::Display;
 // functions with multiple generic type parameters can contain lots of trait bound information
 // between the function's name and its parameter list, making the function signature hard to read.
 // For this reason, Rust has alternate syntax for specifying trait bounds inside a where clause
+// after the function signature
 //
 pub trait Summary {
     fn summarize_author(&self) -> String;
