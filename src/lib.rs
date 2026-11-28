@@ -13,7 +13,8 @@ fn some_function<T, U>(t: T, u: U) -> i32
 where
     T: Display + Clone,
     U: Clone + Debug,
-{
+{ // This function's signature is less cluttered: the function name, paramter list, and return type
+    // are close together, similar to a fucntion withouut lots of trait bounds.
 }
 
 pub trait Summary {
