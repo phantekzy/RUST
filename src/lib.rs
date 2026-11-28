@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 // Specifying Multiple Trait Bounds with the + Syntax
 // We can also specify more than one trait bound. Say we wanted notify to use display formatting on
 // item as well as the summarize method : we specify in the notify definition that item must
@@ -11,7 +13,7 @@ pub trait Summary {
         format!("Read more {}...", self.summarize_author())
     }
 }
-pub fn notify<T: Summary>(item1: T, item2: T) {}
+pub fn notify(item: impl Summary + Display) {}
 
 // Tweet Struct
 pub struct Tweet {
