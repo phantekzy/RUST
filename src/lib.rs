@@ -7,7 +7,14 @@ use std::fmt::{Debug, Display};
 // For this reason, Rust has alternate syntax for specifying trait bounds inside a where clause
 // after the function signature.
 // So instead of writing this :
-fn some_function<T: Display + Clone, U: Display + Debug>(t: T, u: U) -> i32 {}
+// fn some_function<T: Display + Clone, U: Display + Debug>(t: T, u: U) -> i32 {}
+// We can use a where clause, like this :
+fn some_function<T, U>(t: T, u: U) -> i32
+where
+    T: Display + Clone,
+    U: Clone + Debug,
+{
+}
 
 pub trait Summary {
     fn summarize_author(&self) -> String;
