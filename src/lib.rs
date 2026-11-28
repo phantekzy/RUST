@@ -3,7 +3,8 @@ use std::fmt::Display;
 // Clearer Trait Bounds with where Clauses
 // Using too many Trait bounds has its downsides. Each generic has its own trait bounds, so
 // functions with multiple generic type parameters can contain lots of trait bound information
-// between the function's name and its parameter list,
+// between the function's name and its parameter list, making the function signature hard to read.
+// For this reason, Rust has alternate syntax for specifying trait bounds inside a where clause
 //
 pub trait Summary {
     fn summarize_author(&self) -> String;
