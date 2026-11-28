@@ -1,4 +1,3 @@
-use std::fmt::{Debug, Display};
 // Returning Types that implement Traits
 // We can also use the impl Trait syntax in the return position to return a value of some type that
 // implements a trait, as shown here :
