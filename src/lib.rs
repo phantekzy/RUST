@@ -1,5 +1,7 @@
 // Returning Types that implement Traits
 
+use std::fmt::{Debug, Display};
+
 fn some_function<T, U>(t: T, u: U) -> i32
 where
     T: Display + Clone,
